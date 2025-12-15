@@ -1,4 +1,11 @@
-require("dotenv").config();
+const path = require("path");
+require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
+
+if (!process.env.STRATZ_API_TOKEN) {
+  throw new Error(
+    "Missing STRATZ_API_TOKEN. Put STRATZ_API_TOKEN=... in the repo root .env (d2dt-dataset/.env)."
+  );
+}
 
 const STRATZ_API_URL = 'https://api.stratz.com/graphql';
 

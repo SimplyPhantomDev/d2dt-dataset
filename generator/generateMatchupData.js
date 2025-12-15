@@ -6,7 +6,7 @@ const fetchMatchups = require("./fetchMatchups");
 const crypto = require("crypto");
 
 // TODO: change this to the hero list JSON your frontend uses
-const HEROES_PATH = path.resolve(__dirname, "../heroes.json");
+const HEROES_PATH = path.resolve(__dirname, "./heroes.json");
 
 // Where to write the generated dataset
 const OUTPUT_PATH = path.resolve(__dirname, "../synergyMatrix.json");
