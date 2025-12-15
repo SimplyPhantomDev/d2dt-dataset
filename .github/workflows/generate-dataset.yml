@@ -28,7 +28,7 @@ jobs:
                 STARTZ_API_TOKEN: ${{ secrets.STRATZ_API_TOKEN }}
               run: |
                 cd generator
-                node generateMatchupsData.js
+                node generateMatchupData.js
                 
             - name: Commit and push updated latest
               run: |
