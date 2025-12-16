@@ -24,7 +24,10 @@ jobs:
           node-version: "22"
 
       - name: Install deps
-        run: npm ci || npm install
+        shell: pwsh
+        run: |
+          npm ci
+          if ($LASTEXITCODE -ne 0) { npm install }
 
       - name: Check STRATZ token is present (does not print it)
         run: node -e "console.log('token present:', !!process.env.STRATZ_API_TOKEN, 'len:', (process.env.STRATZ_API_TOKEN||'').length)"
