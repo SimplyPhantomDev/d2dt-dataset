@@ -45,7 +45,21 @@ async function fetchMatchups(heroId) {
       body: JSON.stringify({ query: matchupQuery, variables }),
     });
 
-    const json = await response.json();
+    const bodyText = await response.text();
+
+    if (!response.ok) {
+      console.error("STRATZ HTTP error:", response.status, bodyText.slice(0, 300));
+      return;
+    }
+
+    let json;
+
+    try {
+      json = JSON.parse(bodyText);
+    } catch (e) {
+      console.error("STRATZ returned non-JSON:", bodyText.slice(0, 300));
+      return;
+    }
 
     if (json.errors) {
       console.error("GraphQL errors:", json.errors);
@@ -72,5 +86,6 @@ async function fetchMatchups(heroId) {
     console.error("Error fetching matchups:", err);
   }
 }
+
 
 module.exports = fetchMatchups;
