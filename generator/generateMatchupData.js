@@ -5,8 +5,7 @@ const path = require("path");
 const fetchMatchups = require("./fetchMatchups");
 const crypto = require("crypto");
 
-// TODO: change this to the hero list JSON your frontend uses
-const HEROES_PATH = path.resolve(__dirname, "./heroes.json");
+const HEROES_PATH = path.resolve(__dirname, "../heroes.json");
 
 // Where to write the generated dataset
 const OUTPUT_PATH = path.resolve(__dirname, "../synergyMatrix.json");
@@ -44,8 +43,11 @@ const generateMatchups = async () => {
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(allMatchups, null, 2));
 
   const datasetBuf = fs.readFileSync(OUTPUT_PATH);
+  const heroesBuf = fs.readFileSync(HEROES_PATH);
   const sha256 = crypto.createHash("sha256").update(datasetBuf).digest("hex");
+  const heroesSha256 = crypto.createHash("sha256").update(heroesBuf).digest("hex");
   const bytes = datasetBuf.length;
+  const heroesBytes = heroesBuf.length;
 
   const manifest = {
     schema: 1,
@@ -53,6 +55,9 @@ const generateMatchups = async () => {
     file: path.basename(OUTPUT_PATH),
     bytes,
     sha256,
+    heroesFile: path.basename(HEROES_PATH),
+    heroesBytes,
+    heroesSha256,
   };
 
   const MANIFEST_PATH = path.resolve(__dirname, "../manifest.json");
