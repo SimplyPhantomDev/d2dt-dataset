@@ -1798,7 +1798,7 @@
       "Carry",
       "Durable"
     ],
-    "icon_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png",
+    "icon_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/dawnbreaker.png",
     "primaryAttribute": "str",
     "aliases": [
       "db",
