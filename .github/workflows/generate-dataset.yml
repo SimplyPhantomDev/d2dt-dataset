@@ -32,6 +32,10 @@ jobs:
       - name: Check STRATZ token is present (does not print it)
         run: node -e "console.log('token present:', !!process.env.STRATZ_API_TOKEN, 'len:', (process.env.STRATZ_API_TOKEN||'').length)"
 
+      - name: Generate heroes.json
+        run: |
+          cd generator
+          node fetchHeroes.js
       - name: Generate dataset
         run: |
           cd generator
