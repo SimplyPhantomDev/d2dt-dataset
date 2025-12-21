@@ -5,11 +5,13 @@ const path = require("path");
 
 const STRATZ_API_URL = "https://api.stratz.com/graphql";
 const ICON_BASE_URL = "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes";
+const ICON_REACT_BASE_URL = "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes";
 
-// Dawnbreaker exception you mentioned
+
+// Dawnbreaker exception
 function heroIconUrl(shortName) {
   if (!shortName) return null;
-  if (shortName === "dawnbreaker") return `${ICON_BASE_URL}/${shortName}.png`;
+  if (shortName === "dawnbreaker") return `${ICON_REACT_BASE_URL}/${shortName}.png`;
   return `${ICON_BASE_URL}/${shortName}_full.png`;
 }
 
