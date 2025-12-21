@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "generatedAt": "2025-12-21T04:01:45.688Z",
+  "generatedAt": "2025-12-21T04:11:25.379Z",
   "file": "synergyMatrix.json",
-  "bytes": 2106909,
-  "sha256": "5bfc9afb903f6cb601a5d321df7395b90c7c19e0bd71e9ce3b40ad029bf59a56",
+  "bytes": 2106891,
+  "sha256": "bfe6aafc69e206e2b603a600bc6f9f424d3093c72d88ea920268a711ac118774",
   "heroesFile": "heroes.json",
-  "heroesBytes": 38920,
-  "heroesSha256": "85879f984d60381bf442399517ac15088c03c88bbe386882d4d7db510bb715d5"
+  "heroesBytes": 38931,
+  "heroesSha256": "ab2d54bbdf18e05535feca60f6068fa131050be3e66dc46285f74756304c777f"
 }
