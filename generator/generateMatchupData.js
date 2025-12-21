@@ -10,6 +10,8 @@ const HEROES_PATH = path.resolve(__dirname, "../heroes.json");
 // Where to write the generated dataset
 const OUTPUT_PATH = path.resolve(__dirname, "../synergyMatrix.json");
 
+const patch = process.env.DOTA_PATCH || "unknown";
+
 const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
 const generateMatchups = async () => {
@@ -58,6 +60,7 @@ const generateMatchups = async () => {
     heroesFile: path.basename(HEROES_PATH),
     heroesBytes,
     heroesSha256,
+    patch
   };
 
   const MANIFEST_PATH = path.resolve(__dirname, "../manifest.json");
