@@ -1852,7 +1852,11 @@
       "Disabler"
     ],
     "icon_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/kez_full.png",
-    "primaryAttribute": "agi"
+    "primaryAttribute": "agi",
+    "aliases": [
+      "kestrel",
+      "bird"
+    ]
   },
   {
     "HeroId": 155,
@@ -1863,6 +1867,10 @@
       "Support"
     ],
     "icon_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/largo_full.png",
-    "primaryAttribute": "str"
+    "primaryAttribute": "str",
+    "aliases": [
+      "frog",
+      "bard"
+    ]
   }
 ]
