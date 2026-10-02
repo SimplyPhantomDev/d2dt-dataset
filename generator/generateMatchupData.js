@@ -32,7 +32,7 @@ const generateMatchups = async () => {
     console.log(`Fetching matchups for ${name} (ID: ${heroId})`);
 
     try {
-      const data = await fetchMatchups(heroId); // uses STRATZ token env var :contentReference[oaicite:1]{index=1}
+      const data = await fetchMatchups(heroId); // uses STRATZ token env var
       if (data) allMatchups[heroId] = data;
       else console.warn(`No data for ${name}`);
     } catch (err) {
