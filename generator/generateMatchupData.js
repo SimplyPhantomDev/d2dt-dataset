@@ -15,6 +15,62 @@ const MANIFEST_PATH = path.resolve(__dirname, "../manifest.json");
 const sleep = (ms) =>
   new Promise((resolve) => setTimeout(resolve, ms));
 
+// Record Valve's latest released patch with the dataset being generated.
+// Abort generation on lookup failure rather than publish a guessed patch label.
+async function fetchCurrentPatch() {
+  const response = await fetch(
+    "https://www.dota2.com/datafeed/patchnoteslist?language=english",
+    { signal: AbortSignal.timeout(20_000) }
+  );
+
+  if (!response.ok) {
+    throw new Error("Patch lookup failed: HTTP " + response.status);
+  }
+
+  const body = await response.json();
+  if (
+    body?.success !== true ||
+    !Array.isArray(body.patches) ||
+    body.patches.length === 0
+  ) {
+    throw new Error("Valve returned an invalid patch list");
+  }
+
+  let latest = null;
+  const now = Math.floor(Date.now() / 1000);
+
+  for (const entry of body.patches) {
+    if (
+      !entry ||
+      typeof entry.patch_number !== "string" ||
+      !/^\d+\.\d+[a-z]?$/i.test(entry.patch_number) ||
+      !Number.isSafeInteger(entry.patch_timestamp) ||
+      entry.patch_timestamp <= 0
+    ) {
+      throw new Error("Valve returned an invalid patch entry");
+    }
+
+    // Exclude any future-dated releases.
+    if (entry.patch_timestamp > now) continue;
+
+    if (
+      !latest ||
+      entry.patch_timestamp > latest.patch_timestamp ||
+      (entry.patch_timestamp === latest.patch_timestamp &&
+        entry.patch_number.toLowerCase().localeCompare(
+          latest.patch_number.toLowerCase(),
+          "en",
+          { numeric: true }
+        ) > 0)
+    ) {
+      latest = entry;
+    }
+  }
+
+  if (!latest) throw new Error("Valve returned no released patches");
+  return latest.patch_number.toLowerCase();
+}
+
 function validateCoverage(data, heroId, expectedIds) {
   if (!data || data.heroId !== heroId) {
     throw new Error(
@@ -58,6 +114,8 @@ function validateCoverage(data, heroId, expectedIds) {
 }
 
 async function generateMatchups() {
+  const patch = await fetchCurrentPatch();
+  console.log("Detected Dota 2 patch: " + patch);
   const heroesBuf = fs.readFileSync(HEROES_PATH);
   const heroes = JSON.parse(heroesBuf.toString("utf8"));
 
@@ -134,7 +192,7 @@ async function generateMatchups() {
       .createHash("sha256")
       .update(heroesBuf)
       .digest("hex"),
-    patch: process.env.DOTA_PATCH || "unknown",
+    patch: patch,
   };
 
   const manifestText = JSON.stringify(manifest, null, 2);
