@@ -39,7 +39,8 @@ It uses:
 - A self-hosted runner with PowerShell available.
 - Node.js 22.
 - A repository secret named `STRATZ_API_TOKEN`.
-- An optional repository variable named `DOTA_PATCH`.
+- The patch label is detected automatically from Valve's patch-notes feed during generation. The STRATZ matchup query does not explicitly filter statistics to that patch.
+- Generation stops if patch detection or a matchup request fails validation. A failed workflow does not publish replacement dataset files.
 
 Scheduled updates depend on runner availability and successful API requests. Check `generatedAt` in `manifest.json` for the timestamp of the published snapshot.
 
@@ -60,8 +61,6 @@ Create a `.env` file in the repository root:
 ```dotenv
 STRATZ_API_TOKEN=replace_with_your_token
 ```
-
-You can optionally add `DOTA_PATCH` to label the generated snapshot. If it is unset or empty, the patch label defaults to `unknown`.
 
 Run both generators from the repository root:
 
@@ -107,8 +106,6 @@ The deployed handler requires a server-side `GITHUB_TOKEN` with permission to cr
 ## Data notes
 
 - The published files are snapshots of data retrieved from STRATZ.
-- `DOTA_PATCH` is a metadata label; the current matchup query does not use it to filter results.
-- Individual matchup requests can fail without stopping the entire generation process. Review generation logs, as the resulting dataset may be incomplete.
 
 ## Author
 
