@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-03T23:07:01.903Z",
+  "generatedAt": "2026-10-04T17:33:13.837Z",
   "file": "synergyMatrix.json",
-  "bytes": 2106885,
-  "sha256": "28244425b24b7b8db4774981370ffbcb50b491f4ed0651de955c9fc77c68eced",
+  "bytes": 2106974,
+  "sha256": "911855b63963ee4d0515fc8ad9e523c850197fe78344ab2ae69b14b3c0c547f3",
   "heroesFile": "heroes.json",
   "heroesBytes": 39036,
   "heroesSha256": "c03ecb637729035aeaece7e59e32ee423a3b3343789c0d6b29891d8ae521c646",
-  "patch": "7.40"
+  "patch": "7.41f"
 }
