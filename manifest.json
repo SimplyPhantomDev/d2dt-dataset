@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-04T17:33:13.837Z",
+  "generatedAt": "2026-10-05T11:16:34.599Z",
   "file": "synergyMatrix.json",
-  "bytes": 2106974,
-  "sha256": "911855b63963ee4d0515fc8ad9e523c850197fe78344ab2ae69b14b3c0c547f3",
+  "bytes": 2106991,
+  "sha256": "ca527a77dfe1d140ed35c650b253644fb862cfdd93420e9cd61075d8daf6443a",
   "heroesFile": "heroes.json",
   "heroesBytes": 39036,
   "heroesSha256": "c03ecb637729035aeaece7e59e32ee423a3b3343789c0d6b29891d8ae521c646",
