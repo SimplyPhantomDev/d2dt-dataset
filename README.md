@@ -66,6 +66,7 @@ Run both generators from the repository root:
 
 ```bash
 node generator/fetchHeroes.js
+node generator/updateWinrateHistory.js
 node generator/generateMatchupData.js
 ```
 
@@ -106,6 +107,20 @@ The deployed handler requires a server-side `GITHUB_TOKEN` with permission to cr
 ## Data notes
 
 - The published files are snapshots of data retrieved from STRATZ.
+
+## Hero winrate history
+
+A separate workflow collects hourly STRATZ results every six hours and maintains eight days of completed hours in `winrateHistory.json`. Overlapping hero/hour records replace previous snapshots; their counts are not added together. Weekly generation refreshes this archive before building the dataset.
+
+`generator/buildHeroWinrates.js` sums wins and matches over the same seven completed UTC days for every expected hero. All 168 hourly records and a positive total match count are required for each hero. Missing hours make the window unavailable.
+
+Each matrix entry includes `baseline`, containing `winCount`, `matchCount`, and `winRate`, or `null` when the window is unavailable. `winRate` is a fraction from 0 to 1 stored at full precision. `manifest.heroWinrates` records readiness, coverage, query scope, and the window's inclusive start and exclusive end.
+
+To check coverage without changing files:
+
+```bash
+node generator/buildHeroWinrates.js
+```
 
 ## Author
 

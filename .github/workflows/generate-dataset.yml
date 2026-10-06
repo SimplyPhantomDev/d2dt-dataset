@@ -44,6 +44,10 @@ jobs:
         run: |
           cd generator
           node fetchHeroes.js
+
+      - name: Update hourly winrate history
+        run: node generator/updateWinrateHistory.js
+
       - name: Generate dataset
         run: |
           cd generator

@@ -7,8 +7,10 @@ require("dotenv").config({
 });
 
 const fetchMatchups = require("./fetchMatchups");
+const buildHeroWinrates = require("./buildHeroWinrates");
 
 const HEROES_PATH = path.resolve(__dirname, "../heroes.json");
+const HISTORY_PATH = path.resolve(__dirname, "../winrateHistory.json");
 const OUTPUT_PATH = path.resolve(__dirname, "../synergyMatrix.json");
 const MANIFEST_PATH = path.resolve(__dirname, "../manifest.json");
 
@@ -150,6 +152,25 @@ async function generateMatchups() {
     );
   }
 
+  // Keep observed hero winrates and their time window separate from pair synergy.
+  // The helper returns no rates until every hero has a complete seven-day window.
+  const history = JSON.parse(fs.readFileSync(HISTORY_PATH, "utf8"));
+  const { heroes: winratesByHero, ...winrateMetadata } =
+    buildHeroWinrates(history, [...expectedIds]);
+
+  if (winrateMetadata.ready) {
+    console.log(
+      `Hero winrates ready: ${winrateMetadata.windowStart} to ` +
+      `${winrateMetadata.windowEnd} (exclusive)`
+    );
+  } else {
+    console.log(
+      `Hero winrates unavailable: ${winrateMetadata.reason}; ` +
+      `${winrateMetadata.minimumHeroHours}/${winrateMetadata.requiredHours} ` +
+      "hours for the least-covered hero"
+    );
+  }
+
   const allMatchups = {};
 
   for (const { heroId, name } of entries) {
@@ -160,7 +181,10 @@ async function generateMatchups() {
     try {
       const data = await fetchMatchups(heroId);
       validateCoverage(data, heroId, expectedIds);
-      allMatchups[heroId] = data;
+      allMatchups[heroId] = {
+        ...data,
+        baseline: winrateMetadata.ready ? winratesByHero[heroId] : null,
+      };
     } catch (error) {
       throw new Error(
         `Failed to generate data for ${name} (ID: ${heroId}): ` +
@@ -193,6 +217,7 @@ async function generateMatchups() {
       .update(heroesBuf)
       .digest("hex"),
     patch: patch,
+    heroWinrates: winrateMetadata,
   };
 
   const manifestText = JSON.stringify(manifest, null, 2);
