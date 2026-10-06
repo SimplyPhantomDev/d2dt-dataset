@@ -8,6 +8,12 @@ on:
 permissions:
     contents: write
 
+# Shared with the hourly collector: serialize writes to the same branch
+concurrency:
+  group: dataset-writes-${{ github.ref }}
+  cancel-in-progress: false
+  queue: max
+
 jobs:
   build:
     runs-on: self-hosted
@@ -17,6 +23,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
 
       - name: Setup Node
         uses: actions/setup-node@v4

@@ -1,0 +1,75 @@
+name: Collect hourly winrate history
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "35 */6 * * *"
+
+permissions:
+  contents: write
+
+# Shared with the weekly generator: serialize writes to the same branch.
+concurrency:
+  group: dataset-writes-${{ github.ref }}
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  collect:
+    runs-on: self-hosted
+    timeout-minutes: 15
+
+    defaults:
+      run:
+        shell: powershell
+
+    env:
+      STRATZ_API_TOKEN: ${{ secrets.STRATZ_API_TOKEN }}
+      TARGET_BRANCH: ${{ github.ref_name }}
+
+    steps:
+      - name: Checkout latest branch contents
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Update hourly history
+        run: node generator/updateWinrateHistory.js
+
+      - name: Commit and push hourly history
+        run: |
+          git config user.name "github-actions[bot]"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+          git add -- winrateHistory.json
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+          git diff --cached --quiet
+          $diffExitCode = $LASTEXITCODE
+          if ($diffExitCode -eq 0) {
+            Write-Host "No history changes to commit"
+            exit 0
+          }
+          if ($diffExitCode -ne 1) { exit $diffExitCode }
+
+          git commit -m "Update hourly winrate history"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+          # Include any unrelated commits pushed while collection was running.
+          git pull --rebase origin $env:TARGET_BRANCH
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+          git push origin "HEAD:refs/heads/$env:TARGET_BRANCH"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
