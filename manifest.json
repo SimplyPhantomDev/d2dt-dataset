@@ -1,21 +1,20 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-06T19:13:30.273Z",
+  "generatedAt": "2026-10-12T14:41:20.986Z",
   "file": "synergyMatrix.json",
-  "bytes": 2109640,
-  "sha256": "e718f004bbf63778386565c51e698cb7b9a68af5269caa1d9e43ebd8f89a9f6f",
+  "bytes": 2121430,
+  "sha256": "98ba3f28a9f0fa04765dfd32ca0d943399f39e4e383120239041e55b796a3849",
   "heroesFile": "heroes.json",
   "heroesBytes": 39036,
   "heroesSha256": "c03ecb637729035aeaece7e59e32ee423a3b3343789c0d6b29891d8ae521c646",
   "patch": "7.41f",
   "heroWinrates": {
-    "ready": false,
+    "ready": true,
     "scope": "unfiltered",
-    "windowStart": "2026-09-29T00:00:00.000Z",
-    "windowEnd": "2026-10-06T00:00:00.000Z",
+    "windowStart": "2026-10-05T00:00:00.000Z",
+    "windowEnd": "2026-10-12T00:00:00.000Z",
     "requiredHours": 168,
-    "minimumHeroHours": 30,
-    "heroesExpected": 127,
-    "reason": "Incomplete hourly coverage"
+    "minimumHeroHours": 168,
+    "heroesExpected": 127
   }
 }
