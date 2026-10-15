@@ -1,3057 +1,9 @@
 {
   "schema": 1,
   "scope": "unfiltered",
-  "updatedAt": "2026-10-15T13:35:49.105Z",
+  "updatedAt": "2026-10-15T17:18:10.514Z",
   "retentionHours": 192,
   "records": [
-    {
-      "heroId": 1,
-      "hour": 1791378000,
-      "winCount": 765,
-      "matchCount": 1491
-    },
-    {
-      "heroId": 2,
-      "hour": 1791378000,
-      "winCount": 694,
-      "matchCount": 1300
-    },
-    {
-      "heroId": 3,
-      "hour": 1791378000,
-      "winCount": 145,
-      "matchCount": 296
-    },
-    {
-      "heroId": 4,
-      "hour": 1791378000,
-      "winCount": 153,
-      "matchCount": 301
-    },
-    {
-      "heroId": 5,
-      "hour": 1791378000,
-      "winCount": 537,
-      "matchCount": 1040
-    },
-    {
-      "heroId": 6,
-      "hour": 1791378000,
-      "winCount": 1034,
-      "matchCount": 2034
-    },
-    {
-      "heroId": 7,
-      "hour": 1791378000,
-      "winCount": 715,
-      "matchCount": 1417
-    },
-    {
-      "heroId": 8,
-      "hour": 1791378000,
-      "winCount": 663,
-      "matchCount": 1337
-    },
-    {
-      "heroId": 9,
-      "hour": 1791378000,
-      "winCount": 478,
-      "matchCount": 915
-    },
-    {
-      "heroId": 10,
-      "hour": 1791378000,
-      "winCount": 230,
-      "matchCount": 468
-    },
-    {
-      "heroId": 11,
-      "hour": 1791378000,
-      "winCount": 499,
-      "matchCount": 1155
-    },
-    {
-      "heroId": 12,
-      "hour": 1791378000,
-      "winCount": 657,
-      "matchCount": 1231
-    },
-    {
-      "heroId": 13,
-      "hour": 1791378000,
-      "winCount": 98,
-      "matchCount": 229
-    },
-    {
-      "heroId": 14,
-      "hour": 1791378000,
-      "winCount": 1444,
-      "matchCount": 2939
-    },
-    {
-      "heroId": 15,
-      "hour": 1791378000,
-      "winCount": 211,
-      "matchCount": 433
-    },
-    {
-      "heroId": 16,
-      "hour": 1791378000,
-      "winCount": 127,
-      "matchCount": 274
-    },
-    {
-      "heroId": 17,
-      "hour": 1791378000,
-      "winCount": 234,
-      "matchCount": 488
-    },
-    {
-      "heroId": 18,
-      "hour": 1791378000,
-      "winCount": 421,
-      "matchCount": 818
-    },
-    {
-      "heroId": 19,
-      "hour": 1791378000,
-      "winCount": 415,
-      "matchCount": 924
-    },
-    {
-      "heroId": 20,
-      "hour": 1791378000,
-      "winCount": 438,
-      "matchCount": 798
-    },
-    {
-      "heroId": 21,
-      "hour": 1791378000,
-      "winCount": 658,
-      "matchCount": 1337
-    },
-    {
-      "heroId": 22,
-      "hour": 1791378000,
-      "winCount": 523,
-      "matchCount": 1014
-    },
-    {
-      "heroId": 23,
-      "hour": 1791378000,
-      "winCount": 157,
-      "matchCount": 341
-    },
-    {
-      "heroId": 25,
-      "hour": 1791378000,
-      "winCount": 672,
-      "matchCount": 1353
-    },
-    {
-      "heroId": 26,
-      "hour": 1791378000,
-      "winCount": 972,
-      "matchCount": 2052
-    },
-    {
-      "heroId": 27,
-      "hour": 1791378000,
-      "winCount": 741,
-      "matchCount": 1463
-    },
-    {
-      "heroId": 28,
-      "hour": 1791378000,
-      "winCount": 229,
-      "matchCount": 446
-    },
-    {
-      "heroId": 29,
-      "hour": 1791378000,
-      "winCount": 847,
-      "matchCount": 1671
-    },
-    {
-      "heroId": 30,
-      "hour": 1791378000,
-      "winCount": 648,
-      "matchCount": 1255
-    },
-    {
-      "heroId": 31,
-      "hour": 1791378000,
-      "winCount": 458,
-      "matchCount": 831
-    },
-    {
-      "heroId": 32,
-      "hour": 1791378000,
-      "winCount": 230,
-      "matchCount": 422
-    },
-    {
-      "heroId": 33,
-      "hour": 1791378000,
-      "winCount": 242,
-      "matchCount": 433
-    },
-    {
-      "heroId": 34,
-      "hour": 1791378000,
-      "winCount": 325,
-      "matchCount": 662
-    },
-    {
-      "heroId": 35,
-      "hour": 1791378000,
-      "winCount": 764,
-      "matchCount": 1571
-    },
-    {
-      "heroId": 36,
-      "hour": 1791378000,
-      "winCount": 562,
-      "matchCount": 1097
-    },
-    {
-      "heroId": 37,
-      "hour": 1791378000,
-      "winCount": 215,
-      "matchCount": 448
-    },
-    {
-      "heroId": 38,
-      "hour": 1791378000,
-      "winCount": 79,
-      "matchCount": 182
-    },
-    {
-      "heroId": 39,
-      "hour": 1791378000,
-      "winCount": 310,
-      "matchCount": 664
-    },
-    {
-      "heroId": 40,
-      "hour": 1791378000,
-      "winCount": 222,
-      "matchCount": 495
-    },
-    {
-      "heroId": 41,
-      "hour": 1791378000,
-      "winCount": 288,
-      "matchCount": 575
-    },
-    {
-      "heroId": 42,
-      "hour": 1791378000,
-      "winCount": 492,
-      "matchCount": 870
-    },
-    {
-      "heroId": 43,
-      "hour": 1791378000,
-      "winCount": 291,
-      "matchCount": 598
-    },
-    {
-      "heroId": 44,
-      "hour": 1791378000,
-      "winCount": 576,
-      "matchCount": 1060
-    },
-    {
-      "heroId": 45,
-      "hour": 1791378000,
-      "winCount": 181,
-      "matchCount": 318
-    },
-    {
-      "heroId": 46,
-      "hour": 1791378000,
-      "winCount": 201,
-      "matchCount": 456
-    },
-    {
-      "heroId": 47,
-      "hour": 1791378000,
-      "winCount": 296,
-      "matchCount": 614
-    },
-    {
-      "heroId": 48,
-      "hour": 1791378000,
-      "winCount": 627,
-      "matchCount": 1229
-    },
-    {
-      "heroId": 49,
-      "hour": 1791378000,
-      "winCount": 555,
-      "matchCount": 991
-    },
-    {
-      "heroId": 50,
-      "hour": 1791378000,
-      "winCount": 268,
-      "matchCount": 503
-    },
-    {
-      "heroId": 51,
-      "hour": 1791378000,
-      "winCount": 121,
-      "matchCount": 232
-    },
-    {
-      "heroId": 52,
-      "hour": 1791378000,
-      "winCount": 118,
-      "matchCount": 226
-    },
-    {
-      "heroId": 53,
-      "hour": 1791378000,
-      "winCount": 255,
-      "matchCount": 658
-    },
-    {
-      "heroId": 54,
-      "hour": 1791378000,
-      "winCount": 589,
-      "matchCount": 1128
-    },
-    {
-      "heroId": 55,
-      "hour": 1791378000,
-      "winCount": 241,
-      "matchCount": 485
-    },
-    {
-      "heroId": 56,
-      "hour": 1791378000,
-      "winCount": 228,
-      "matchCount": 440
-    },
-    {
-      "heroId": 57,
-      "hour": 1791378000,
-      "winCount": 89,
-      "matchCount": 198
-    },
-    {
-      "heroId": 58,
-      "hour": 1791378000,
-      "winCount": 108,
-      "matchCount": 227
-    },
-    {
-      "heroId": 59,
-      "hour": 1791378000,
-      "winCount": 178,
-      "matchCount": 393
-    },
-    {
-      "heroId": 60,
-      "hour": 1791378000,
-      "winCount": 313,
-      "matchCount": 598
-    },
-    {
-      "heroId": 61,
-      "hour": 1791378000,
-      "winCount": 196,
-      "matchCount": 425
-    },
-    {
-      "heroId": 62,
-      "hour": 1791378000,
-      "winCount": 379,
-      "matchCount": 709
-    },
-    {
-      "heroId": 63,
-      "hour": 1791378000,
-      "winCount": 207,
-      "matchCount": 437
-    },
-    {
-      "heroId": 64,
-      "hour": 1791378000,
-      "winCount": 340,
-      "matchCount": 670
-    },
-    {
-      "heroId": 65,
-      "hour": 1791378000,
-      "winCount": 36,
-      "matchCount": 78
-    },
-    {
-      "heroId": 66,
-      "hour": 1791378000,
-      "winCount": 25,
-      "matchCount": 52
-    },
-    {
-      "heroId": 67,
-      "hour": 1791378000,
-      "winCount": 410,
-      "matchCount": 768
-    },
-    {
-      "heroId": 68,
-      "hour": 1791378000,
-      "winCount": 503,
-      "matchCount": 976
-    },
-    {
-      "heroId": 69,
-      "hour": 1791378000,
-      "winCount": 207,
-      "matchCount": 403
-    },
-    {
-      "heroId": 70,
-      "hour": 1791378000,
-      "winCount": 225,
-      "matchCount": 488
-    },
-    {
-      "heroId": 71,
-      "hour": 1791378000,
-      "winCount": 698,
-      "matchCount": 1387
-    },
-    {
-      "heroId": 72,
-      "hour": 1791378000,
-      "winCount": 99,
-      "matchCount": 208
-    },
-    {
-      "heroId": 73,
-      "hour": 1791378000,
-      "winCount": 107,
-      "matchCount": 193
-    },
-    {
-      "heroId": 74,
-      "hour": 1791378000,
-      "winCount": 1044,
-      "matchCount": 2073
-    },
-    {
-      "heroId": 75,
-      "hour": 1791378000,
-      "winCount": 315,
-      "matchCount": 651
-    },
-    {
-      "heroId": 76,
-      "hour": 1791378000,
-      "winCount": 496,
-      "matchCount": 975
-    },
-    {
-      "heroId": 77,
-      "hour": 1791378000,
-      "winCount": 68,
-      "matchCount": 145
-    },
-    {
-      "heroId": 78,
-      "hour": 1791378000,
-      "winCount": 116,
-      "matchCount": 203
-    },
-    {
-      "heroId": 79,
-      "hour": 1791378000,
-      "winCount": 67,
-      "matchCount": 159
-    },
-    {
-      "heroId": 80,
-      "hour": 1791378000,
-      "winCount": 135,
-      "matchCount": 270
-    },
-    {
-      "heroId": 81,
-      "hour": 1791378000,
-      "winCount": 170,
-      "matchCount": 320
-    },
-    {
-      "heroId": 82,
-      "hour": 1791378000,
-      "winCount": 132,
-      "matchCount": 224
-    },
-    {
-      "heroId": 83,
-      "hour": 1791378000,
-      "winCount": 175,
-      "matchCount": 436
-    },
-    {
-      "heroId": 84,
-      "hour": 1791378000,
-      "winCount": 720,
-      "matchCount": 1419
-    },
-    {
-      "heroId": 85,
-      "hour": 1791378000,
-      "winCount": 818,
-      "matchCount": 1675
-    },
-    {
-      "heroId": 86,
-      "hour": 1791378000,
-      "winCount": 911,
-      "matchCount": 1844
-    },
-    {
-      "heroId": 87,
-      "hour": 1791378000,
-      "winCount": 295,
-      "matchCount": 586
-    },
-    {
-      "heroId": 88,
-      "hour": 1791378000,
-      "winCount": 571,
-      "matchCount": 1120
-    },
-    {
-      "heroId": 89,
-      "hour": 1791378000,
-      "winCount": 97,
-      "matchCount": 189
-    },
-    {
-      "heroId": 90,
-      "hour": 1791378000,
-      "winCount": 290,
-      "matchCount": 555
-    },
-    {
-      "heroId": 91,
-      "hour": 1791378000,
-      "winCount": 292,
-      "matchCount": 531
-    },
-    {
-      "heroId": 92,
-      "hour": 1791378000,
-      "winCount": 94,
-      "matchCount": 194
-    },
-    {
-      "heroId": 93,
-      "hour": 1791378000,
-      "winCount": 486,
-      "matchCount": 990
-    },
-    {
-      "heroId": 94,
-      "hour": 1791378000,
-      "winCount": 109,
-      "matchCount": 220
-    },
-    {
-      "heroId": 95,
-      "hour": 1791378000,
-      "winCount": 115,
-      "matchCount": 206
-    },
-    {
-      "heroId": 96,
-      "hour": 1791378000,
-      "winCount": 212,
-      "matchCount": 420
-    },
-    {
-      "heroId": 97,
-      "hour": 1791378000,
-      "winCount": 472,
-      "matchCount": 966
-    },
-    {
-      "heroId": 98,
-      "hour": 1791378000,
-      "winCount": 182,
-      "matchCount": 414
-    },
-    {
-      "heroId": 99,
-      "hour": 1791378000,
-      "winCount": 244,
-      "matchCount": 485
-    },
-    {
-      "heroId": 100,
-      "hour": 1791378000,
-      "winCount": 229,
-      "matchCount": 461
-    },
-    {
-      "heroId": 101,
-      "hour": 1791378000,
-      "winCount": 484,
-      "matchCount": 1011
-    },
-    {
-      "heroId": 102,
-      "hour": 1791378000,
-      "winCount": 137,
-      "matchCount": 253
-    },
-    {
-      "heroId": 103,
-      "hour": 1791378000,
-      "winCount": 52,
-      "matchCount": 92
-    },
-    {
-      "heroId": 104,
-      "hour": 1791378000,
-      "winCount": 742,
-      "matchCount": 1416
-    },
-    {
-      "heroId": 105,
-      "hour": 1791378000,
-      "winCount": 661,
-      "matchCount": 1326
-    },
-    {
-      "heroId": 106,
-      "hour": 1791378000,
-      "winCount": 309,
-      "matchCount": 631
-    },
-    {
-      "heroId": 107,
-      "hour": 1791378000,
-      "winCount": 195,
-      "matchCount": 427
-    },
-    {
-      "heroId": 108,
-      "hour": 1791378000,
-      "winCount": 154,
-      "matchCount": 358
-    },
-    {
-      "heroId": 109,
-      "hour": 1791378000,
-      "winCount": 554,
-      "matchCount": 1239
-    },
-    {
-      "heroId": 110,
-      "hour": 1791378000,
-      "winCount": 244,
-      "matchCount": 467
-    },
-    {
-      "heroId": 111,
-      "hour": 1791378000,
-      "winCount": 380,
-      "matchCount": 752
-    },
-    {
-      "heroId": 112,
-      "hour": 1791378000,
-      "winCount": 270,
-      "matchCount": 535
-    },
-    {
-      "heroId": 113,
-      "hour": 1791378000,
-      "winCount": 302,
-      "matchCount": 595
-    },
-    {
-      "heroId": 114,
-      "hour": 1791378000,
-      "winCount": 233,
-      "matchCount": 497
-    },
-    {
-      "heroId": 119,
-      "hour": 1791378000,
-      "winCount": 268,
-      "matchCount": 587
-    },
-    {
-      "heroId": 120,
-      "hour": 1791378000,
-      "winCount": 152,
-      "matchCount": 300
-    },
-    {
-      "heroId": 121,
-      "hour": 1791378000,
-      "winCount": 321,
-      "matchCount": 621
-    },
-    {
-      "heroId": 123,
-      "hour": 1791378000,
-      "winCount": 479,
-      "matchCount": 1007
-    },
-    {
-      "heroId": 126,
-      "hour": 1791378000,
-      "winCount": 200,
-      "matchCount": 382
-    },
-    {
-      "heroId": 128,
-      "hour": 1791378000,
-      "winCount": 397,
-      "matchCount": 815
-    },
-    {
-      "heroId": 129,
-      "hour": 1791378000,
-      "winCount": 146,
-      "matchCount": 295
-    },
-    {
-      "heroId": 131,
-      "hour": 1791378000,
-      "winCount": 214,
-      "matchCount": 485
-    },
-    {
-      "heroId": 135,
-      "hour": 1791378000,
-      "winCount": 391,
-      "matchCount": 734
-    },
-    {
-      "heroId": 136,
-      "hour": 1791378000,
-      "winCount": 464,
-      "matchCount": 1003
-    },
-    {
-      "heroId": 137,
-      "hour": 1791378000,
-      "winCount": 383,
-      "matchCount": 712
-    },
-    {
-      "heroId": 138,
-      "hour": 1791378000,
-      "winCount": 128,
-      "matchCount": 256
-    },
-    {
-      "heroId": 145,
-      "hour": 1791378000,
-      "winCount": 175,
-      "matchCount": 367
-    },
-    {
-      "heroId": 155,
-      "hour": 1791378000,
-      "winCount": 91,
-      "matchCount": 168
-    },
-    {
-      "heroId": 1,
-      "hour": 1791381600,
-      "winCount": 747,
-      "matchCount": 1473
-    },
-    {
-      "heroId": 2,
-      "hour": 1791381600,
-      "winCount": 607,
-      "matchCount": 1228
-    },
-    {
-      "heroId": 3,
-      "hour": 1791381600,
-      "winCount": 152,
-      "matchCount": 315
-    },
-    {
-      "heroId": 4,
-      "hour": 1791381600,
-      "winCount": 144,
-      "matchCount": 267
-    },
-    {
-      "heroId": 5,
-      "hour": 1791381600,
-      "winCount": 537,
-      "matchCount": 1052
-    },
-    {
-      "heroId": 6,
-      "hour": 1791381600,
-      "winCount": 979,
-      "matchCount": 2008
-    },
-    {
-      "heroId": 7,
-      "hour": 1791381600,
-      "winCount": 676,
-      "matchCount": 1329
-    },
-    {
-      "heroId": 8,
-      "hour": 1791381600,
-      "winCount": 657,
-      "matchCount": 1312
-    },
-    {
-      "heroId": 9,
-      "hour": 1791381600,
-      "winCount": 441,
-      "matchCount": 861
-    },
-    {
-      "heroId": 10,
-      "hour": 1791381600,
-      "winCount": 232,
-      "matchCount": 454
-    },
-    {
-      "heroId": 11,
-      "hour": 1791381600,
-      "winCount": 530,
-      "matchCount": 1164
-    },
-    {
-      "heroId": 12,
-      "hour": 1791381600,
-      "winCount": 631,
-      "matchCount": 1130
-    },
-    {
-      "heroId": 13,
-      "hour": 1791381600,
-      "winCount": 112,
-      "matchCount": 234
-    },
-    {
-      "heroId": 14,
-      "hour": 1791381600,
-      "winCount": 1438,
-      "matchCount": 2752
-    },
-    {
-      "heroId": 15,
-      "hour": 1791381600,
-      "winCount": 230,
-      "matchCount": 461
-    },
-    {
-      "heroId": 16,
-      "hour": 1791381600,
-      "winCount": 148,
-      "matchCount": 269
-    },
-    {
-      "heroId": 17,
-      "hour": 1791381600,
-      "winCount": 250,
-      "matchCount": 507
-    },
-    {
-      "heroId": 18,
-      "hour": 1791381600,
-      "winCount": 399,
-      "matchCount": 796
-    },
-    {
-      "heroId": 19,
-      "hour": 1791381600,
-      "winCount": 367,
-      "matchCount": 889
-    },
-    {
-      "heroId": 20,
-      "hour": 1791381600,
-      "winCount": 454,
-      "matchCount": 831
-    },
-    {
-      "heroId": 21,
-      "hour": 1791381600,
-      "winCount": 645,
-      "matchCount": 1339
-    },
-    {
-      "heroId": 22,
-      "hour": 1791381600,
-      "winCount": 499,
-      "matchCount": 962
-    },
-    {
-      "heroId": 23,
-      "hour": 1791381600,
-      "winCount": 156,
-      "matchCount": 305
-    },
-    {
-      "heroId": 25,
-      "hour": 1791381600,
-      "winCount": 584,
-      "matchCount": 1298
-    },
-    {
-      "heroId": 26,
-      "hour": 1791381600,
-      "winCount": 902,
-      "matchCount": 1932
-    },
-    {
-      "heroId": 27,
-      "hour": 1791381600,
-      "winCount": 714,
-      "matchCount": 1402
-    },
-    {
-      "heroId": 28,
-      "hour": 1791381600,
-      "winCount": 227,
-      "matchCount": 446
-    },
-    {
-      "heroId": 29,
-      "hour": 1791381600,
-      "winCount": 863,
-      "matchCount": 1611
-    },
-    {
-      "heroId": 30,
-      "hour": 1791381600,
-      "winCount": 618,
-      "matchCount": 1203
-    },
-    {
-      "heroId": 31,
-      "hour": 1791381600,
-      "winCount": 464,
-      "matchCount": 862
-    },
-    {
-      "heroId": 32,
-      "hour": 1791381600,
-      "winCount": 203,
-      "matchCount": 367
-    },
-    {
-      "heroId": 33,
-      "hour": 1791381600,
-      "winCount": 214,
-      "matchCount": 395
-    },
-    {
-      "heroId": 34,
-      "hour": 1791381600,
-      "winCount": 283,
-      "matchCount": 624
-    },
-    {
-      "heroId": 35,
-      "hour": 1791381600,
-      "winCount": 783,
-      "matchCount": 1546
-    },
-    {
-      "heroId": 36,
-      "hour": 1791381600,
-      "winCount": 581,
-      "matchCount": 1107
-    },
-    {
-      "heroId": 37,
-      "hour": 1791381600,
-      "winCount": 215,
-      "matchCount": 426
-    },
-    {
-      "heroId": 38,
-      "hour": 1791381600,
-      "winCount": 85,
-      "matchCount": 197
-    },
-    {
-      "heroId": 39,
-      "hour": 1791381600,
-      "winCount": 275,
-      "matchCount": 634
-    },
-    {
-      "heroId": 40,
-      "hour": 1791381600,
-      "winCount": 209,
-      "matchCount": 506
-    },
-    {
-      "heroId": 41,
-      "hour": 1791381600,
-      "winCount": 276,
-      "matchCount": 538
-    },
-    {
-      "heroId": 42,
-      "hour": 1791381600,
-      "winCount": 507,
-      "matchCount": 881
-    },
-    {
-      "heroId": 43,
-      "hour": 1791381600,
-      "winCount": 265,
-      "matchCount": 554
-    },
-    {
-      "heroId": 44,
-      "hour": 1791381600,
-      "winCount": 575,
-      "matchCount": 1054
-    },
-    {
-      "heroId": 45,
-      "hour": 1791381600,
-      "winCount": 170,
-      "matchCount": 348
-    },
-    {
-      "heroId": 46,
-      "hour": 1791381600,
-      "winCount": 209,
-      "matchCount": 484
-    },
-    {
-      "heroId": 47,
-      "hour": 1791381600,
-      "winCount": 261,
-      "matchCount": 545
-    },
-    {
-      "heroId": 48,
-      "hour": 1791381600,
-      "winCount": 617,
-      "matchCount": 1158
-    },
-    {
-      "heroId": 49,
-      "hour": 1791381600,
-      "winCount": 574,
-      "matchCount": 1025
-    },
-    {
-      "heroId": 50,
-      "hour": 1791381600,
-      "winCount": 248,
-      "matchCount": 475
-    },
-    {
-      "heroId": 51,
-      "hour": 1791381600,
-      "winCount": 119,
-      "matchCount": 241
-    },
-    {
-      "heroId": 52,
-      "hour": 1791381600,
-      "winCount": 124,
-      "matchCount": 230
-    },
-    {
-      "heroId": 53,
-      "hour": 1791381600,
-      "winCount": 254,
-      "matchCount": 618
-    },
-    {
-      "heroId": 54,
-      "hour": 1791381600,
-      "winCount": 511,
-      "matchCount": 1044
-    },
-    {
-      "heroId": 55,
-      "hour": 1791381600,
-      "winCount": 262,
-      "matchCount": 484
-    },
-    {
-      "heroId": 56,
-      "hour": 1791381600,
-      "winCount": 203,
-      "matchCount": 411
-    },
-    {
-      "heroId": 57,
-      "hour": 1791381600,
-      "winCount": 99,
-      "matchCount": 195
-    },
-    {
-      "heroId": 58,
-      "hour": 1791381600,
-      "winCount": 99,
-      "matchCount": 204
-    },
-    {
-      "heroId": 59,
-      "hour": 1791381600,
-      "winCount": 162,
-      "matchCount": 365
-    },
-    {
-      "heroId": 60,
-      "hour": 1791381600,
-      "winCount": 335,
-      "matchCount": 633
-    },
-    {
-      "heroId": 61,
-      "hour": 1791381600,
-      "winCount": 208,
-      "matchCount": 421
-    },
-    {
-      "heroId": 62,
-      "hour": 1791381600,
-      "winCount": 345,
-      "matchCount": 631
-    },
-    {
-      "heroId": 63,
-      "hour": 1791381600,
-      "winCount": 191,
-      "matchCount": 401
-    },
-    {
-      "heroId": 64,
-      "hour": 1791381600,
-      "winCount": 278,
-      "matchCount": 559
-    },
-    {
-      "heroId": 65,
-      "hour": 1791381600,
-      "winCount": 40,
-      "matchCount": 82
-    },
-    {
-      "heroId": 66,
-      "hour": 1791381600,
-      "winCount": 21,
-      "matchCount": 43
-    },
-    {
-      "heroId": 67,
-      "hour": 1791381600,
-      "winCount": 373,
-      "matchCount": 713
-    },
-    {
-      "heroId": 68,
-      "hour": 1791381600,
-      "winCount": 493,
-      "matchCount": 964
-    },
-    {
-      "heroId": 69,
-      "hour": 1791381600,
-      "winCount": 162,
-      "matchCount": 360
-    },
-    {
-      "heroId": 70,
-      "hour": 1791381600,
-      "winCount": 227,
-      "matchCount": 482
-    },
-    {
-      "heroId": 71,
-      "hour": 1791381600,
-      "winCount": 748,
-      "matchCount": 1387
-    },
-    {
-      "heroId": 72,
-      "hour": 1791381600,
-      "winCount": 98,
-      "matchCount": 212
-    },
-    {
-      "heroId": 73,
-      "hour": 1791381600,
-      "winCount": 114,
-      "matchCount": 233
-    },
-    {
-      "heroId": 74,
-      "hour": 1791381600,
-      "winCount": 1037,
-      "matchCount": 2046
-    },
-    {
-      "heroId": 75,
-      "hour": 1791381600,
-      "winCount": 335,
-      "matchCount": 660
-    },
-    {
-      "heroId": 76,
-      "hour": 1791381600,
-      "winCount": 490,
-      "matchCount": 921
-    },
-    {
-      "heroId": 77,
-      "hour": 1791381600,
-      "winCount": 62,
-      "matchCount": 139
-    },
-    {
-      "heroId": 78,
-      "hour": 1791381600,
-      "winCount": 96,
-      "matchCount": 205
-    },
-    {
-      "heroId": 79,
-      "hour": 1791381600,
-      "winCount": 67,
-      "matchCount": 162
-    },
-    {
-      "heroId": 80,
-      "hour": 1791381600,
-      "winCount": 124,
-      "matchCount": 245
-    },
-    {
-      "heroId": 81,
-      "hour": 1791381600,
-      "winCount": 147,
-      "matchCount": 292
-    },
-    {
-      "heroId": 82,
-      "hour": 1791381600,
-      "winCount": 91,
-      "matchCount": 191
-    },
-    {
-      "heroId": 83,
-      "hour": 1791381600,
-      "winCount": 193,
-      "matchCount": 402
-    },
-    {
-      "heroId": 84,
-      "hour": 1791381600,
-      "winCount": 680,
-      "matchCount": 1405
-    },
-    {
-      "heroId": 85,
-      "hour": 1791381600,
-      "winCount": 814,
-      "matchCount": 1616
-    },
-    {
-      "heroId": 86,
-      "hour": 1791381600,
-      "winCount": 883,
-      "matchCount": 1757
-    },
-    {
-      "heroId": 87,
-      "hour": 1791381600,
-      "winCount": 271,
-      "matchCount": 536
-    },
-    {
-      "heroId": 88,
-      "hour": 1791381600,
-      "winCount": 594,
-      "matchCount": 1110
-    },
-    {
-      "heroId": 89,
-      "hour": 1791381600,
-      "winCount": 59,
-      "matchCount": 133
-    },
-    {
-      "heroId": 90,
-      "hour": 1791381600,
-      "winCount": 276,
-      "matchCount": 569
-    },
-    {
-      "heroId": 91,
-      "hour": 1791381600,
-      "winCount": 280,
-      "matchCount": 553
-    },
-    {
-      "heroId": 92,
-      "hour": 1791381600,
-      "winCount": 99,
-      "matchCount": 187
-    },
-    {
-      "heroId": 93,
-      "hour": 1791381600,
-      "winCount": 470,
-      "matchCount": 934
-    },
-    {
-      "heroId": 94,
-      "hour": 1791381600,
-      "winCount": 97,
-      "matchCount": 199
-    },
-    {
-      "heroId": 95,
-      "hour": 1791381600,
-      "winCount": 123,
-      "matchCount": 225
-    },
-    {
-      "heroId": 96,
-      "hour": 1791381600,
-      "winCount": 191,
-      "matchCount": 375
-    },
-    {
-      "heroId": 97,
-      "hour": 1791381600,
-      "winCount": 456,
-      "matchCount": 926
-    },
-    {
-      "heroId": 98,
-      "hour": 1791381600,
-      "winCount": 189,
-      "matchCount": 393
-    },
-    {
-      "heroId": 99,
-      "hour": 1791381600,
-      "winCount": 233,
-      "matchCount": 460
-    },
-    {
-      "heroId": 100,
-      "hour": 1791381600,
-      "winCount": 193,
-      "matchCount": 444
-    },
-    {
-      "heroId": 101,
-      "hour": 1791381600,
-      "winCount": 471,
-      "matchCount": 947
-    },
-    {
-      "heroId": 102,
-      "hour": 1791381600,
-      "winCount": 124,
-      "matchCount": 254
-    },
-    {
-      "heroId": 103,
-      "hour": 1791381600,
-      "winCount": 44,
-      "matchCount": 95
-    },
-    {
-      "heroId": 104,
-      "hour": 1791381600,
-      "winCount": 735,
-      "matchCount": 1412
-    },
-    {
-      "heroId": 105,
-      "hour": 1791381600,
-      "winCount": 668,
-      "matchCount": 1314
-    },
-    {
-      "heroId": 106,
-      "hour": 1791381600,
-      "winCount": 288,
-      "matchCount": 604
-    },
-    {
-      "heroId": 107,
-      "hour": 1791381600,
-      "winCount": 208,
-      "matchCount": 400
-    },
-    {
-      "heroId": 108,
-      "hour": 1791381600,
-      "winCount": 185,
-      "matchCount": 384
-    },
-    {
-      "heroId": 109,
-      "hour": 1791381600,
-      "winCount": 566,
-      "matchCount": 1238
-    },
-    {
-      "heroId": 110,
-      "hour": 1791381600,
-      "winCount": 256,
-      "matchCount": 466
-    },
-    {
-      "heroId": 111,
-      "hour": 1791381600,
-      "winCount": 360,
-      "matchCount": 779
-    },
-    {
-      "heroId": 112,
-      "hour": 1791381600,
-      "winCount": 278,
-      "matchCount": 548
-    },
-    {
-      "heroId": 113,
-      "hour": 1791381600,
-      "winCount": 271,
-      "matchCount": 562
-    },
-    {
-      "heroId": 114,
-      "hour": 1791381600,
-      "winCount": 186,
-      "matchCount": 403
-    },
-    {
-      "heroId": 119,
-      "hour": 1791381600,
-      "winCount": 284,
-      "matchCount": 565
-    },
-    {
-      "heroId": 120,
-      "hour": 1791381600,
-      "winCount": 138,
-      "matchCount": 300
-    },
-    {
-      "heroId": 121,
-      "hour": 1791381600,
-      "winCount": 318,
-      "matchCount": 634
-    },
-    {
-      "heroId": 123,
-      "hour": 1791381600,
-      "winCount": 487,
-      "matchCount": 1073
-    },
-    {
-      "heroId": 126,
-      "hour": 1791381600,
-      "winCount": 196,
-      "matchCount": 397
-    },
-    {
-      "heroId": 128,
-      "hour": 1791381600,
-      "winCount": 387,
-      "matchCount": 821
-    },
-    {
-      "heroId": 129,
-      "hour": 1791381600,
-      "winCount": 143,
-      "matchCount": 294
-    },
-    {
-      "heroId": 131,
-      "hour": 1791381600,
-      "winCount": 236,
-      "matchCount": 484
-    },
-    {
-      "heroId": 135,
-      "hour": 1791381600,
-      "winCount": 401,
-      "matchCount": 786
-    },
-    {
-      "heroId": 136,
-      "hour": 1791381600,
-      "winCount": 453,
-      "matchCount": 945
-    },
-    {
-      "heroId": 137,
-      "hour": 1791381600,
-      "winCount": 341,
-      "matchCount": 681
-    },
-    {
-      "heroId": 138,
-      "hour": 1791381600,
-      "winCount": 137,
-      "matchCount": 259
-    },
-    {
-      "heroId": 145,
-      "hour": 1791381600,
-      "winCount": 170,
-      "matchCount": 376
-    },
-    {
-      "heroId": 155,
-      "hour": 1791381600,
-      "winCount": 70,
-      "matchCount": 165
-    },
-    {
-      "heroId": 1,
-      "hour": 1791385200,
-      "winCount": 680,
-      "matchCount": 1338
-    },
-    {
-      "heroId": 2,
-      "hour": 1791385200,
-      "winCount": 590,
-      "matchCount": 1102
-    },
-    {
-      "heroId": 3,
-      "hour": 1791385200,
-      "winCount": 121,
-      "matchCount": 277
-    },
-    {
-      "heroId": 4,
-      "hour": 1791385200,
-      "winCount": 121,
-      "matchCount": 237
-    },
-    {
-      "heroId": 5,
-      "hour": 1791385200,
-      "winCount": 482,
-      "matchCount": 912
-    },
-    {
-      "heroId": 6,
-      "hour": 1791385200,
-      "winCount": 837,
-      "matchCount": 1702
-    },
-    {
-      "heroId": 7,
-      "hour": 1791385200,
-      "winCount": 642,
-      "matchCount": 1249
-    },
-    {
-      "heroId": 8,
-      "hour": 1791385200,
-      "winCount": 615,
-      "matchCount": 1159
-    },
-    {
-      "heroId": 9,
-      "hour": 1791385200,
-      "winCount": 412,
-      "matchCount": 753
-    },
-    {
-      "heroId": 10,
-      "hour": 1791385200,
-      "winCount": 186,
-      "matchCount": 393
-    },
-    {
-      "heroId": 11,
-      "hour": 1791385200,
-      "winCount": 441,
-      "matchCount": 1025
-    },
-    {
-      "heroId": 12,
-      "hour": 1791385200,
-      "winCount": 582,
-      "matchCount": 1029
-    },
-    {
-      "heroId": 13,
-      "hour": 1791385200,
-      "winCount": 97,
-      "matchCount": 212
-    },
-    {
-      "heroId": 14,
-      "hour": 1791385200,
-      "winCount": 1260,
-      "matchCount": 2543
-    },
-    {
-      "heroId": 15,
-      "hour": 1791385200,
-      "winCount": 162,
-      "matchCount": 335
-    },
-    {
-      "heroId": 16,
-      "hour": 1791385200,
-      "winCount": 125,
-      "matchCount": 256
-    },
-    {
-      "heroId": 17,
-      "hour": 1791385200,
-      "winCount": 170,
-      "matchCount": 389
-    },
-    {
-      "heroId": 18,
-      "hour": 1791385200,
-      "winCount": 387,
-      "matchCount": 718
-    },
-    {
-      "heroId": 19,
-      "hour": 1791385200,
-      "winCount": 367,
-      "matchCount": 815
-    },
-    {
-      "heroId": 20,
-      "hour": 1791385200,
-      "winCount": 420,
-      "matchCount": 735
-    },
-    {
-      "heroId": 21,
-      "hour": 1791385200,
-      "winCount": 581,
-      "matchCount": 1215
-    },
-    {
-      "heroId": 22,
-      "hour": 1791385200,
-      "winCount": 431,
-      "matchCount": 870
-    },
-    {
-      "heroId": 23,
-      "hour": 1791385200,
-      "winCount": 153,
-      "matchCount": 307
-    },
-    {
-      "heroId": 25,
-      "hour": 1791385200,
-      "winCount": 568,
-      "matchCount": 1181
-    },
-    {
-      "heroId": 26,
-      "hour": 1791385200,
-      "winCount": 898,
-      "matchCount": 1820
-    },
-    {
-      "heroId": 27,
-      "hour": 1791385200,
-      "winCount": 677,
-      "matchCount": 1252
-    },
-    {
-      "heroId": 28,
-      "hour": 1791385200,
-      "winCount": 211,
-      "matchCount": 414
-    },
-    {
-      "heroId": 29,
-      "hour": 1791385200,
-      "winCount": 697,
-      "matchCount": 1388
-    },
-    {
-      "heroId": 30,
-      "hour": 1791385200,
-      "winCount": 595,
-      "matchCount": 1159
-    },
-    {
-      "heroId": 31,
-      "hour": 1791385200,
-      "winCount": 396,
-      "matchCount": 765
-    },
-    {
-      "heroId": 32,
-      "hour": 1791385200,
-      "winCount": 186,
-      "matchCount": 347
-    },
-    {
-      "heroId": 33,
-      "hour": 1791385200,
-      "winCount": 165,
-      "matchCount": 336
-    },
-    {
-      "heroId": 34,
-      "hour": 1791385200,
-      "winCount": 271,
-      "matchCount": 530
-    },
-    {
-      "heroId": 35,
-      "hour": 1791385200,
-      "winCount": 700,
-      "matchCount": 1413
-    },
-    {
-      "heroId": 36,
-      "hour": 1791385200,
-      "winCount": 460,
-      "matchCount": 944
-    },
-    {
-      "heroId": 37,
-      "hour": 1791385200,
-      "winCount": 179,
-      "matchCount": 350
-    },
-    {
-      "heroId": 38,
-      "hour": 1791385200,
-      "winCount": 89,
-      "matchCount": 185
-    },
-    {
-      "heroId": 39,
-      "hour": 1791385200,
-      "winCount": 264,
-      "matchCount": 546
-    },
-    {
-      "heroId": 40,
-      "hour": 1791385200,
-      "winCount": 225,
-      "matchCount": 461
-    },
-    {
-      "heroId": 41,
-      "hour": 1791385200,
-      "winCount": 247,
-      "matchCount": 507
-    },
-    {
-      "heroId": 42,
-      "hour": 1791385200,
-      "winCount": 392,
-      "matchCount": 733
-    },
-    {
-      "heroId": 43,
-      "hour": 1791385200,
-      "winCount": 263,
-      "matchCount": 573
-    },
-    {
-      "heroId": 44,
-      "hour": 1791385200,
-      "winCount": 472,
-      "matchCount": 914
-    },
-    {
-      "heroId": 45,
-      "hour": 1791385200,
-      "winCount": 137,
-      "matchCount": 275
-    },
-    {
-      "heroId": 46,
-      "hour": 1791385200,
-      "winCount": 187,
-      "matchCount": 410
-    },
-    {
-      "heroId": 47,
-      "hour": 1791385200,
-      "winCount": 235,
-      "matchCount": 492
-    },
-    {
-      "heroId": 48,
-      "hour": 1791385200,
-      "winCount": 581,
-      "matchCount": 1107
-    },
-    {
-      "heroId": 49,
-      "hour": 1791385200,
-      "winCount": 475,
-      "matchCount": 891
-    },
-    {
-      "heroId": 50,
-      "hour": 1791385200,
-      "winCount": 219,
-      "matchCount": 431
-    },
-    {
-      "heroId": 51,
-      "hour": 1791385200,
-      "winCount": 94,
-      "matchCount": 207
-    },
-    {
-      "heroId": 52,
-      "hour": 1791385200,
-      "winCount": 129,
-      "matchCount": 222
-    },
-    {
-      "heroId": 53,
-      "hour": 1791385200,
-      "winCount": 223,
-      "matchCount": 543
-    },
-    {
-      "heroId": 54,
-      "hour": 1791385200,
-      "winCount": 513,
-      "matchCount": 980
-    },
-    {
-      "heroId": 55,
-      "hour": 1791385200,
-      "winCount": 188,
-      "matchCount": 387
-    },
-    {
-      "heroId": 56,
-      "hour": 1791385200,
-      "winCount": 184,
-      "matchCount": 394
-    },
-    {
-      "heroId": 57,
-      "hour": 1791385200,
-      "winCount": 78,
-      "matchCount": 170
-    },
-    {
-      "heroId": 58,
-      "hour": 1791385200,
-      "winCount": 107,
-      "matchCount": 217
-    },
-    {
-      "heroId": 59,
-      "hour": 1791385200,
-      "winCount": 172,
-      "matchCount": 338
-    },
-    {
-      "heroId": 60,
-      "hour": 1791385200,
-      "winCount": 277,
-      "matchCount": 565
-    },
-    {
-      "heroId": 61,
-      "hour": 1791385200,
-      "winCount": 165,
-      "matchCount": 364
-    },
-    {
-      "heroId": 62,
-      "hour": 1791385200,
-      "winCount": 294,
-      "matchCount": 599
-    },
-    {
-      "heroId": 63,
-      "hour": 1791385200,
-      "winCount": 164,
-      "matchCount": 355
-    },
-    {
-      "heroId": 64,
-      "hour": 1791385200,
-      "winCount": 279,
-      "matchCount": 525
-    },
-    {
-      "heroId": 65,
-      "hour": 1791385200,
-      "winCount": 33,
-      "matchCount": 70
-    },
-    {
-      "heroId": 66,
-      "hour": 1791385200,
-      "winCount": 23,
-      "matchCount": 43
-    },
-    {
-      "heroId": 67,
-      "hour": 1791385200,
-      "winCount": 352,
-      "matchCount": 641
-    },
-    {
-      "heroId": 68,
-      "hour": 1791385200,
-      "winCount": 436,
-      "matchCount": 901
-    },
-    {
-      "heroId": 69,
-      "hour": 1791385200,
-      "winCount": 173,
-      "matchCount": 370
-    },
-    {
-      "heroId": 70,
-      "hour": 1791385200,
-      "winCount": 207,
-      "matchCount": 432
-    },
-    {
-      "heroId": 71,
-      "hour": 1791385200,
-      "winCount": 639,
-      "matchCount": 1235
-    },
-    {
-      "heroId": 72,
-      "hour": 1791385200,
-      "winCount": 98,
-      "matchCount": 221
-    },
-    {
-      "heroId": 73,
-      "hour": 1791385200,
-      "winCount": 93,
-      "matchCount": 179
-    },
-    {
-      "heroId": 74,
-      "hour": 1791385200,
-      "winCount": 939,
-      "matchCount": 1814
-    },
-    {
-      "heroId": 75,
-      "hour": 1791385200,
-      "winCount": 291,
-      "matchCount": 590
-    },
-    {
-      "heroId": 76,
-      "hour": 1791385200,
-      "winCount": 390,
-      "matchCount": 749
-    },
-    {
-      "heroId": 77,
-      "hour": 1791385200,
-      "winCount": 59,
-      "matchCount": 125
-    },
-    {
-      "heroId": 78,
-      "hour": 1791385200,
-      "winCount": 105,
-      "matchCount": 213
-    },
-    {
-      "heroId": 79,
-      "hour": 1791385200,
-      "winCount": 60,
-      "matchCount": 140
-    },
-    {
-      "heroId": 80,
-      "hour": 1791385200,
-      "winCount": 121,
-      "matchCount": 248
-    },
-    {
-      "heroId": 81,
-      "hour": 1791385200,
-      "winCount": 140,
-      "matchCount": 284
-    },
-    {
-      "heroId": 82,
-      "hour": 1791385200,
-      "winCount": 101,
-      "matchCount": 187
-    },
-    {
-      "heroId": 83,
-      "hour": 1791385200,
-      "winCount": 183,
-      "matchCount": 390
-    },
-    {
-      "heroId": 84,
-      "hour": 1791385200,
-      "winCount": 598,
-      "matchCount": 1158
-    },
-    {
-      "heroId": 85,
-      "hour": 1791385200,
-      "winCount": 713,
-      "matchCount": 1438
-    },
-    {
-      "heroId": 86,
-      "hour": 1791385200,
-      "winCount": 772,
-      "matchCount": 1577
-    },
-    {
-      "heroId": 87,
-      "hour": 1791385200,
-      "winCount": 221,
-      "matchCount": 434
-    },
-    {
-      "heroId": 88,
-      "hour": 1791385200,
-      "winCount": 486,
-      "matchCount": 936
-    },
-    {
-      "heroId": 89,
-      "hour": 1791385200,
-      "winCount": 92,
-      "matchCount": 163
-    },
-    {
-      "heroId": 90,
-      "hour": 1791385200,
-      "winCount": 237,
-      "matchCount": 501
-    },
-    {
-      "heroId": 91,
-      "hour": 1791385200,
-      "winCount": 225,
-      "matchCount": 480
-    },
-    {
-      "heroId": 92,
-      "hour": 1791385200,
-      "winCount": 92,
-      "matchCount": 174
-    },
-    {
-      "heroId": 93,
-      "hour": 1791385200,
-      "winCount": 395,
-      "matchCount": 836
-    },
-    {
-      "heroId": 94,
-      "hour": 1791385200,
-      "winCount": 92,
-      "matchCount": 174
-    },
-    {
-      "heroId": 95,
-      "hour": 1791385200,
-      "winCount": 90,
-      "matchCount": 164
-    },
-    {
-      "heroId": 96,
-      "hour": 1791385200,
-      "winCount": 193,
-      "matchCount": 359
-    },
-    {
-      "heroId": 97,
-      "hour": 1791385200,
-      "winCount": 400,
-      "matchCount": 808
-    },
-    {
-      "heroId": 98,
-      "hour": 1791385200,
-      "winCount": 156,
-      "matchCount": 328
-    },
-    {
-      "heroId": 99,
-      "hour": 1791385200,
-      "winCount": 242,
-      "matchCount": 482
-    },
-    {
-      "heroId": 100,
-      "hour": 1791385200,
-      "winCount": 202,
-      "matchCount": 407
-    },
-    {
-      "heroId": 101,
-      "hour": 1791385200,
-      "winCount": 427,
-      "matchCount": 869
-    },
-    {
-      "heroId": 102,
-      "hour": 1791385200,
-      "winCount": 103,
-      "matchCount": 208
-    },
-    {
-      "heroId": 103,
-      "hour": 1791385200,
-      "winCount": 45,
-      "matchCount": 85
-    },
-    {
-      "heroId": 104,
-      "hour": 1791385200,
-      "winCount": 640,
-      "matchCount": 1215
-    },
-    {
-      "heroId": 105,
-      "hour": 1791385200,
-      "winCount": 638,
-      "matchCount": 1228
-    },
-    {
-      "heroId": 106,
-      "hour": 1791385200,
-      "winCount": 253,
-      "matchCount": 524
-    },
-    {
-      "heroId": 107,
-      "hour": 1791385200,
-      "winCount": 176,
-      "matchCount": 330
-    },
-    {
-      "heroId": 108,
-      "hour": 1791385200,
-      "winCount": 157,
-      "matchCount": 333
-    },
-    {
-      "heroId": 109,
-      "hour": 1791385200,
-      "winCount": 467,
-      "matchCount": 1128
-    },
-    {
-      "heroId": 110,
-      "hour": 1791385200,
-      "winCount": 230,
-      "matchCount": 446
-    },
-    {
-      "heroId": 111,
-      "hour": 1791385200,
-      "winCount": 361,
-      "matchCount": 700
-    },
-    {
-      "heroId": 112,
-      "hour": 1791385200,
-      "winCount": 271,
-      "matchCount": 531
-    },
-    {
-      "heroId": 113,
-      "hour": 1791385200,
-      "winCount": 292,
-      "matchCount": 540
-    },
-    {
-      "heroId": 114,
-      "hour": 1791385200,
-      "winCount": 177,
-      "matchCount": 375
-    },
-    {
-      "heroId": 119,
-      "hour": 1791385200,
-      "winCount": 230,
-      "matchCount": 509
-    },
-    {
-      "heroId": 120,
-      "hour": 1791385200,
-      "winCount": 118,
-      "matchCount": 267
-    },
-    {
-      "heroId": 121,
-      "hour": 1791385200,
-      "winCount": 275,
-      "matchCount": 552
-    },
-    {
-      "heroId": 123,
-      "hour": 1791385200,
-      "winCount": 460,
-      "matchCount": 957
-    },
-    {
-      "heroId": 126,
-      "hour": 1791385200,
-      "winCount": 171,
-      "matchCount": 335
-    },
-    {
-      "heroId": 128,
-      "hour": 1791385200,
-      "winCount": 386,
-      "matchCount": 727
-    },
-    {
-      "heroId": 129,
-      "hour": 1791385200,
-      "winCount": 120,
-      "matchCount": 232
-    },
-    {
-      "heroId": 131,
-      "hour": 1791385200,
-      "winCount": 216,
-      "matchCount": 446
-    },
-    {
-      "heroId": 135,
-      "hour": 1791385200,
-      "winCount": 321,
-      "matchCount": 675
-    },
-    {
-      "heroId": 136,
-      "hour": 1791385200,
-      "winCount": 396,
-      "matchCount": 859
-    },
-    {
-      "heroId": 137,
-      "hour": 1791385200,
-      "winCount": 313,
-      "matchCount": 631
-    },
-    {
-      "heroId": 138,
-      "hour": 1791385200,
-      "winCount": 108,
-      "matchCount": 207
-    },
-    {
-      "heroId": 145,
-      "hour": 1791385200,
-      "winCount": 159,
-      "matchCount": 332
-    },
-    {
-      "heroId": 155,
-      "hour": 1791385200,
-      "winCount": 73,
-      "matchCount": 147
-    },
-    {
-      "heroId": 1,
-      "hour": 1791388800,
-      "winCount": 643,
-      "matchCount": 1197
-    },
-    {
-      "heroId": 2,
-      "hour": 1791388800,
-      "winCount": 512,
-      "matchCount": 1022
-    },
-    {
-      "heroId": 3,
-      "hour": 1791388800,
-      "winCount": 117,
-      "matchCount": 253
-    },
-    {
-      "heroId": 4,
-      "hour": 1791388800,
-      "winCount": 125,
-      "matchCount": 233
-    },
-    {
-      "heroId": 5,
-      "hour": 1791388800,
-      "winCount": 453,
-      "matchCount": 844
-    },
-    {
-      "heroId": 6,
-      "hour": 1791388800,
-      "winCount": 733,
-      "matchCount": 1625
-    },
-    {
-      "heroId": 7,
-      "hour": 1791388800,
-      "winCount": 563,
-      "matchCount": 1109
-    },
-    {
-      "heroId": 8,
-      "hour": 1791388800,
-      "winCount": 545,
-      "matchCount": 1028
-    },
-    {
-      "heroId": 9,
-      "hour": 1791388800,
-      "winCount": 346,
-      "matchCount": 645
-    },
-    {
-      "heroId": 10,
-      "hour": 1791388800,
-      "winCount": 169,
-      "matchCount": 371
-    },
-    {
-      "heroId": 11,
-      "hour": 1791388800,
-      "winCount": 420,
-      "matchCount": 919
-    },
-    {
-      "heroId": 12,
-      "hour": 1791388800,
-      "winCount": 544,
-      "matchCount": 962
-    },
-    {
-      "heroId": 13,
-      "hour": 1791388800,
-      "winCount": 96,
-      "matchCount": 191
-    },
-    {
-      "heroId": 14,
-      "hour": 1791388800,
-      "winCount": 1140,
-      "matchCount": 2301
-    },
-    {
-      "heroId": 15,
-      "hour": 1791388800,
-      "winCount": 173,
-      "matchCount": 328
-    },
-    {
-      "heroId": 16,
-      "hour": 1791388800,
-      "winCount": 112,
-      "matchCount": 229
-    },
-    {
-      "heroId": 17,
-      "hour": 1791388800,
-      "winCount": 169,
-      "matchCount": 370
-    },
-    {
-      "heroId": 18,
-      "hour": 1791388800,
-      "winCount": 350,
-      "matchCount": 684
-    },
-    {
-      "heroId": 19,
-      "hour": 1791388800,
-      "winCount": 298,
-      "matchCount": 733
-    },
-    {
-      "heroId": 20,
-      "hour": 1791388800,
-      "winCount": 334,
-      "matchCount": 647
-    },
-    {
-      "heroId": 21,
-      "hour": 1791388800,
-      "winCount": 511,
-      "matchCount": 1060
-    },
-    {
-      "heroId": 22,
-      "hour": 1791388800,
-      "winCount": 420,
-      "matchCount": 831
-    },
-    {
-      "heroId": 23,
-      "hour": 1791388800,
-      "winCount": 140,
-      "matchCount": 274
-    },
-    {
-      "heroId": 25,
-      "hour": 1791388800,
-      "winCount": 507,
-      "matchCount": 1061
-    },
-    {
-      "heroId": 26,
-      "hour": 1791388800,
-      "winCount": 830,
-      "matchCount": 1705
-    },
-    {
-      "heroId": 27,
-      "hour": 1791388800,
-      "winCount": 583,
-      "matchCount": 1140
-    },
-    {
-      "heroId": 28,
-      "hour": 1791388800,
-      "winCount": 165,
-      "matchCount": 341
-    },
-    {
-      "heroId": 29,
-      "hour": 1791388800,
-      "winCount": 638,
-      "matchCount": 1221
-    },
-    {
-      "heroId": 30,
-      "hour": 1791388800,
-      "winCount": 570,
-      "matchCount": 1066
-    },
-    {
-      "heroId": 31,
-      "hour": 1791388800,
-      "winCount": 339,
-      "matchCount": 682
-    },
-    {
-      "heroId": 32,
-      "hour": 1791388800,
-      "winCount": 141,
-      "matchCount": 293
-    },
-    {
-      "heroId": 33,
-      "hour": 1791388800,
-      "winCount": 167,
-      "matchCount": 321
-    },
-    {
-      "heroId": 34,
-      "hour": 1791388800,
-      "winCount": 212,
-      "matchCount": 470
-    },
-    {
-      "heroId": 35,
-      "hour": 1791388800,
-      "winCount": 661,
-      "matchCount": 1271
-    },
-    {
-      "heroId": 36,
-      "hour": 1791388800,
-      "winCount": 439,
-      "matchCount": 863
-    },
-    {
-      "heroId": 37,
-      "hour": 1791388800,
-      "winCount": 163,
-      "matchCount": 338
-    },
-    {
-      "heroId": 38,
-      "hour": 1791388800,
-      "winCount": 71,
-      "matchCount": 159
-    },
-    {
-      "heroId": 39,
-      "hour": 1791388800,
-      "winCount": 238,
-      "matchCount": 503
-    },
-    {
-      "heroId": 40,
-      "hour": 1791388800,
-      "winCount": 181,
-      "matchCount": 380
-    },
-    {
-      "heroId": 41,
-      "hour": 1791388800,
-      "winCount": 221,
-      "matchCount": 470
-    },
-    {
-      "heroId": 42,
-      "hour": 1791388800,
-      "winCount": 379,
-      "matchCount": 690
-    },
-    {
-      "heroId": 43,
-      "hour": 1791388800,
-      "winCount": 230,
-      "matchCount": 487
-    },
-    {
-      "heroId": 44,
-      "hour": 1791388800,
-      "winCount": 462,
-      "matchCount": 872
-    },
-    {
-      "heroId": 45,
-      "hour": 1791388800,
-      "winCount": 117,
-      "matchCount": 238
-    },
-    {
-      "heroId": 46,
-      "hour": 1791388800,
-      "winCount": 186,
-      "matchCount": 403
-    },
-    {
-      "heroId": 47,
-      "hour": 1791388800,
-      "winCount": 210,
-      "matchCount": 446
-    },
-    {
-      "heroId": 48,
-      "hour": 1791388800,
-      "winCount": 527,
-      "matchCount": 1002
-    },
-    {
-      "heroId": 49,
-      "hour": 1791388800,
-      "winCount": 431,
-      "matchCount": 799
-    },
-    {
-      "heroId": 50,
-      "hour": 1791388800,
-      "winCount": 210,
-      "matchCount": 420
-    },
-    {
-      "heroId": 51,
-      "hour": 1791388800,
-      "winCount": 110,
-      "matchCount": 202
-    },
-    {
-      "heroId": 52,
-      "hour": 1791388800,
-      "winCount": 92,
-      "matchCount": 179
-    },
-    {
-      "heroId": 53,
-      "hour": 1791388800,
-      "winCount": 230,
-      "matchCount": 495
-    },
-    {
-      "heroId": 54,
-      "hour": 1791388800,
-      "winCount": 435,
-      "matchCount": 858
-    },
-    {
-      "heroId": 55,
-      "hour": 1791388800,
-      "winCount": 193,
-      "matchCount": 374
-    },
-    {
-      "heroId": 56,
-      "hour": 1791388800,
-      "winCount": 176,
-      "matchCount": 325
-    },
-    {
-      "heroId": 57,
-      "hour": 1791388800,
-      "winCount": 95,
-      "matchCount": 164
-    },
-    {
-      "heroId": 58,
-      "hour": 1791388800,
-      "winCount": 86,
-      "matchCount": 187
-    },
-    {
-      "heroId": 59,
-      "hour": 1791388800,
-      "winCount": 135,
-      "matchCount": 292
-    },
-    {
-      "heroId": 60,
-      "hour": 1791388800,
-      "winCount": 249,
-      "matchCount": 471
-    },
-    {
-      "heroId": 61,
-      "hour": 1791388800,
-      "winCount": 164,
-      "matchCount": 327
-    },
-    {
-      "heroId": 62,
-      "hour": 1791388800,
-      "winCount": 256,
-      "matchCount": 490
-    },
-    {
-      "heroId": 63,
-      "hour": 1791388800,
-      "winCount": 150,
-      "matchCount": 323
-    },
-    {
-      "heroId": 64,
-      "hour": 1791388800,
-      "winCount": 256,
-      "matchCount": 546
-    },
-    {
-      "heroId": 65,
-      "hour": 1791388800,
-      "winCount": 32,
-      "matchCount": 72
-    },
-    {
-      "heroId": 66,
-      "hour": 1791388800,
-      "winCount": 22,
-      "matchCount": 42
-    },
-    {
-      "heroId": 67,
-      "hour": 1791388800,
-      "winCount": 305,
-      "matchCount": 558
-    },
-    {
-      "heroId": 68,
-      "hour": 1791388800,
-      "winCount": 388,
-      "matchCount": 758
-    },
-    {
-      "heroId": 69,
-      "hour": 1791388800,
-      "winCount": 144,
-      "matchCount": 320
-    },
-    {
-      "heroId": 70,
-      "hour": 1791388800,
-      "winCount": 200,
-      "matchCount": 393
-    },
-    {
-      "heroId": 71,
-      "hour": 1791388800,
-      "winCount": 607,
-      "matchCount": 1095
-    },
-    {
-      "heroId": 72,
-      "hour": 1791388800,
-      "winCount": 78,
-      "matchCount": 146
-    },
-    {
-      "heroId": 73,
-      "hour": 1791388800,
-      "winCount": 76,
-      "matchCount": 178
-    },
-    {
-      "heroId": 74,
-      "hour": 1791388800,
-      "winCount": 837,
-      "matchCount": 1684
-    },
-    {
-      "heroId": 75,
-      "hour": 1791388800,
-      "winCount": 271,
-      "matchCount": 513
-    },
-    {
-      "heroId": 76,
-      "hour": 1791388800,
-      "winCount": 380,
-      "matchCount": 763
-    },
-    {
-      "heroId": 77,
-      "hour": 1791388800,
-      "winCount": 56,
-      "matchCount": 120
-    },
-    {
-      "heroId": 78,
-      "hour": 1791388800,
-      "winCount": 69,
-      "matchCount": 142
-    },
-    {
-      "heroId": 79,
-      "hour": 1791388800,
-      "winCount": 66,
-      "matchCount": 133
-    },
-    {
-      "heroId": 80,
-      "hour": 1791388800,
-      "winCount": 115,
-      "matchCount": 223
-    },
-    {
-      "heroId": 81,
-      "hour": 1791388800,
-      "winCount": 133,
-      "matchCount": 248
-    },
-    {
-      "heroId": 82,
-      "hour": 1791388800,
-      "winCount": 73,
-      "matchCount": 144
-    },
-    {
-      "heroId": 83,
-      "hour": 1791388800,
-      "winCount": 148,
-      "matchCount": 326
-    },
-    {
-      "heroId": 84,
-      "hour": 1791388800,
-      "winCount": 580,
-      "matchCount": 1123
-    },
-    {
-      "heroId": 85,
-      "hour": 1791388800,
-      "winCount": 662,
-      "matchCount": 1391
-    },
-    {
-      "heroId": 86,
-      "hour": 1791388800,
-      "winCount": 674,
-      "matchCount": 1419
-    },
-    {
-      "heroId": 87,
-      "hour": 1791388800,
-      "winCount": 234,
-      "matchCount": 469
-    },
-    {
-      "heroId": 88,
-      "hour": 1791388800,
-      "winCount": 420,
-      "matchCount": 839
-    },
-    {
-      "heroId": 89,
-      "hour": 1791388800,
-      "winCount": 56,
-      "matchCount": 115
-    },
-    {
-      "heroId": 90,
-      "hour": 1791388800,
-      "winCount": 227,
-      "matchCount": 470
-    },
-    {
-      "heroId": 91,
-      "hour": 1791388800,
-      "winCount": 243,
-      "matchCount": 483
-    },
-    {
-      "heroId": 92,
-      "hour": 1791388800,
-      "winCount": 89,
-      "matchCount": 164
-    },
-    {
-      "heroId": 93,
-      "hour": 1791388800,
-      "winCount": 405,
-      "matchCount": 769
-    },
-    {
-      "heroId": 94,
-      "hour": 1791388800,
-      "winCount": 89,
-      "matchCount": 172
-    },
-    {
-      "heroId": 95,
-      "hour": 1791388800,
-      "winCount": 106,
-      "matchCount": 182
-    },
-    {
-      "heroId": 96,
-      "hour": 1791388800,
-      "winCount": 167,
-      "matchCount": 318
-    },
-    {
-      "heroId": 97,
-      "hour": 1791388800,
-      "winCount": 425,
-      "matchCount": 799
-    },
-    {
-      "heroId": 98,
-      "hour": 1791388800,
-      "winCount": 138,
-      "matchCount": 303
-    },
-    {
-      "heroId": 99,
-      "hour": 1791388800,
-      "winCount": 201,
-      "matchCount": 409
-    },
-    {
-      "heroId": 100,
-      "hour": 1791388800,
-      "winCount": 169,
-      "matchCount": 364
-    },
-    {
-      "heroId": 101,
-      "hour": 1791388800,
-      "winCount": 421,
-      "matchCount": 816
-    },
-    {
-      "heroId": 102,
-      "hour": 1791388800,
-      "winCount": 122,
-      "matchCount": 205
-    },
-    {
-      "heroId": 103,
-      "hour": 1791388800,
-      "winCount": 33,
-      "matchCount": 78
-    },
-    {
-      "heroId": 104,
-      "hour": 1791388800,
-      "winCount": 578,
-      "matchCount": 1134
-    },
-    {
-      "heroId": 105,
-      "hour": 1791388800,
-      "winCount": 578,
-      "matchCount": 1122
-    },
-    {
-      "heroId": 106,
-      "hour": 1791388800,
-      "winCount": 225,
-      "matchCount": 457
-    },
-    {
-      "heroId": 107,
-      "hour": 1791388800,
-      "winCount": 146,
-      "matchCount": 294
-    },
-    {
-      "heroId": 108,
-      "hour": 1791388800,
-      "winCount": 129,
-      "matchCount": 274
-    },
-    {
-      "heroId": 109,
-      "hour": 1791388800,
-      "winCount": 433,
-      "matchCount": 1019
-    },
-    {
-      "heroId": 110,
-      "hour": 1791388800,
-      "winCount": 204,
-      "matchCount": 386
-    },
-    {
-      "heroId": 111,
-      "hour": 1791388800,
-      "winCount": 290,
-      "matchCount": 593
-    },
-    {
-      "heroId": 112,
-      "hour": 1791388800,
-      "winCount": 233,
-      "matchCount": 463
-    },
-    {
-      "heroId": 113,
-      "hour": 1791388800,
-      "winCount": 276,
-      "matchCount": 498
-    },
-    {
-      "heroId": 114,
-      "hour": 1791388800,
-      "winCount": 172,
-      "matchCount": 366
-    },
-    {
-      "heroId": 119,
-      "hour": 1791388800,
-      "winCount": 211,
-      "matchCount": 441
-    },
-    {
-      "heroId": 120,
-      "hour": 1791388800,
-      "winCount": 119,
-      "matchCount": 261
-    },
-    {
-      "heroId": 121,
-      "hour": 1791388800,
-      "winCount": 291,
-      "matchCount": 562
-    },
-    {
-      "heroId": 123,
-      "hour": 1791388800,
-      "winCount": 438,
-      "matchCount": 891
-    },
-    {
-      "heroId": 126,
-      "hour": 1791388800,
-      "winCount": 142,
-      "matchCount": 282
-    },
-    {
-      "heroId": 128,
-      "hour": 1791388800,
-      "winCount": 350,
-      "matchCount": 691
-    },
-    {
-      "heroId": 129,
-      "hour": 1791388800,
-      "winCount": 104,
-      "matchCount": 215
-    },
-    {
-      "heroId": 131,
-      "hour": 1791388800,
-      "winCount": 201,
-      "matchCount": 431
-    },
-    {
-      "heroId": 135,
-      "hour": 1791388800,
-      "winCount": 331,
-      "matchCount": 660
-    },
-    {
-      "heroId": 136,
-      "hour": 1791388800,
-      "winCount": 401,
-      "matchCount": 831
-    },
-    {
-      "heroId": 137,
-      "hour": 1791388800,
-      "winCount": 269,
-      "matchCount": 574
-    },
-    {
-      "heroId": 138,
-      "hour": 1791388800,
-      "winCount": 87,
-      "matchCount": 183
-    },
-    {
-      "heroId": 145,
-      "hour": 1791388800,
-      "winCount": 128,
-      "matchCount": 298
-    },
-    {
-      "heroId": 155,
-      "hour": 1791388800,
-      "winCount": 45,
-      "matchCount": 118
-    },
     {
       "heroId": 1,
       "hour": 1791392400,
@@ -146307,6 +143259,2292 @@
       "hour": 1792065600,
       "winCount": 68,
       "matchCount": 127
+    },
+    {
+      "heroId": 1,
+      "hour": 1792069200,
+      "winCount": 741,
+      "matchCount": 1424
+    },
+    {
+      "heroId": 2,
+      "hour": 1792069200,
+      "winCount": 632,
+      "matchCount": 1259
+    },
+    {
+      "heroId": 3,
+      "hour": 1792069200,
+      "winCount": 166,
+      "matchCount": 302
+    },
+    {
+      "heroId": 4,
+      "hour": 1792069200,
+      "winCount": 132,
+      "matchCount": 263
+    },
+    {
+      "heroId": 5,
+      "hour": 1792069200,
+      "winCount": 495,
+      "matchCount": 935
+    },
+    {
+      "heroId": 6,
+      "hour": 1792069200,
+      "winCount": 697,
+      "matchCount": 1531
+    },
+    {
+      "heroId": 7,
+      "hour": 1792069200,
+      "winCount": 662,
+      "matchCount": 1310
+    },
+    {
+      "heroId": 8,
+      "hour": 1792069200,
+      "winCount": 621,
+      "matchCount": 1196
+    },
+    {
+      "heroId": 9,
+      "hour": 1792069200,
+      "winCount": 419,
+      "matchCount": 805
+    },
+    {
+      "heroId": 10,
+      "hour": 1792069200,
+      "winCount": 178,
+      "matchCount": 414
+    },
+    {
+      "heroId": 11,
+      "hour": 1792069200,
+      "winCount": 445,
+      "matchCount": 948
+    },
+    {
+      "heroId": 12,
+      "hour": 1792069200,
+      "winCount": 583,
+      "matchCount": 1120
+    },
+    {
+      "heroId": 13,
+      "hour": 1792069200,
+      "winCount": 117,
+      "matchCount": 253
+    },
+    {
+      "heroId": 14,
+      "hour": 1792069200,
+      "winCount": 1228,
+      "matchCount": 2452
+    },
+    {
+      "heroId": 15,
+      "hour": 1792069200,
+      "winCount": 195,
+      "matchCount": 399
+    },
+    {
+      "heroId": 16,
+      "hour": 1792069200,
+      "winCount": 146,
+      "matchCount": 306
+    },
+    {
+      "heroId": 17,
+      "hour": 1792069200,
+      "winCount": 194,
+      "matchCount": 426
+    },
+    {
+      "heroId": 18,
+      "hour": 1792069200,
+      "winCount": 450,
+      "matchCount": 810
+    },
+    {
+      "heroId": 19,
+      "hour": 1792069200,
+      "winCount": 214,
+      "matchCount": 459
+    },
+    {
+      "heroId": 20,
+      "hour": 1792069200,
+      "winCount": 408,
+      "matchCount": 707
+    },
+    {
+      "heroId": 21,
+      "hour": 1792069200,
+      "winCount": 656,
+      "matchCount": 1272
+    },
+    {
+      "heroId": 22,
+      "hour": 1792069200,
+      "winCount": 481,
+      "matchCount": 929
+    },
+    {
+      "heroId": 23,
+      "hour": 1792069200,
+      "winCount": 149,
+      "matchCount": 307
+    },
+    {
+      "heroId": 25,
+      "hour": 1792069200,
+      "winCount": 491,
+      "matchCount": 1058
+    },
+    {
+      "heroId": 26,
+      "hour": 1792069200,
+      "winCount": 902,
+      "matchCount": 1871
+    },
+    {
+      "heroId": 27,
+      "hour": 1792069200,
+      "winCount": 552,
+      "matchCount": 1067
+    },
+    {
+      "heroId": 28,
+      "hour": 1792069200,
+      "winCount": 215,
+      "matchCount": 421
+    },
+    {
+      "heroId": 29,
+      "hour": 1792069200,
+      "winCount": 568,
+      "matchCount": 1131
+    },
+    {
+      "heroId": 30,
+      "hour": 1792069200,
+      "winCount": 616,
+      "matchCount": 1235
+    },
+    {
+      "heroId": 31,
+      "hour": 1792069200,
+      "winCount": 432,
+      "matchCount": 835
+    },
+    {
+      "heroId": 32,
+      "hour": 1792069200,
+      "winCount": 177,
+      "matchCount": 347
+    },
+    {
+      "heroId": 33,
+      "hour": 1792069200,
+      "winCount": 194,
+      "matchCount": 363
+    },
+    {
+      "heroId": 34,
+      "hour": 1792069200,
+      "winCount": 258,
+      "matchCount": 508
+    },
+    {
+      "heroId": 35,
+      "hour": 1792069200,
+      "winCount": 693,
+      "matchCount": 1341
+    },
+    {
+      "heroId": 36,
+      "hour": 1792069200,
+      "winCount": 489,
+      "matchCount": 993
+    },
+    {
+      "heroId": 37,
+      "hour": 1792069200,
+      "winCount": 198,
+      "matchCount": 383
+    },
+    {
+      "heroId": 38,
+      "hour": 1792069200,
+      "winCount": 90,
+      "matchCount": 196
+    },
+    {
+      "heroId": 39,
+      "hour": 1792069200,
+      "winCount": 252,
+      "matchCount": 545
+    },
+    {
+      "heroId": 40,
+      "hour": 1792069200,
+      "winCount": 214,
+      "matchCount": 456
+    },
+    {
+      "heroId": 41,
+      "hour": 1792069200,
+      "winCount": 217,
+      "matchCount": 474
+    },
+    {
+      "heroId": 42,
+      "hour": 1792069200,
+      "winCount": 454,
+      "matchCount": 836
+    },
+    {
+      "heroId": 43,
+      "hour": 1792069200,
+      "winCount": 177,
+      "matchCount": 392
+    },
+    {
+      "heroId": 44,
+      "hour": 1792069200,
+      "winCount": 481,
+      "matchCount": 934
+    },
+    {
+      "heroId": 45,
+      "hour": 1792069200,
+      "winCount": 157,
+      "matchCount": 344
+    },
+    {
+      "heroId": 46,
+      "hour": 1792069200,
+      "winCount": 188,
+      "matchCount": 415
+    },
+    {
+      "heroId": 47,
+      "hour": 1792069200,
+      "winCount": 242,
+      "matchCount": 518
+    },
+    {
+      "heroId": 48,
+      "hour": 1792069200,
+      "winCount": 562,
+      "matchCount": 1186
+    },
+    {
+      "heroId": 49,
+      "hour": 1792069200,
+      "winCount": 593,
+      "matchCount": 1136
+    },
+    {
+      "heroId": 50,
+      "hour": 1792069200,
+      "winCount": 280,
+      "matchCount": 548
+    },
+    {
+      "heroId": 51,
+      "hour": 1792069200,
+      "winCount": 82,
+      "matchCount": 185
+    },
+    {
+      "heroId": 52,
+      "hour": 1792069200,
+      "winCount": 125,
+      "matchCount": 226
+    },
+    {
+      "heroId": 53,
+      "hour": 1792069200,
+      "winCount": 296,
+      "matchCount": 665
+    },
+    {
+      "heroId": 54,
+      "hour": 1792069200,
+      "winCount": 590,
+      "matchCount": 1098
+    },
+    {
+      "heroId": 55,
+      "hour": 1792069200,
+      "winCount": 234,
+      "matchCount": 454
+    },
+    {
+      "heroId": 56,
+      "hour": 1792069200,
+      "winCount": 192,
+      "matchCount": 379
+    },
+    {
+      "heroId": 57,
+      "hour": 1792069200,
+      "winCount": 98,
+      "matchCount": 200
+    },
+    {
+      "heroId": 58,
+      "hour": 1792069200,
+      "winCount": 90,
+      "matchCount": 205
+    },
+    {
+      "heroId": 59,
+      "hour": 1792069200,
+      "winCount": 148,
+      "matchCount": 355
+    },
+    {
+      "heroId": 60,
+      "hour": 1792069200,
+      "winCount": 302,
+      "matchCount": 586
+    },
+    {
+      "heroId": 61,
+      "hour": 1792069200,
+      "winCount": 135,
+      "matchCount": 284
+    },
+    {
+      "heroId": 62,
+      "hour": 1792069200,
+      "winCount": 336,
+      "matchCount": 618
+    },
+    {
+      "heroId": 63,
+      "hour": 1792069200,
+      "winCount": 169,
+      "matchCount": 370
+    },
+    {
+      "heroId": 64,
+      "hour": 1792069200,
+      "winCount": 291,
+      "matchCount": 582
+    },
+    {
+      "heroId": 65,
+      "hour": 1792069200,
+      "winCount": 51,
+      "matchCount": 91
+    },
+    {
+      "heroId": 66,
+      "hour": 1792069200,
+      "winCount": 26,
+      "matchCount": 51
+    },
+    {
+      "heroId": 67,
+      "hour": 1792069200,
+      "winCount": 395,
+      "matchCount": 735
+    },
+    {
+      "heroId": 68,
+      "hour": 1792069200,
+      "winCount": 299,
+      "matchCount": 582
+    },
+    {
+      "heroId": 69,
+      "hour": 1792069200,
+      "winCount": 210,
+      "matchCount": 430
+    },
+    {
+      "heroId": 70,
+      "hour": 1792069200,
+      "winCount": 248,
+      "matchCount": 495
+    },
+    {
+      "heroId": 71,
+      "hour": 1792069200,
+      "winCount": 697,
+      "matchCount": 1366
+    },
+    {
+      "heroId": 72,
+      "hour": 1792069200,
+      "winCount": 107,
+      "matchCount": 257
+    },
+    {
+      "heroId": 73,
+      "hour": 1792069200,
+      "winCount": 96,
+      "matchCount": 202
+    },
+    {
+      "heroId": 74,
+      "hour": 1792069200,
+      "winCount": 926,
+      "matchCount": 1810
+    },
+    {
+      "heroId": 75,
+      "hour": 1792069200,
+      "winCount": 350,
+      "matchCount": 672
+    },
+    {
+      "heroId": 76,
+      "hour": 1792069200,
+      "winCount": 474,
+      "matchCount": 923
+    },
+    {
+      "heroId": 77,
+      "hour": 1792069200,
+      "winCount": 67,
+      "matchCount": 141
+    },
+    {
+      "heroId": 78,
+      "hour": 1792069200,
+      "winCount": 131,
+      "matchCount": 261
+    },
+    {
+      "heroId": 79,
+      "hour": 1792069200,
+      "winCount": 62,
+      "matchCount": 154
+    },
+    {
+      "heroId": 80,
+      "hour": 1792069200,
+      "winCount": 110,
+      "matchCount": 254
+    },
+    {
+      "heroId": 81,
+      "hour": 1792069200,
+      "winCount": 124,
+      "matchCount": 266
+    },
+    {
+      "heroId": 82,
+      "hour": 1792069200,
+      "winCount": 105,
+      "matchCount": 225
+    },
+    {
+      "heroId": 83,
+      "hour": 1792069200,
+      "winCount": 120,
+      "matchCount": 227
+    },
+    {
+      "heroId": 84,
+      "hour": 1792069200,
+      "winCount": 695,
+      "matchCount": 1285
+    },
+    {
+      "heroId": 85,
+      "hour": 1792069200,
+      "winCount": 489,
+      "matchCount": 1002
+    },
+    {
+      "heroId": 86,
+      "hour": 1792069200,
+      "winCount": 888,
+      "matchCount": 1687
+    },
+    {
+      "heroId": 87,
+      "hour": 1792069200,
+      "winCount": 282,
+      "matchCount": 531
+    },
+    {
+      "heroId": 88,
+      "hour": 1792069200,
+      "winCount": 437,
+      "matchCount": 840
+    },
+    {
+      "heroId": 89,
+      "hour": 1792069200,
+      "winCount": 82,
+      "matchCount": 144
+    },
+    {
+      "heroId": 90,
+      "hour": 1792069200,
+      "winCount": 260,
+      "matchCount": 542
+    },
+    {
+      "heroId": 91,
+      "hour": 1792069200,
+      "winCount": 261,
+      "matchCount": 507
+    },
+    {
+      "heroId": 92,
+      "hour": 1792069200,
+      "winCount": 100,
+      "matchCount": 213
+    },
+    {
+      "heroId": 93,
+      "hour": 1792069200,
+      "winCount": 464,
+      "matchCount": 933
+    },
+    {
+      "heroId": 94,
+      "hour": 1792069200,
+      "winCount": 89,
+      "matchCount": 190
+    },
+    {
+      "heroId": 95,
+      "hour": 1792069200,
+      "winCount": 99,
+      "matchCount": 204
+    },
+    {
+      "heroId": 96,
+      "hour": 1792069200,
+      "winCount": 170,
+      "matchCount": 348
+    },
+    {
+      "heroId": 97,
+      "hour": 1792069200,
+      "winCount": 398,
+      "matchCount": 813
+    },
+    {
+      "heroId": 98,
+      "hour": 1792069200,
+      "winCount": 187,
+      "matchCount": 431
+    },
+    {
+      "heroId": 99,
+      "hour": 1792069200,
+      "winCount": 214,
+      "matchCount": 401
+    },
+    {
+      "heroId": 100,
+      "hour": 1792069200,
+      "winCount": 192,
+      "matchCount": 409
+    },
+    {
+      "heroId": 101,
+      "hour": 1792069200,
+      "winCount": 409,
+      "matchCount": 880
+    },
+    {
+      "heroId": 102,
+      "hour": 1792069200,
+      "winCount": 133,
+      "matchCount": 245
+    },
+    {
+      "heroId": 103,
+      "hour": 1792069200,
+      "winCount": 49,
+      "matchCount": 94
+    },
+    {
+      "heroId": 104,
+      "hour": 1792069200,
+      "winCount": 638,
+      "matchCount": 1177
+    },
+    {
+      "heroId": 105,
+      "hour": 1792069200,
+      "winCount": 717,
+      "matchCount": 1481
+    },
+    {
+      "heroId": 106,
+      "hour": 1792069200,
+      "winCount": 265,
+      "matchCount": 564
+    },
+    {
+      "heroId": 107,
+      "hour": 1792069200,
+      "winCount": 185,
+      "matchCount": 398
+    },
+    {
+      "heroId": 108,
+      "hour": 1792069200,
+      "winCount": 187,
+      "matchCount": 347
+    },
+    {
+      "heroId": 109,
+      "hour": 1792069200,
+      "winCount": 273,
+      "matchCount": 572
+    },
+    {
+      "heroId": 110,
+      "hour": 1792069200,
+      "winCount": 254,
+      "matchCount": 479
+    },
+    {
+      "heroId": 111,
+      "hour": 1792069200,
+      "winCount": 233,
+      "matchCount": 495
+    },
+    {
+      "heroId": 112,
+      "hour": 1792069200,
+      "winCount": 279,
+      "matchCount": 575
+    },
+    {
+      "heroId": 113,
+      "hour": 1792069200,
+      "winCount": 270,
+      "matchCount": 533
+    },
+    {
+      "heroId": 114,
+      "hour": 1792069200,
+      "winCount": 192,
+      "matchCount": 410
+    },
+    {
+      "heroId": 119,
+      "hour": 1792069200,
+      "winCount": 301,
+      "matchCount": 599
+    },
+    {
+      "heroId": 120,
+      "hour": 1792069200,
+      "winCount": 144,
+      "matchCount": 295
+    },
+    {
+      "heroId": 121,
+      "hour": 1792069200,
+      "winCount": 315,
+      "matchCount": 666
+    },
+    {
+      "heroId": 123,
+      "hour": 1792069200,
+      "winCount": 483,
+      "matchCount": 1072
+    },
+    {
+      "heroId": 126,
+      "hour": 1792069200,
+      "winCount": 169,
+      "matchCount": 329
+    },
+    {
+      "heroId": 128,
+      "hour": 1792069200,
+      "winCount": 357,
+      "matchCount": 743
+    },
+    {
+      "heroId": 129,
+      "hour": 1792069200,
+      "winCount": 121,
+      "matchCount": 260
+    },
+    {
+      "heroId": 131,
+      "hour": 1792069200,
+      "winCount": 231,
+      "matchCount": 455
+    },
+    {
+      "heroId": 135,
+      "hour": 1792069200,
+      "winCount": 395,
+      "matchCount": 729
+    },
+    {
+      "heroId": 136,
+      "hour": 1792069200,
+      "winCount": 343,
+      "matchCount": 647
+    },
+    {
+      "heroId": 137,
+      "hour": 1792069200,
+      "winCount": 232,
+      "matchCount": 460
+    },
+    {
+      "heroId": 138,
+      "hour": 1792069200,
+      "winCount": 104,
+      "matchCount": 218
+    },
+    {
+      "heroId": 145,
+      "hour": 1792069200,
+      "winCount": 205,
+      "matchCount": 444
+    },
+    {
+      "heroId": 155,
+      "hour": 1792069200,
+      "winCount": 82,
+      "matchCount": 164
+    },
+    {
+      "heroId": 1,
+      "hour": 1792072800,
+      "winCount": 815,
+      "matchCount": 1526
+    },
+    {
+      "heroId": 2,
+      "hour": 1792072800,
+      "winCount": 726,
+      "matchCount": 1361
+    },
+    {
+      "heroId": 3,
+      "hour": 1792072800,
+      "winCount": 149,
+      "matchCount": 305
+    },
+    {
+      "heroId": 4,
+      "hour": 1792072800,
+      "winCount": 156,
+      "matchCount": 310
+    },
+    {
+      "heroId": 5,
+      "hour": 1792072800,
+      "winCount": 574,
+      "matchCount": 1097
+    },
+    {
+      "heroId": 6,
+      "hour": 1792072800,
+      "winCount": 856,
+      "matchCount": 1828
+    },
+    {
+      "heroId": 7,
+      "hour": 1792072800,
+      "winCount": 728,
+      "matchCount": 1474
+    },
+    {
+      "heroId": 8,
+      "hour": 1792072800,
+      "winCount": 729,
+      "matchCount": 1360
+    },
+    {
+      "heroId": 9,
+      "hour": 1792072800,
+      "winCount": 470,
+      "matchCount": 923
+    },
+    {
+      "heroId": 10,
+      "hour": 1792072800,
+      "winCount": 202,
+      "matchCount": 458
+    },
+    {
+      "heroId": 11,
+      "hour": 1792072800,
+      "winCount": 482,
+      "matchCount": 1063
+    },
+    {
+      "heroId": 12,
+      "hour": 1792072800,
+      "winCount": 663,
+      "matchCount": 1246
+    },
+    {
+      "heroId": 13,
+      "hour": 1792072800,
+      "winCount": 133,
+      "matchCount": 288
+    },
+    {
+      "heroId": 14,
+      "hour": 1792072800,
+      "winCount": 1449,
+      "matchCount": 2856
+    },
+    {
+      "heroId": 15,
+      "hour": 1792072800,
+      "winCount": 221,
+      "matchCount": 438
+    },
+    {
+      "heroId": 16,
+      "hour": 1792072800,
+      "winCount": 166,
+      "matchCount": 325
+    },
+    {
+      "heroId": 17,
+      "hour": 1792072800,
+      "winCount": 221,
+      "matchCount": 506
+    },
+    {
+      "heroId": 18,
+      "hour": 1792072800,
+      "winCount": 500,
+      "matchCount": 961
+    },
+    {
+      "heroId": 19,
+      "hour": 1792072800,
+      "winCount": 205,
+      "matchCount": 494
+    },
+    {
+      "heroId": 20,
+      "hour": 1792072800,
+      "winCount": 426,
+      "matchCount": 803
+    },
+    {
+      "heroId": 21,
+      "hour": 1792072800,
+      "winCount": 696,
+      "matchCount": 1449
+    },
+    {
+      "heroId": 22,
+      "hour": 1792072800,
+      "winCount": 534,
+      "matchCount": 1038
+    },
+    {
+      "heroId": 23,
+      "hour": 1792072800,
+      "winCount": 155,
+      "matchCount": 332
+    },
+    {
+      "heroId": 25,
+      "hour": 1792072800,
+      "winCount": 597,
+      "matchCount": 1220
+    },
+    {
+      "heroId": 26,
+      "hour": 1792072800,
+      "winCount": 1073,
+      "matchCount": 2228
+    },
+    {
+      "heroId": 27,
+      "hour": 1792072800,
+      "winCount": 686,
+      "matchCount": 1278
+    },
+    {
+      "heroId": 28,
+      "hour": 1792072800,
+      "winCount": 233,
+      "matchCount": 465
+    },
+    {
+      "heroId": 29,
+      "hour": 1792072800,
+      "winCount": 661,
+      "matchCount": 1344
+    },
+    {
+      "heroId": 30,
+      "hour": 1792072800,
+      "winCount": 722,
+      "matchCount": 1368
+    },
+    {
+      "heroId": 31,
+      "hour": 1792072800,
+      "winCount": 521,
+      "matchCount": 971
+    },
+    {
+      "heroId": 32,
+      "hour": 1792072800,
+      "winCount": 234,
+      "matchCount": 445
+    },
+    {
+      "heroId": 33,
+      "hour": 1792072800,
+      "winCount": 233,
+      "matchCount": 447
+    },
+    {
+      "heroId": 34,
+      "hour": 1792072800,
+      "winCount": 309,
+      "matchCount": 636
+    },
+    {
+      "heroId": 35,
+      "hour": 1792072800,
+      "winCount": 805,
+      "matchCount": 1582
+    },
+    {
+      "heroId": 36,
+      "hour": 1792072800,
+      "winCount": 617,
+      "matchCount": 1202
+    },
+    {
+      "heroId": 37,
+      "hour": 1792072800,
+      "winCount": 207,
+      "matchCount": 427
+    },
+    {
+      "heroId": 38,
+      "hour": 1792072800,
+      "winCount": 101,
+      "matchCount": 205
+    },
+    {
+      "heroId": 39,
+      "hour": 1792072800,
+      "winCount": 307,
+      "matchCount": 664
+    },
+    {
+      "heroId": 40,
+      "hour": 1792072800,
+      "winCount": 251,
+      "matchCount": 540
+    },
+    {
+      "heroId": 41,
+      "hour": 1792072800,
+      "winCount": 283,
+      "matchCount": 592
+    },
+    {
+      "heroId": 42,
+      "hour": 1792072800,
+      "winCount": 524,
+      "matchCount": 962
+    },
+    {
+      "heroId": 43,
+      "hour": 1792072800,
+      "winCount": 210,
+      "matchCount": 459
+    },
+    {
+      "heroId": 44,
+      "hour": 1792072800,
+      "winCount": 554,
+      "matchCount": 1077
+    },
+    {
+      "heroId": 45,
+      "hour": 1792072800,
+      "winCount": 192,
+      "matchCount": 382
+    },
+    {
+      "heroId": 46,
+      "hour": 1792072800,
+      "winCount": 224,
+      "matchCount": 463
+    },
+    {
+      "heroId": 47,
+      "hour": 1792072800,
+      "winCount": 314,
+      "matchCount": 620
+    },
+    {
+      "heroId": 48,
+      "hour": 1792072800,
+      "winCount": 661,
+      "matchCount": 1292
+    },
+    {
+      "heroId": 49,
+      "hour": 1792072800,
+      "winCount": 671,
+      "matchCount": 1262
+    },
+    {
+      "heroId": 50,
+      "hour": 1792072800,
+      "winCount": 319,
+      "matchCount": 617
+    },
+    {
+      "heroId": 51,
+      "hour": 1792072800,
+      "winCount": 107,
+      "matchCount": 215
+    },
+    {
+      "heroId": 52,
+      "hour": 1792072800,
+      "winCount": 149,
+      "matchCount": 256
+    },
+    {
+      "heroId": 53,
+      "hour": 1792072800,
+      "winCount": 333,
+      "matchCount": 742
+    },
+    {
+      "heroId": 54,
+      "hour": 1792072800,
+      "winCount": 599,
+      "matchCount": 1185
+    },
+    {
+      "heroId": 55,
+      "hour": 1792072800,
+      "winCount": 229,
+      "matchCount": 492
+    },
+    {
+      "heroId": 56,
+      "hour": 1792072800,
+      "winCount": 219,
+      "matchCount": 423
+    },
+    {
+      "heroId": 57,
+      "hour": 1792072800,
+      "winCount": 108,
+      "matchCount": 198
+    },
+    {
+      "heroId": 58,
+      "hour": 1792072800,
+      "winCount": 111,
+      "matchCount": 216
+    },
+    {
+      "heroId": 59,
+      "hour": 1792072800,
+      "winCount": 194,
+      "matchCount": 423
+    },
+    {
+      "heroId": 60,
+      "hour": 1792072800,
+      "winCount": 321,
+      "matchCount": 636
+    },
+    {
+      "heroId": 61,
+      "hour": 1792072800,
+      "winCount": 147,
+      "matchCount": 316
+    },
+    {
+      "heroId": 62,
+      "hour": 1792072800,
+      "winCount": 350,
+      "matchCount": 700
+    },
+    {
+      "heroId": 63,
+      "hour": 1792072800,
+      "winCount": 209,
+      "matchCount": 435
+    },
+    {
+      "heroId": 64,
+      "hour": 1792072800,
+      "winCount": 317,
+      "matchCount": 662
+    },
+    {
+      "heroId": 65,
+      "hour": 1792072800,
+      "winCount": 42,
+      "matchCount": 92
+    },
+    {
+      "heroId": 66,
+      "hour": 1792072800,
+      "winCount": 26,
+      "matchCount": 58
+    },
+    {
+      "heroId": 67,
+      "hour": 1792072800,
+      "winCount": 446,
+      "matchCount": 790
+    },
+    {
+      "heroId": 68,
+      "hour": 1792072800,
+      "winCount": 365,
+      "matchCount": 681
+    },
+    {
+      "heroId": 69,
+      "hour": 1792072800,
+      "winCount": 212,
+      "matchCount": 449
+    },
+    {
+      "heroId": 70,
+      "hour": 1792072800,
+      "winCount": 290,
+      "matchCount": 608
+    },
+    {
+      "heroId": 71,
+      "hour": 1792072800,
+      "winCount": 767,
+      "matchCount": 1465
+    },
+    {
+      "heroId": 72,
+      "hour": 1792072800,
+      "winCount": 118,
+      "matchCount": 265
+    },
+    {
+      "heroId": 73,
+      "hour": 1792072800,
+      "winCount": 103,
+      "matchCount": 227
+    },
+    {
+      "heroId": 74,
+      "hour": 1792072800,
+      "winCount": 1027,
+      "matchCount": 2088
+    },
+    {
+      "heroId": 75,
+      "hour": 1792072800,
+      "winCount": 374,
+      "matchCount": 747
+    },
+    {
+      "heroId": 76,
+      "hour": 1792072800,
+      "winCount": 520,
+      "matchCount": 986
+    },
+    {
+      "heroId": 77,
+      "hour": 1792072800,
+      "winCount": 84,
+      "matchCount": 170
+    },
+    {
+      "heroId": 78,
+      "hour": 1792072800,
+      "winCount": 141,
+      "matchCount": 278
+    },
+    {
+      "heroId": 79,
+      "hour": 1792072800,
+      "winCount": 88,
+      "matchCount": 195
+    },
+    {
+      "heroId": 80,
+      "hour": 1792072800,
+      "winCount": 145,
+      "matchCount": 302
+    },
+    {
+      "heroId": 81,
+      "hour": 1792072800,
+      "winCount": 176,
+      "matchCount": 331
+    },
+    {
+      "heroId": 82,
+      "hour": 1792072800,
+      "winCount": 127,
+      "matchCount": 244
+    },
+    {
+      "heroId": 83,
+      "hour": 1792072800,
+      "winCount": 115,
+      "matchCount": 247
+    },
+    {
+      "heroId": 84,
+      "hour": 1792072800,
+      "winCount": 738,
+      "matchCount": 1451
+    },
+    {
+      "heroId": 85,
+      "hour": 1792072800,
+      "winCount": 576,
+      "matchCount": 1155
+    },
+    {
+      "heroId": 86,
+      "hour": 1792072800,
+      "winCount": 981,
+      "matchCount": 1929
+    },
+    {
+      "heroId": 87,
+      "hour": 1792072800,
+      "winCount": 270,
+      "matchCount": 536
+    },
+    {
+      "heroId": 88,
+      "hour": 1792072800,
+      "winCount": 569,
+      "matchCount": 1025
+    },
+    {
+      "heroId": 89,
+      "hour": 1792072800,
+      "winCount": 83,
+      "matchCount": 172
+    },
+    {
+      "heroId": 90,
+      "hour": 1792072800,
+      "winCount": 283,
+      "matchCount": 582
+    },
+    {
+      "heroId": 91,
+      "hour": 1792072800,
+      "winCount": 310,
+      "matchCount": 592
+    },
+    {
+      "heroId": 92,
+      "hour": 1792072800,
+      "winCount": 103,
+      "matchCount": 222
+    },
+    {
+      "heroId": 93,
+      "hour": 1792072800,
+      "winCount": 516,
+      "matchCount": 1070
+    },
+    {
+      "heroId": 94,
+      "hour": 1792072800,
+      "winCount": 124,
+      "matchCount": 232
+    },
+    {
+      "heroId": 95,
+      "hour": 1792072800,
+      "winCount": 113,
+      "matchCount": 202
+    },
+    {
+      "heroId": 96,
+      "hour": 1792072800,
+      "winCount": 225,
+      "matchCount": 426
+    },
+    {
+      "heroId": 97,
+      "hour": 1792072800,
+      "winCount": 457,
+      "matchCount": 907
+    },
+    {
+      "heroId": 98,
+      "hour": 1792072800,
+      "winCount": 209,
+      "matchCount": 499
+    },
+    {
+      "heroId": 99,
+      "hour": 1792072800,
+      "winCount": 238,
+      "matchCount": 495
+    },
+    {
+      "heroId": 100,
+      "hour": 1792072800,
+      "winCount": 237,
+      "matchCount": 491
+    },
+    {
+      "heroId": 101,
+      "hour": 1792072800,
+      "winCount": 515,
+      "matchCount": 1064
+    },
+    {
+      "heroId": 102,
+      "hour": 1792072800,
+      "winCount": 119,
+      "matchCount": 241
+    },
+    {
+      "heroId": 103,
+      "hour": 1792072800,
+      "winCount": 60,
+      "matchCount": 103
+    },
+    {
+      "heroId": 104,
+      "hour": 1792072800,
+      "winCount": 699,
+      "matchCount": 1350
+    },
+    {
+      "heroId": 105,
+      "hour": 1792072800,
+      "winCount": 814,
+      "matchCount": 1669
+    },
+    {
+      "heroId": 106,
+      "hour": 1792072800,
+      "winCount": 312,
+      "matchCount": 685
+    },
+    {
+      "heroId": 107,
+      "hour": 1792072800,
+      "winCount": 210,
+      "matchCount": 436
+    },
+    {
+      "heroId": 108,
+      "hour": 1792072800,
+      "winCount": 177,
+      "matchCount": 374
+    },
+    {
+      "heroId": 109,
+      "hour": 1792072800,
+      "winCount": 292,
+      "matchCount": 676
+    },
+    {
+      "heroId": 110,
+      "hour": 1792072800,
+      "winCount": 293,
+      "matchCount": 554
+    },
+    {
+      "heroId": 111,
+      "hour": 1792072800,
+      "winCount": 283,
+      "matchCount": 560
+    },
+    {
+      "heroId": 112,
+      "hour": 1792072800,
+      "winCount": 321,
+      "matchCount": 637
+    },
+    {
+      "heroId": 113,
+      "hour": 1792072800,
+      "winCount": 307,
+      "matchCount": 605
+    },
+    {
+      "heroId": 114,
+      "hour": 1792072800,
+      "winCount": 230,
+      "matchCount": 493
+    },
+    {
+      "heroId": 119,
+      "hour": 1792072800,
+      "winCount": 325,
+      "matchCount": 662
+    },
+    {
+      "heroId": 120,
+      "hour": 1792072800,
+      "winCount": 165,
+      "matchCount": 320
+    },
+    {
+      "heroId": 121,
+      "hour": 1792072800,
+      "winCount": 381,
+      "matchCount": 734
+    },
+    {
+      "heroId": 123,
+      "hour": 1792072800,
+      "winCount": 540,
+      "matchCount": 1176
+    },
+    {
+      "heroId": 126,
+      "hour": 1792072800,
+      "winCount": 183,
+      "matchCount": 385
+    },
+    {
+      "heroId": 128,
+      "hour": 1792072800,
+      "winCount": 431,
+      "matchCount": 876
+    },
+    {
+      "heroId": 129,
+      "hour": 1792072800,
+      "winCount": 140,
+      "matchCount": 289
+    },
+    {
+      "heroId": 131,
+      "hour": 1792072800,
+      "winCount": 252,
+      "matchCount": 517
+    },
+    {
+      "heroId": 135,
+      "hour": 1792072800,
+      "winCount": 434,
+      "matchCount": 849
+    },
+    {
+      "heroId": 136,
+      "hour": 1792072800,
+      "winCount": 352,
+      "matchCount": 738
+    },
+    {
+      "heroId": 137,
+      "hour": 1792072800,
+      "winCount": 268,
+      "matchCount": 545
+    },
+    {
+      "heroId": 138,
+      "hour": 1792072800,
+      "winCount": 112,
+      "matchCount": 231
+    },
+    {
+      "heroId": 145,
+      "hour": 1792072800,
+      "winCount": 202,
+      "matchCount": 486
+    },
+    {
+      "heroId": 155,
+      "hour": 1792072800,
+      "winCount": 102,
+      "matchCount": 198
+    },
+    {
+      "heroId": 1,
+      "hour": 1792076400,
+      "winCount": 776,
+      "matchCount": 1528
+    },
+    {
+      "heroId": 2,
+      "hour": 1792076400,
+      "winCount": 628,
+      "matchCount": 1297
+    },
+    {
+      "heroId": 3,
+      "hour": 1792076400,
+      "winCount": 125,
+      "matchCount": 264
+    },
+    {
+      "heroId": 4,
+      "hour": 1792076400,
+      "winCount": 152,
+      "matchCount": 275
+    },
+    {
+      "heroId": 5,
+      "hour": 1792076400,
+      "winCount": 511,
+      "matchCount": 995
+    },
+    {
+      "heroId": 6,
+      "hour": 1792076400,
+      "winCount": 821,
+      "matchCount": 1679
+    },
+    {
+      "heroId": 7,
+      "hour": 1792076400,
+      "winCount": 651,
+      "matchCount": 1370
+    },
+    {
+      "heroId": 8,
+      "hour": 1792076400,
+      "winCount": 664,
+      "matchCount": 1252
+    },
+    {
+      "heroId": 9,
+      "hour": 1792076400,
+      "winCount": 454,
+      "matchCount": 855
+    },
+    {
+      "heroId": 10,
+      "hour": 1792076400,
+      "winCount": 190,
+      "matchCount": 411
+    },
+    {
+      "heroId": 11,
+      "hour": 1792076400,
+      "winCount": 446,
+      "matchCount": 1027
+    },
+    {
+      "heroId": 12,
+      "hour": 1792076400,
+      "winCount": 574,
+      "matchCount": 1150
+    },
+    {
+      "heroId": 13,
+      "hour": 1792076400,
+      "winCount": 121,
+      "matchCount": 255
+    },
+    {
+      "heroId": 14,
+      "hour": 1792076400,
+      "winCount": 1311,
+      "matchCount": 2647
+    },
+    {
+      "heroId": 15,
+      "hour": 1792076400,
+      "winCount": 221,
+      "matchCount": 423
+    },
+    {
+      "heroId": 16,
+      "hour": 1792076400,
+      "winCount": 158,
+      "matchCount": 303
+    },
+    {
+      "heroId": 17,
+      "hour": 1792076400,
+      "winCount": 231,
+      "matchCount": 486
+    },
+    {
+      "heroId": 18,
+      "hour": 1792076400,
+      "winCount": 456,
+      "matchCount": 861
+    },
+    {
+      "heroId": 19,
+      "hour": 1792076400,
+      "winCount": 230,
+      "matchCount": 519
+    },
+    {
+      "heroId": 20,
+      "hour": 1792076400,
+      "winCount": 412,
+      "matchCount": 760
+    },
+    {
+      "heroId": 21,
+      "hour": 1792076400,
+      "winCount": 690,
+      "matchCount": 1404
+    },
+    {
+      "heroId": 22,
+      "hour": 1792076400,
+      "winCount": 515,
+      "matchCount": 961
+    },
+    {
+      "heroId": 23,
+      "hour": 1792076400,
+      "winCount": 186,
+      "matchCount": 354
+    },
+    {
+      "heroId": 25,
+      "hour": 1792076400,
+      "winCount": 522,
+      "matchCount": 1129
+    },
+    {
+      "heroId": 26,
+      "hour": 1792076400,
+      "winCount": 998,
+      "matchCount": 2042
+    },
+    {
+      "heroId": 27,
+      "hour": 1792076400,
+      "winCount": 668,
+      "matchCount": 1288
+    },
+    {
+      "heroId": 28,
+      "hour": 1792076400,
+      "winCount": 248,
+      "matchCount": 456
+    },
+    {
+      "heroId": 29,
+      "hour": 1792076400,
+      "winCount": 625,
+      "matchCount": 1227
+    },
+    {
+      "heroId": 30,
+      "hour": 1792076400,
+      "winCount": 681,
+      "matchCount": 1334
+    },
+    {
+      "heroId": 31,
+      "hour": 1792076400,
+      "winCount": 444,
+      "matchCount": 814
+    },
+    {
+      "heroId": 32,
+      "hour": 1792076400,
+      "winCount": 198,
+      "matchCount": 380
+    },
+    {
+      "heroId": 33,
+      "hour": 1792076400,
+      "winCount": 200,
+      "matchCount": 421
+    },
+    {
+      "heroId": 34,
+      "hour": 1792076400,
+      "winCount": 289,
+      "matchCount": 610
+    },
+    {
+      "heroId": 35,
+      "hour": 1792076400,
+      "winCount": 745,
+      "matchCount": 1484
+    },
+    {
+      "heroId": 36,
+      "hour": 1792076400,
+      "winCount": 539,
+      "matchCount": 1089
+    },
+    {
+      "heroId": 37,
+      "hour": 1792076400,
+      "winCount": 192,
+      "matchCount": 408
+    },
+    {
+      "heroId": 38,
+      "hour": 1792076400,
+      "winCount": 70,
+      "matchCount": 192
+    },
+    {
+      "heroId": 39,
+      "hour": 1792076400,
+      "winCount": 272,
+      "matchCount": 597
+    },
+    {
+      "heroId": 40,
+      "hour": 1792076400,
+      "winCount": 254,
+      "matchCount": 537
+    },
+    {
+      "heroId": 41,
+      "hour": 1792076400,
+      "winCount": 304,
+      "matchCount": 576
+    },
+    {
+      "heroId": 42,
+      "hour": 1792076400,
+      "winCount": 519,
+      "matchCount": 909
+    },
+    {
+      "heroId": 43,
+      "hour": 1792076400,
+      "winCount": 215,
+      "matchCount": 412
+    },
+    {
+      "heroId": 44,
+      "hour": 1792076400,
+      "winCount": 535,
+      "matchCount": 1092
+    },
+    {
+      "heroId": 45,
+      "hour": 1792076400,
+      "winCount": 167,
+      "matchCount": 336
+    },
+    {
+      "heroId": 46,
+      "hour": 1792076400,
+      "winCount": 192,
+      "matchCount": 424
+    },
+    {
+      "heroId": 47,
+      "hour": 1792076400,
+      "winCount": 318,
+      "matchCount": 591
+    },
+    {
+      "heroId": 48,
+      "hour": 1792076400,
+      "winCount": 632,
+      "matchCount": 1177
+    },
+    {
+      "heroId": 49,
+      "hour": 1792076400,
+      "winCount": 566,
+      "matchCount": 1100
+    },
+    {
+      "heroId": 50,
+      "hour": 1792076400,
+      "winCount": 302,
+      "matchCount": 558
+    },
+    {
+      "heroId": 51,
+      "hour": 1792076400,
+      "winCount": 111,
+      "matchCount": 211
+    },
+    {
+      "heroId": 52,
+      "hour": 1792076400,
+      "winCount": 130,
+      "matchCount": 243
+    },
+    {
+      "heroId": 53,
+      "hour": 1792076400,
+      "winCount": 298,
+      "matchCount": 724
+    },
+    {
+      "heroId": 54,
+      "hour": 1792076400,
+      "winCount": 582,
+      "matchCount": 1130
+    },
+    {
+      "heroId": 55,
+      "hour": 1792076400,
+      "winCount": 220,
+      "matchCount": 452
+    },
+    {
+      "heroId": 56,
+      "hour": 1792076400,
+      "winCount": 199,
+      "matchCount": 386
+    },
+    {
+      "heroId": 57,
+      "hour": 1792076400,
+      "winCount": 93,
+      "matchCount": 184
+    },
+    {
+      "heroId": 58,
+      "hour": 1792076400,
+      "winCount": 92,
+      "matchCount": 206
+    },
+    {
+      "heroId": 59,
+      "hour": 1792076400,
+      "winCount": 178,
+      "matchCount": 376
+    },
+    {
+      "heroId": 60,
+      "hour": 1792076400,
+      "winCount": 288,
+      "matchCount": 602
+    },
+    {
+      "heroId": 61,
+      "hour": 1792076400,
+      "winCount": 156,
+      "matchCount": 326
+    },
+    {
+      "heroId": 62,
+      "hour": 1792076400,
+      "winCount": 344,
+      "matchCount": 660
+    },
+    {
+      "heroId": 63,
+      "hour": 1792076400,
+      "winCount": 201,
+      "matchCount": 420
+    },
+    {
+      "heroId": 64,
+      "hour": 1792076400,
+      "winCount": 307,
+      "matchCount": 610
+    },
+    {
+      "heroId": 65,
+      "hour": 1792076400,
+      "winCount": 37,
+      "matchCount": 97
+    },
+    {
+      "heroId": 66,
+      "hour": 1792076400,
+      "winCount": 24,
+      "matchCount": 53
+    },
+    {
+      "heroId": 67,
+      "hour": 1792076400,
+      "winCount": 383,
+      "matchCount": 720
+    },
+    {
+      "heroId": 68,
+      "hour": 1792076400,
+      "winCount": 349,
+      "matchCount": 704
+    },
+    {
+      "heroId": 69,
+      "hour": 1792076400,
+      "winCount": 227,
+      "matchCount": 457
+    },
+    {
+      "heroId": 70,
+      "hour": 1792076400,
+      "winCount": 262,
+      "matchCount": 535
+    },
+    {
+      "heroId": 71,
+      "hour": 1792076400,
+      "winCount": 754,
+      "matchCount": 1454
+    },
+    {
+      "heroId": 72,
+      "hour": 1792076400,
+      "winCount": 142,
+      "matchCount": 299
+    },
+    {
+      "heroId": 73,
+      "hour": 1792076400,
+      "winCount": 101,
+      "matchCount": 207
+    },
+    {
+      "heroId": 74,
+      "hour": 1792076400,
+      "winCount": 995,
+      "matchCount": 1943
+    },
+    {
+      "heroId": 75,
+      "hour": 1792076400,
+      "winCount": 320,
+      "matchCount": 681
+    },
+    {
+      "heroId": 76,
+      "hour": 1792076400,
+      "winCount": 501,
+      "matchCount": 967
+    },
+    {
+      "heroId": 77,
+      "hour": 1792076400,
+      "winCount": 86,
+      "matchCount": 160
+    },
+    {
+      "heroId": 78,
+      "hour": 1792076400,
+      "winCount": 138,
+      "matchCount": 278
+    },
+    {
+      "heroId": 79,
+      "hour": 1792076400,
+      "winCount": 89,
+      "matchCount": 196
+    },
+    {
+      "heroId": 80,
+      "hour": 1792076400,
+      "winCount": 135,
+      "matchCount": 267
+    },
+    {
+      "heroId": 81,
+      "hour": 1792076400,
+      "winCount": 150,
+      "matchCount": 291
+    },
+    {
+      "heroId": 82,
+      "hour": 1792076400,
+      "winCount": 103,
+      "matchCount": 201
+    },
+    {
+      "heroId": 83,
+      "hour": 1792076400,
+      "winCount": 111,
+      "matchCount": 231
+    },
+    {
+      "heroId": 84,
+      "hour": 1792076400,
+      "winCount": 709,
+      "matchCount": 1362
+    },
+    {
+      "heroId": 85,
+      "hour": 1792076400,
+      "winCount": 551,
+      "matchCount": 1089
+    },
+    {
+      "heroId": 86,
+      "hour": 1792076400,
+      "winCount": 926,
+      "matchCount": 1874
+    },
+    {
+      "heroId": 87,
+      "hour": 1792076400,
+      "winCount": 280,
+      "matchCount": 551
+    },
+    {
+      "heroId": 88,
+      "hour": 1792076400,
+      "winCount": 441,
+      "matchCount": 850
+    },
+    {
+      "heroId": 89,
+      "hour": 1792076400,
+      "winCount": 89,
+      "matchCount": 178
+    },
+    {
+      "heroId": 90,
+      "hour": 1792076400,
+      "winCount": 271,
+      "matchCount": 549
+    },
+    {
+      "heroId": 91,
+      "hour": 1792076400,
+      "winCount": 293,
+      "matchCount": 598
+    },
+    {
+      "heroId": 92,
+      "hour": 1792076400,
+      "winCount": 112,
+      "matchCount": 202
+    },
+    {
+      "heroId": 93,
+      "hour": 1792076400,
+      "winCount": 530,
+      "matchCount": 988
+    },
+    {
+      "heroId": 94,
+      "hour": 1792076400,
+      "winCount": 99,
+      "matchCount": 203
+    },
+    {
+      "heroId": 95,
+      "hour": 1792076400,
+      "winCount": 98,
+      "matchCount": 205
+    },
+    {
+      "heroId": 96,
+      "hour": 1792076400,
+      "winCount": 176,
+      "matchCount": 369
+    },
+    {
+      "heroId": 97,
+      "hour": 1792076400,
+      "winCount": 429,
+      "matchCount": 954
+    },
+    {
+      "heroId": 98,
+      "hour": 1792076400,
+      "winCount": 195,
+      "matchCount": 424
+    },
+    {
+      "heroId": 99,
+      "hour": 1792076400,
+      "winCount": 253,
+      "matchCount": 507
+    },
+    {
+      "heroId": 100,
+      "hour": 1792076400,
+      "winCount": 200,
+      "matchCount": 448
+    },
+    {
+      "heroId": 101,
+      "hour": 1792076400,
+      "winCount": 483,
+      "matchCount": 931
+    },
+    {
+      "heroId": 102,
+      "hour": 1792076400,
+      "winCount": 157,
+      "matchCount": 272
+    },
+    {
+      "heroId": 103,
+      "hour": 1792076400,
+      "winCount": 49,
+      "matchCount": 82
+    },
+    {
+      "heroId": 104,
+      "hour": 1792076400,
+      "winCount": 618,
+      "matchCount": 1214
+    },
+    {
+      "heroId": 105,
+      "hour": 1792076400,
+      "winCount": 774,
+      "matchCount": 1553
+    },
+    {
+      "heroId": 106,
+      "hour": 1792076400,
+      "winCount": 281,
+      "matchCount": 589
+    },
+    {
+      "heroId": 107,
+      "hour": 1792076400,
+      "winCount": 201,
+      "matchCount": 393
+    },
+    {
+      "heroId": 108,
+      "hour": 1792076400,
+      "winCount": 161,
+      "matchCount": 331
+    },
+    {
+      "heroId": 109,
+      "hour": 1792076400,
+      "winCount": 305,
+      "matchCount": 673
+    },
+    {
+      "heroId": 110,
+      "hour": 1792076400,
+      "winCount": 259,
+      "matchCount": 500
+    },
+    {
+      "heroId": 111,
+      "hour": 1792076400,
+      "winCount": 289,
+      "matchCount": 540
+    },
+    {
+      "heroId": 112,
+      "hour": 1792076400,
+      "winCount": 295,
+      "matchCount": 565
+    },
+    {
+      "heroId": 113,
+      "hour": 1792076400,
+      "winCount": 324,
+      "matchCount": 621
+    },
+    {
+      "heroId": 114,
+      "hour": 1792076400,
+      "winCount": 215,
+      "matchCount": 475
+    },
+    {
+      "heroId": 119,
+      "hour": 1792076400,
+      "winCount": 325,
+      "matchCount": 653
+    },
+    {
+      "heroId": 120,
+      "hour": 1792076400,
+      "winCount": 131,
+      "matchCount": 311
+    },
+    {
+      "heroId": 121,
+      "hour": 1792076400,
+      "winCount": 371,
+      "matchCount": 677
+    },
+    {
+      "heroId": 123,
+      "hour": 1792076400,
+      "winCount": 496,
+      "matchCount": 1075
+    },
+    {
+      "heroId": 126,
+      "hour": 1792076400,
+      "winCount": 171,
+      "matchCount": 370
+    },
+    {
+      "heroId": 128,
+      "hour": 1792076400,
+      "winCount": 382,
+      "matchCount": 776
+    },
+    {
+      "heroId": 129,
+      "hour": 1792076400,
+      "winCount": 142,
+      "matchCount": 267
+    },
+    {
+      "heroId": 131,
+      "hour": 1792076400,
+      "winCount": 226,
+      "matchCount": 453
+    },
+    {
+      "heroId": 135,
+      "hour": 1792076400,
+      "winCount": 413,
+      "matchCount": 788
+    },
+    {
+      "heroId": 136,
+      "hour": 1792076400,
+      "winCount": 309,
+      "matchCount": 631
+    },
+    {
+      "heroId": 137,
+      "hour": 1792076400,
+      "winCount": 287,
+      "matchCount": 506
+    },
+    {
+      "heroId": 138,
+      "hour": 1792076400,
+      "winCount": 94,
+      "matchCount": 221
+    },
+    {
+      "heroId": 145,
+      "hour": 1792076400,
+      "winCount": 213,
+      "matchCount": 513
+    },
+    {
+      "heroId": 155,
+      "hour": 1792076400,
+      "winCount": 73,
+      "matchCount": 179
     }
   ]
 }
