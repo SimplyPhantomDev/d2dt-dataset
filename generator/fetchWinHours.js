@@ -5,6 +5,8 @@ require("dotenv").config({
   quiet: true,
 });
 
+const { stratzQuery } = require("../server/stratzApi.cjs");
+
 const QUERY = `
   query HeroWinHours($take: Int!, $skip: Int!) {
     heroStats {
@@ -19,8 +21,6 @@ const QUERY = `
 `;
 
 async function fetchWinHours() {
-  const token = process.env.STRATZ_API_TOKEN;
-  if (!token) throw new Error("Missing STRATZ_API_TOKEN");
 
   const records = new Map();
   let skip = 0;
@@ -32,35 +32,8 @@ async function fetchWinHours() {
       await new Promise((resolve) => setTimeout(resolve, 300));
     }
 
-    const response = await fetch("https://api.stratz.com/graphql", {
-      method: "POST",
-      signal: AbortSignal.timeout(20_000),
-      headers: {
-        "Content-Type": "application/json",
-        "User-Agent": "STRATZ_API",
-        Authorization: `Bearer ${token}`,
-      },
-      body: JSON.stringify({
-        query: QUERY,
-        variables: { take: 100, skip },
-      }),
-    });
-
+    const body = await stratzQuery(QUERY, { take: 100, skip });
     requests++;
-
-    if (!response.ok) {
-      throw new Error(`STRATZ HTTP ${response.status}`);
-    }
-
-    const body = await response.json();
-
-    if (body.errors?.length) {
-      const message = body.errors
-        .map((error) => error.message)
-        .join("; ");
-
-      throw new Error(message.replaceAll(token, "[redacted]"));
-    }
 
     const rows = body.data?.heroStats?.winHour;
 

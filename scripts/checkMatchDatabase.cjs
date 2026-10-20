@@ -52,8 +52,14 @@ async function main() {
   LIMIT 0
 `;
 
+  await sql`
+  SELECT allowed, retry_at
+  FROM public.reserve_stratz_request('primary', 'dataset')
+  LIMIT 0
+`;
+
   console.log(
-    "Match-feedback database connection OK; required columns are accessible."
+    "Match-feedback database connection OK; required columns and quota function are accessible."
   );
 }
 
@@ -67,6 +73,8 @@ main().catch(error => {
       "The configured database user cannot read a required table.",
     "28P01":
       "Database authentication failed. Check the connection string credentials.",
+    "42883":
+      "The STRATZ quota function is missing. Run database/003_stratz_rate_limit.sql.",
   };
 
   // Connection errors can include credentials. Print only our own explanations.

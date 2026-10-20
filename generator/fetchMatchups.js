@@ -4,7 +4,7 @@ require("dotenv").config({
   override: false,
 });
 
-const STRATZ_API_URL = "https://api.stratz.com/graphql";
+const { stratzQuery } = require("../server/stratzApi.cjs");
 
 const matchupQuery = `
   query HeroVsHeroMatchup($heroId: Short!) {
@@ -54,51 +54,7 @@ function validatePairs(pairs, kind, heroId) {
 }
 
 async function fetchMatchups(heroId) {
-  const token = process.env.STRATZ_API_TOKEN;
-
-  if (!token) {
-    throw new Error("Missing STRATZ_API_TOKEN environment variable");
-  }
-
-  const response = await fetch(STRATZ_API_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "User-Agent": "STRATZ_API",
-      Authorization: `Bearer ${token}`,
-    },
-    body: JSON.stringify({
-      query: matchupQuery,
-      variables: { heroId },
-    }),
-  });
-
-  if (!response.ok) {
-    throw new Error(
-      `STRATZ HTTP error ${response.status} for hero ${heroId}`
-    );
-  }
-
-  const bodyText = await response.text();
-  let json;
-
-  try {
-    json = JSON.parse(bodyText);
-  } catch {
-    throw new Error(
-      `STRATZ returned non-JSON data for hero ${heroId}`
-    );
-  }
-
-  if (
-    json?.errors &&
-    (!Array.isArray(json.errors) || json.errors.length > 0)
-  ) {
-    throw new Error(
-      `STRATZ GraphQL error for hero ${heroId}: ` +
-      JSON.stringify(json.errors).slice(0, 300)
-    );
-  }
+  const json = await stratzQuery(matchupQuery, { heroId });
 
   const advantages =
     json?.data?.heroStats?.heroVsHeroMatchup?.advantage;

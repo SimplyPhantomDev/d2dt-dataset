@@ -3,7 +3,7 @@ require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
 
-const STRATZ_API_URL = "https://api.stratz.com/graphql";
+const { stratzQuery } = require("../server/stratzApi.cjs");
 const ICON_BASE_URL = "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes";
 const ICON_REACT_BASE_URL = "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes";
 
@@ -30,26 +30,7 @@ const query = `
 `;
 
 async function main() {
-  const token = process.env.STRATZ_API_TOKEN;
-  if (!token) throw new Error("Missing STRATZ_API_TOKEN env var");
-
-  const res = await fetch(STRATZ_API_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "User-Agent": "STRATZ_API",
-      "Authorization": `Bearer ${token}`,
-    },
-    body: JSON.stringify({ query }),
-  });
-
-  if (!res.ok) {
-    const text = await res.text().catch(() => "");
-    throw new Error(`STRATZ fetch failed: ${res.status} ${res.statusText} ${text}`.slice(0, 400));
-  }
-
-  const json = await res.json();
-  if (json.errors) throw new Error(`GraphQL error: ${JSON.stringify(json.errors).slice(0, 400)}`);
+  const json = await stratzQuery(query);
 
   const heroes = json?.data?.constants?.heroes ?? [];
 
