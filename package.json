@@ -18,6 +18,7 @@
   "homepage": "https://github.com/SimplyPhantomDev/d2dt-dataset#readme",
   "description": "",
   "dependencies": {
+    "@neondatabase/serverless": "^1.2.0",
     "dotenv": "^17.2.3",
     "node-fetch": "^3.3.2"
   }
