@@ -1,5 +1,5 @@
-// Check the configured database and required table columns without reading
-// match reports or inserting test data. The future API will use the same driver.
+// Check the report, verification and request-budget tables without reading
+// saved reports or inserting test data.
 const { resolve } = require("node:path");
 
 require("dotenv").config({
@@ -25,6 +25,33 @@ async function main() {
     LIMIT 0
   `;
 
+  await sql`
+  SELECT match_id, created_at, next_attempt_at, attempts,
+         lease_token, lease_expires_at, last_error_code
+  FROM public.match_verification_jobs
+  LIMIT 0
+`;
+
+  await sql`
+  SELECT match_id, fetched_at, schema, match_data
+  FROM public.stratz_match_cache
+  LIMIT 0
+`;
+
+  await sql`
+  SELECT budget_key, max_per_second, max_per_minute, max_per_hour,
+         max_per_day, verification_max_per_hour,
+         verification_max_per_day, paused_until
+  FROM public.stratz_api_budgets
+  LIMIT 0
+`;
+
+  await sql`
+  SELECT id, budget_key, purpose, reserved_at
+  FROM public.stratz_api_reservations
+  LIMIT 0
+`;
+
   console.log(
     "Match-feedback database connection OK; required columns are accessible."
   );
@@ -33,11 +60,11 @@ async function main() {
 main().catch(error => {
   const explanations = {
     "42P01":
-      "The match_reports table is missing. Run database/001_match_reports.sql first.",
+      "A required table is missing. Run database/001_match_reports.sql and database/002_match_verification.sql.",
     "42703":
-      "The match_reports columns differ from database/001_match_reports.sql.",
+      "The database columns differ from the SQL files in database/.",
     "42501":
-      "The configured database user cannot read the match_reports table.",
+      "The configured database user cannot read a required table.",
     "28P01":
       "Database authentication failed. Check the connection string credentials.",
   };
@@ -45,7 +72,7 @@ main().catch(error => {
   // Connection errors can include credentials. Print only our own explanations.
   console.error(
     explanations[error?.code]
-      ?? "Database check failed. Check DATABASE_URL, your connection and the database status."
+    ?? "Database check failed. Check DATABASE_URL, your connection and the database status."
   );
 
   process.exitCode = 1;
