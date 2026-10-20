@@ -78,19 +78,20 @@ module.exports = async function handler(req, res) {
     });
 
     const inserted = await sql`
-      INSERT INTO public.match_reports
-        (draft_id, outcome, reported_at, payload_sha256, report)
-      VALUES
-        (
-          ${report.draftId}::uuid,
-          ${report.outcome},
-          ${report.reportedAt}::timestamptz,
-          ${hash},
-          ${serialized}::jsonb
-        )
-      ON CONFLICT (draft_id) DO NOTHING
-      RETURNING draft_id
-    `;
+  INSERT INTO public.match_reports
+    (draft_id, outcome, reported_at, payload_sha256, report, match_id)
+  VALUES
+    (
+      ${report.draftId}::uuid,
+      ${report.outcome},
+      ${report.reportedAt}::timestamptz,
+      ${hash},
+      ${serialized}::jsonb,
+      ${report.matchId ?? null}::bigint
+    )
+  ON CONFLICT (draft_id) DO NOTHING
+  RETURNING draft_id
+`;
 
     if (inserted.length === 0) {
       const existing = await sql`

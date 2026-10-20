@@ -45,6 +45,24 @@ function text(value, field, maximum, optional = false) {
   return value;
 }
 
+function optionalMatchId(value) {
+  if (value == null) return null;
+
+  // Keep IDs as strings to avoid rounding large integers in JavaScript.
+  // The upper bound matches the database's signed BIGINT column.
+  if (
+    typeof value !== "string"
+    || !/^[1-9][0-9]{0,18}$/.test(value)
+    || BigInt(value) > 9223372036854775807n
+  ) {
+    reject(
+      "matchId must be a positive decimal string within the BIGINT range."
+    );
+  }
+
+  return value;
+}
+
 function heroIds(value, field, allowedHeroIds) {
   if (
     !Array.isArray(value)
@@ -151,6 +169,7 @@ function normalizeMatchReport(body, allowedHeroIds) {
   }
 
   const id = input.draftId.toLowerCase();
+  const matchId = optionalMatchId(input.matchId);
 
   return {
     schema: 1,
@@ -184,6 +203,9 @@ function normalizeMatchReport(body, allowedHeroIds) {
         patch: text(draft.dataset.patch, "dataset.patch", 32, true),
       },
     },
+    // Omit absent IDs so older reports keep their original normalized hash.
+    // A submitted ID is a claim; verification remains server-controlled.
+    ...(matchId === null ? {} : { matchId }),
   };
 }
 
