@@ -5,26 +5,26 @@ const { fetchStratzMatch } = require("../server/fetchStratzMatch.cjs");
 const { verifyMatchReport } = require("../server/verifyMatchReport.cjs");
 const { StratzRateLimitError } = require("../server/stratzApi.cjs");
 
-class VerificationDatabaseError extends Error {}
+class VerificationDatabaseError extends Error { }
 
 async function databaseQuery(run) {
-  try {
-    const sql = neon(process.env.DATABASE_URL, {
-      fetchOptions: { signal: AbortSignal.timeout(10000) },
-    });
-    return await run(sql);
-  } catch {
-    // Database errors can contain credentials; keep them out of logs.
-    throw new VerificationDatabaseError(
-      "Verification database operation failed. Check DATABASE_URL and migrations 001–004."
-    );
-  }
+    try {
+        const sql = neon(process.env.DATABASE_URL, {
+            fetchOptions: { signal: AbortSignal.timeout(10000) },
+        });
+        return await run(sql);
+    } catch {
+        // Database errors can contain credentials; keep them out of logs.
+        throw new VerificationDatabaseError(
+            "Verification database operation failed. Check DATABASE_URL and migrations 001–004."
+        );
+    }
 }
 
 async function claimJob() {
-  const token = randomUUID();
+    const token = randomUUID();
 
-  const rows = await databaseQuery(sql => sql`
+    const rows = await databaseQuery(sql => sql`
     WITH candidate AS (
       SELECT j.match_id
       FROM public.match_verification_jobs j
@@ -49,16 +49,16 @@ async function claimJob() {
     RETURNING j.match_id::text AS match_id, j.attempts
   `);
 
-  return rows[0] ? { ...rows[0], token } : null;
+    return rows[0] ? { ...rows[0], token } : null;
 }
 
 async function postponeJob(job, code, retryAt = null) {
-  const seconds = Math.min(
-    86400,
-    300 * 2 ** Math.min(job.attempts - 1, 9)
-  );
+    const seconds = Math.min(
+        86400,
+        300 * 2 ** Math.min(job.attempts - 1, 9)
+    );
 
-  const rows = await databaseQuery(sql => sql`
+    const rows = await databaseQuery(sql => sql`
     UPDATE public.match_verification_jobs
     SET next_attempt_at = CASE WHEN ${retryAt}::timestamptz IS NULL
           THEN clock_timestamp()
@@ -76,11 +76,11 @@ async function postponeJob(job, code, retryAt = null) {
     RETURNING match_id
   `);
 
-  return rows.length === 1;
+    return rows.length === 1;
 }
 
 async function finishJob(job, match, decisions) {
-  const rows = await databaseQuery(sql => sql`
+    const rows = await databaseQuery(sql => sql`
     WITH owned AS MATERIALIZED (
       SELECT match_id
       FROM public.match_verification_jobs
@@ -133,78 +133,78 @@ async function finishJob(job, match, decisions) {
        WHERE verification = 'rejected') AS rejected
   `);
 
-  return rows[0];
+    return rows[0];
 }
 
 async function verifyMatchReports(limit = 5) {
-  if (!Number.isInteger(limit) || limit < 1 || limit > 50) {
-    throw new Error("The batch limit must be an integer from 1 to 50.");
-  }
-
-  if (!process.env.DATABASE_URL || !process.env.STRATZ_API_TOKEN) {
-    throw new Error("DATABASE_URL and STRATZ_API_TOKEN are required.");
-  }
-
-  const summary = {
-    claimed: 0,
-    lookupAttempts: 0,
-    cacheHits: 0,
-    verified: 0,
-    rejected: 0,
-    deferred: 0,
-    failed: 0,
-    lostLeases: 0,
-    stopReason: "batch_limit",
-  };
-
-  const deadline = performance.now() + 4 * 60 * 1000;
-
-  for (let index = 0; index < limit; index++) {
-    if (performance.now() >= deadline) {
-      summary.stopReason = "time_limit";
-      break;
+    if (!Number.isInteger(limit) || limit < 1 || limit > 50) {
+        throw new Error("The batch limit must be an integer from 1 to 50.");
     }
 
-    const job = await claimJob();
-
-    if (!job) {
-      summary.stopReason = "no_due_jobs";
-      break;
+    if (!process.env.DATABASE_URL || !process.env.STRATZ_API_TOKEN) {
+        throw new Error("DATABASE_URL and STRATZ_API_TOKEN are required.");
     }
 
-    summary.claimed++;
-    let phase = "cache";
+    const summary = {
+        claimed: 0,
+        lookupAttempts: 0,
+        cacheHits: 0,
+        verified: 0,
+        rejected: 0,
+        deferred: 0,
+        failed: 0,
+        lostLeases: 0,
+        stopReason: "batch_limit",
+    };
 
-    try {
-      const cached = await databaseQuery(sql => sql`
+    const deadline = performance.now() + 4 * 60 * 1000;
+
+    for (let index = 0; index < limit; index++) {
+        if (performance.now() >= deadline) {
+            summary.stopReason = "time_limit";
+            break;
+        }
+
+        const job = await claimJob();
+
+        if (!job) {
+            summary.stopReason = "no_due_jobs";
+            break;
+        }
+
+        summary.claimed++;
+        let phase = "cache";
+
+        try {
+            const cached = await databaseQuery(sql => sql`
         SELECT match_data
         FROM public.stratz_match_cache
         WHERE match_id = ${job.match_id}::bigint
           AND schema = 1
       `);
 
-      let match = cached[0]?.match_data;
+            let match = cached[0]?.match_data;
 
-      if (cached.length) {
-        summary.cacheHits++;
-      } else {
-        phase = "fetch";
-        summary.lookupAttempts++;
-        match = await fetchStratzMatch(job.match_id);
-      }
+            if (cached.length) {
+                summary.cacheHits++;
+            } else {
+                phase = "fetch";
+                summary.lookupAttempts++;
+                match = await fetchStratzMatch(job.match_id);
+            }
 
-      if (match === null) {
-        const owned = await postponeJob(job, "match_unavailable");
+            if (match === null) {
+                const owned = await postponeJob(job, "match_unavailable");
 
-        if (owned) summary.deferred++;
-        else summary.lostLeases++;
+                if (owned) summary.deferred++;
+                else summary.lostLeases++;
 
-        continue;
-      }
+                continue;
+            }
 
-      phase = "compare";
+            phase = "compare";
 
-      const reports = await databaseQuery(sql => sql`
+            const reports = await databaseQuery(sql => sql`
         SELECT draft_id::text, payload_sha256, report
         FROM public.match_reports
         WHERE match_id = ${job.match_id}::bigint
@@ -213,84 +213,91 @@ async function verifyMatchReports(limit = 5) {
         LIMIT 100
       `);
 
-      const decisions = reports.map(row => {
-        const decision = verifyMatchReport(row.report, match);
+            const decisions = reports.map(row => {
+                // Older uploads have no match ID in their immutable JSON.
+                // Use the database's attached ID in a temporary verification copy.
+                const reportForVerification = {
+                    ...row.report,
+                    matchId: row.report.matchId ?? job.match_id,
+                };
 
-        if (!["verified", "rejected"].includes(decision.verification)) {
-          throw new Error(
-            "The stored report is inconsistent with its match ID."
-          );
+                const decision = verifyMatchReport(reportForVerification, match);
+
+                if (!["verified", "rejected"].includes(decision.verification)) {
+                    throw new Error(
+                        "The stored report is inconsistent with its match ID."
+                    );
+                }
+
+                return {
+                    draft_id: row.draft_id,
+                    payload_sha256: row.payload_sha256,
+                    verification: decision.verification,
+                    details: { schema: 1, ...decision },
+                };
+            });
+
+            const saved = await finishJob(job, match, decisions);
+
+            if (!saved.owned) {
+                summary.lostLeases++;
+            } else {
+                summary.verified += saved.verified;
+                summary.rejected += saved.rejected;
+            }
+        } catch (error) {
+            if (error instanceof VerificationDatabaseError) throw error;
+
+            const limited = error instanceof StratzRateLimitError;
+            const auth = error.status === 401 || error.status === 403;
+
+            let code = phase === "fetch"
+                ? "stratz_request_failed"
+                : "invalid_match_data";
+
+            if (auth) code = "stratz_auth_failed";
+            if (limited) code = "quota_wait";
+
+            const owned = await postponeJob(
+                job,
+                code,
+                limited ? error.retryAt : null
+            );
+
+            if (!owned) summary.lostLeases++;
+            else summary.deferred++;
+
+            if (!limited) summary.failed++;
+
+            if (limited || auth) {
+                summary.stopReason = code;
+                break;
+            }
         }
-
-        return {
-          draft_id: row.draft_id,
-          payload_sha256: row.payload_sha256,
-          verification: decision.verification,
-          details: { schema: 1, ...decision },
-        };
-      });
-
-      const saved = await finishJob(job, match, decisions);
-
-      if (!saved.owned) {
-        summary.lostLeases++;
-      } else {
-        summary.verified += saved.verified;
-        summary.rejected += saved.rejected;
-      }
-    } catch (error) {
-      if (error instanceof VerificationDatabaseError) throw error;
-
-      const limited = error instanceof StratzRateLimitError;
-      const auth = error.status === 401 || error.status === 403;
-
-      let code = phase === "fetch"
-        ? "stratz_request_failed"
-        : "invalid_match_data";
-
-      if (auth) code = "stratz_auth_failed";
-      if (limited) code = "quota_wait";
-
-      const owned = await postponeJob(
-        job,
-        code,
-        limited ? error.retryAt : null
-      );
-
-      if (!owned) summary.lostLeases++;
-      else summary.deferred++;
-
-      if (!limited) summary.failed++;
-
-      if (limited || auth) {
-        summary.stopReason = code;
-        break;
-      }
     }
-  }
 
-  return summary;
+    return summary;
 }
 
 module.exports = { verifyMatchReports };
 
 if (require.main === module) {
-  const argument = process.argv[2] ?? "5";
-  const limit = /^[1-9][0-9]?$/.test(argument)
-    ? Number(argument)
-    : NaN;
+    const argument = process.argv[2] ?? "5";
+    const limit = /^[1-9][0-9]?$/.test(argument)
+        ? Number(argument)
+        : NaN;
 
-  (process.argv.length > 3
-    ? Promise.reject(
-        new Error("Usage: node scripts/verifyMatchReports.cjs [1–50]")
-      )
-    : verifyMatchReports(limit)
-  ).then(summary => {
-    console.log(JSON.stringify(summary, null, 2));
+    (process.argv.length > 3
+        ? Promise.reject(
+            new Error("Usage: node scripts/verifyMatchReports.cjs [1–50]")
+        )
+        : verifyMatchReports(limit)
+    ).then(summary => {
+        console.log(JSON.stringify(summary, null, 2));
 
-    if (summary.failed > 0) process.exitCode = 1;
-  }).catch(error => {
-    console.error(error.message);
-    process.exitCode = 1;
-  });
+        if (summary.failed > 0) process.exitCode = 1;
+    }).catch(error => {
+        console.error(error.message);
+        process.exitCode = 1;
+    });
 }
