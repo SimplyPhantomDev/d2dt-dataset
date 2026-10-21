@@ -20,7 +20,7 @@ async function query(run) {
     } catch {
         // Raw connection errors can contain credentials.
         throw new CollectorDatabaseError(
-            "Public-match database operation failed. Check DATABASE_URL and migration 005."
+            "Public-match database operation failed. Check DATABASE_URL and migrations 005–006."
         );
     }
 }
@@ -40,28 +40,28 @@ async function collectPublicMatches(initialCursor = null) {
     const token = randomUUID();
 
     const claimed = await query(sql => sql`
-    UPDATE public.public_match_collection
-    SET next_match_id = CASE WHEN initialized THEN next_match_id
-                            ELSE ${initialCursor}::bigint END,
-        initialized = TRUE,
-        lease_token = ${token}::uuid,
-        lease_expires_at = clock_timestamp() + INTERVAL '2 minutes',
-        next_request_at = clock_timestamp() + INTERVAL '2 seconds',
-        updated_at = clock_timestamp()
-    WHERE name = ${NAME}
-      AND next_request_at <= clock_timestamp()
-      AND (lease_expires_at IS NULL OR lease_expires_at <= clock_timestamp())
-      AND (${initialCursor}::text IS NULL OR NOT initialized)
-    RETURNING next_match_id::text AS cursor
+        UPDATE public.public_match_collection
+        SET next_match_id = CASE WHEN initialized THEN next_match_id
+                                ELSE ${initialCursor}::bigint END,
+            initialized = TRUE,
+            lease_token = ${token}::uuid,
+            lease_expires_at = clock_timestamp() + INTERVAL '2 minutes',
+            next_request_at = clock_timestamp() + INTERVAL '2 seconds',
+            updated_at = clock_timestamp()
+        WHERE name = ${NAME}
+            AND next_request_at <= clock_timestamp()
+            AND (lease_expires_at IS NULL OR lease_expires_at <= clock_timestamp())
+            AND (${initialCursor}::text IS NULL OR NOT initialized)
+        RETURNING next_match_id::text AS cursor
   `);
 
     if (!claimed.length) {
         const [state] = await query(sql => sql`
-      SELECT initialized, next_match_id::text AS cursor,
-        GREATEST(next_request_at,
-          COALESCE(lease_expires_at, next_request_at))::text AS retry_at
-      FROM public.public_match_collection WHERE name = ${NAME}
-    `);
+            SELECT initialized, next_match_id::text AS cursor,
+                GREATEST(next_request_at,
+                    COALESCE(lease_expires_at, next_request_at))::text AS retry_at
+            FROM public.public_match_collection WHERE name = ${NAME}
+        `);
 
         if (!state) {
             throw new Error("Collector state is missing. Run migration 005.");
@@ -82,6 +82,28 @@ async function collectPublicMatches(initialCursor = null) {
     const cursor = claimed[0].cursor;
 
     try {
+        const [budget] = await query(sql => sql`
+            SELECT allowed, retry_at::text AS retry_at
+            FROM public.reserve_public_match_request(${token}::uuid)
+        `);
+
+        if (!budget.allowed) {
+            await query(sql => sql`
+                UPDATE public.public_match_collection
+                SET lease_token = NULL, lease_expires_at = NULL,
+                next_request_at = GREATEST(clock_timestamp() + INTERVAL '1 minute',
+                ${budget.retry_at}::timestamptz),
+                updated_at = clock_timestamp()
+                WHERE name = ${NAME} AND lease_token = ${token}::uuid
+            `);
+
+            return {
+                status: "budget_exhausted",
+                requests: 0,
+                nextCursor: cursor,
+                retryAt: budget.retry_at,
+            };
+        }
         const page = await fetchPublicMatches(cursor);
 
         if (page.skipped.unknownHero > 0) {
@@ -91,46 +113,47 @@ async function collectPublicMatches(initialCursor = null) {
         const next = page.received ? page.nextCursor : cursor;
 
         const [saved] = await query(sql => sql`
-      WITH owned AS MATERIALIZED (
-        SELECT name FROM public.public_match_collection
-        WHERE name = ${NAME} AND lease_token = ${token}::uuid
-          AND lease_expires_at > clock_timestamp()
-          AND next_match_id IS NOT DISTINCT FROM ${cursor}::bigint
-        FOR UPDATE
-      ), incoming AS MATERIALIZED (
-        SELECT (value ->> 'matchId')::bigint AS match_id, value AS match_data
-        FROM jsonb_array_elements(${JSON.stringify(page.matches)}::jsonb)
-      ), conflicts AS MATERIALIZED (
-        SELECT i.match_id FROM incoming i
-        JOIN public.public_match_samples s USING (match_id)
-        WHERE ROW(s.match_data -> 'radiantHeroIds', s.match_data -> 'direHeroIds',
-                  s.match_data -> 'didRadiantWin', s.match_data -> 'startedAt')
-          IS DISTINCT FROM
-              ROW(i.match_data -> 'radiantHeroIds', i.match_data -> 'direHeroIds',
-                  i.match_data -> 'didRadiantWin', i.match_data -> 'startedAt')
-      ), allowed AS (
-        SELECT name FROM owned WHERE NOT EXISTS (SELECT 1 FROM conflicts)
-      ), inserted AS (
-        INSERT INTO public.public_match_samples (match_id, match_data)
-        SELECT i.match_id, i.match_data FROM incoming i CROSS JOIN allowed
-        ON CONFLICT (match_id) DO NOTHING
-        RETURNING match_id
-      ), advanced AS (
-        UPDATE public.public_match_collection c
-        SET next_match_id = ${next}::bigint,
-            next_request_at = clock_timestamp() + CASE
-              WHEN ${page.received}::integer = 0 THEN INTERVAL '5 minutes'
-              ELSE INTERVAL '2 seconds' END,
-            lease_token = NULL, lease_expires_at = NULL,
-            updated_at = clock_timestamp()
-        FROM allowed WHERE c.name = allowed.name
-        RETURNING c.next_match_id::text AS cursor
-      )
-      SELECT EXISTS(SELECT 1 FROM owned) AS owned,
-        EXISTS(SELECT 1 FROM conflicts) AS conflict,
-        (SELECT COUNT(*)::integer FROM inserted) AS inserted,
-        (SELECT cursor FROM advanced) AS cursor
-    `);
+            WITH owned AS MATERIALIZED (
+                SELECT name FROM public.public_match_collection
+                WHERE name = ${NAME} AND lease_token = ${token}::uuid
+                    AND lease_expires_at > clock_timestamp()
+                    AND next_match_id IS NOT DISTINCT FROM ${cursor}::bigint
+                FOR UPDATE
+            ), incoming AS MATERIALIZED (
+                SELECT (value ->> 'matchId')::bigint AS match_id, value AS match_data
+                FROM jsonb_array_elements(${JSON.stringify(page.matches)}::jsonb)
+            ), conflicts AS MATERIALIZED (
+                SELECT i.match_id FROM incoming i
+                JOIN public.public_match_samples s USING (match_id)
+                WHERE   ROW(s.match_data -> 'radiantHeroIds', s.match_data -> 'direHeroIds',
+                          s.match_data -> 'didRadiantWin', s.match_data -> 'startedAt')
+                    IS DISTINCT FROM
+                        ROW(i.match_data -> 'radiantHeroIds', i.match_data -> 'direHeroIds',
+                            i.match_data -> 'didRadiantWin', i.match_data -> 'startedAt')
+            ), allowed AS (
+                SELECT name FROM owned WHERE NOT EXISTS (SELECT 1 FROM conflicts)
+            ), inserted AS (
+                INSERT INTO public.public_match_samples (match_id, match_data)
+                SELECT i.match_id, i.match_data FROM incoming i CROSS JOIN allowed
+                ON CONFLICT (match_id) DO NOTHING
+                RETURNING match_id
+            ), advanced AS (
+                UPDATE public.public_match_collection c
+                SET next_match_id = ${next}::bigint,
+                    next_request_at = clock_timestamp() + CASE
+                        WHEN ${page.received}::integer = 0 THEN INTERVAL '5 minutes'
+                        WHEN ${page.remainingRequests.day}::integer <= 100 THEN INTERVAL '1 hour'
+                        ELSE INTERVAL '2 seconds' END,
+                    lease_token = NULL, lease_expires_at = NULL,
+                    updated_at = clock_timestamp()
+                FROM allowed WHERE c.name = allowed.name
+                RETURNING c.next_match_id::text AS cursor
+            )
+            SELECT EXISTS(SELECT 1 FROM owned) AS owned,
+                EXISTS(SELECT 1 FROM conflicts) AS conflict,
+                (SELECT COUNT(*)::integer FROM inserted) AS inserted,
+                (SELECT cursor FROM advanced) AS cursor
+        `);
 
         if (!saved.owned) {
             throw new Error("Collector lease lost; this run did not save its page.");
