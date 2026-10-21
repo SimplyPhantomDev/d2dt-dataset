@@ -38,7 +38,7 @@ async function stratzQuery(query, variables = {}, purpose = "dataset") {
   const payload = JSON.stringify({ query, variables });
   const waitDeadline = performance.now() + 60000;
 
-  for (;;) {
+  for (; ;) {
     const rows = await databaseQuery(sql => sql`
       SELECT allowed, retry_at,
              GREATEST(0, EXTRACT(EPOCH FROM (retry_at - clock_timestamp())) * 1000) AS wait_ms
