@@ -19,8 +19,9 @@ async function main() {
   const sql = neon(process.env.DATABASE_URL);
 
   await sql`
-    SELECT draft_id, outcome, reported_at, received_at,
-           verification, match_id, payload_sha256, report
+    SELECT  draft_id, outcome, reported_at, received_at,
+            verification, match_id, payload_sha256, report,
+            verification_details
     FROM public.match_reports
     LIMIT 0
   `;
