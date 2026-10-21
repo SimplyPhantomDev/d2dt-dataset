@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   collect:
-    runs-on: self-hosted
+    runs-on: windows-latest
     timeout-minutes: 15
 
     defaults:
