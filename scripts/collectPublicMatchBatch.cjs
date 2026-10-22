@@ -1,7 +1,7 @@
 const { setTimeout: pause } = require("node:timers/promises");
 const { collectPublicMatches } = require("./collectPublicMatches.cjs");
 
-async function collectPublicMatchBatch(pageLimit = 5) {
+async function collectPublicMatchBatch(pageLimit = 5, windowHour = null) {
     if (!Number.isInteger(pageLimit) || pageLimit < 1 || pageLimit > 20) {
         throw new Error("The page limit must be an integer from 1 to 20.");
     }
@@ -33,7 +33,9 @@ async function collectPublicMatchBatch(pageLimit = 5) {
         }
 
         // Every page resumes from the checkpoint stored in Neon.
-        const page = await collectPublicMatches();
+        const page = windowHour === null
+            ? await collectPublicMatches()
+            : await collectPublicMatches(null, windowHour);
 
         summary.requests += page.requests;
         summary.nextCursor = page.nextCursor;
@@ -71,11 +73,13 @@ if (require.main === module) {
         ? Number(argument)
         : NaN;
 
-    (process.argv.length > 3
+    (process.argv.length > 4
         ? Promise.reject(
-            new Error("Usage: node scripts/collectPublicMatchBatch.cjs [1–20]")
+            new Error(
+                "Usage: node scripts/collectPublicMatchBatch.cjs [1–20] [YYYY-MM-DDTHH]"
+            )
         )
-        : collectPublicMatchBatch(limit)
+        : collectPublicMatchBatch(limit, process.argv[3] ?? null)
     ).then(summary => {
         console.log(JSON.stringify(summary, null, 2));
     }).catch(error => {

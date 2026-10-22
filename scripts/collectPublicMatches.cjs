@@ -3,6 +3,10 @@ const { randomUUID } = require("node:crypto");
 const { resolve } = require("node:path");
 const { neon } = require("@neondatabase/serverless");
 const { fetchPublicMatches } = require("../generator/fetchPublicMatches.cjs");
+const {
+    fetchPublicMatchWindow,
+    publicMatchWindow,
+} = require("../generator/fetchPublicMatchWindow.cjs");
 
 require("dotenv").config({ path: resolve(__dirname, "../.env"), quiet: true });
 
@@ -25,7 +29,7 @@ async function query(run) {
     }
 }
 
-async function collectPublicMatches(initialCursor = null) {
+async function collectPublicMatches(initialCursor = null, windowHour = null) {
     if (!process.env.DATABASE_URL) {
         throw new Error("DATABASE_URL is required.");
     }
@@ -35,6 +39,26 @@ async function collectPublicMatches(initialCursor = null) {
         || BigInt(initialCursor) > BigInt(Number.MAX_SAFE_INTEGER)
     )) {
         throw new Error("The initial cursor must be a positive, safe decimal match ID.");
+    }
+
+    let name = NAME;
+
+    if (windowHour !== null) {
+        publicMatchWindow(windowHour);
+
+        if (initialCursor !== null) {
+            throw new Error(
+                "Hourly collection starts automatically; omit the initial cursor."
+            );
+        }
+
+        name = `${NAME}:hour:${windowHour}`;
+
+        await query(sql => sql`
+            INSERT INTO public.public_match_collection (name)
+            VALUES (${name})
+            ON CONFLICT (name) DO NOTHING
+        `);
     }
 
     const token = randomUUID();
@@ -48,7 +72,7 @@ async function collectPublicMatches(initialCursor = null) {
             lease_expires_at = clock_timestamp() + INTERVAL '2 minutes',
             next_request_at = clock_timestamp() + INTERVAL '2 seconds',
             updated_at = clock_timestamp()
-        WHERE name = ${NAME}
+        WHERE name = ${name}
             AND next_request_at <= clock_timestamp()
             AND (lease_expires_at IS NULL OR lease_expires_at <= clock_timestamp())
             AND (${initialCursor}::text IS NULL OR NOT initialized)
@@ -60,7 +84,7 @@ async function collectPublicMatches(initialCursor = null) {
             SELECT initialized, next_match_id::text AS cursor,
                 GREATEST(next_request_at,
                     COALESCE(lease_expires_at, next_request_at))::text AS retry_at
-            FROM public.public_match_collection WHERE name = ${NAME}
+            FROM public.public_match_collection WHERE name = ${name}
         `);
 
         if (!state) {
@@ -94,7 +118,7 @@ async function collectPublicMatches(initialCursor = null) {
                 next_request_at = GREATEST(clock_timestamp() + INTERVAL '1 minute',
                 ${budget.retry_at}::timestamptz),
                 updated_at = clock_timestamp()
-                WHERE name = ${NAME} AND lease_token = ${token}::uuid
+                WHERE name = ${name} AND lease_token = ${token}::uuid
             `);
 
             return {
@@ -104,7 +128,9 @@ async function collectPublicMatches(initialCursor = null) {
                 retryAt: budget.retry_at,
             };
         }
-        const page = await fetchPublicMatches(cursor);
+        const page = windowHour === null
+            ? await fetchPublicMatches(cursor)
+            : await fetchPublicMatchWindow(windowHour, cursor);
 
         if (page.skipped.unknownHero > 0) {
             throw new Error("Page contains unknown heroes. Refresh heroes.json before retrying.");
@@ -115,7 +141,7 @@ async function collectPublicMatches(initialCursor = null) {
         const [saved] = await query(sql => sql`
             WITH owned AS MATERIALIZED (
                 SELECT name FROM public.public_match_collection
-                WHERE name = ${NAME} AND lease_token = ${token}::uuid
+                WHERE name = ${name} AND lease_token = ${token}::uuid
                     AND lease_expires_at > clock_timestamp()
                     AND next_match_id IS NOT DISTINCT FROM ${cursor}::bigint
                 FOR UPDATE
@@ -182,7 +208,7 @@ async function collectPublicMatches(initialCursor = null) {
       SET lease_token = NULL, lease_expires_at = NULL,
           next_request_at = clock_timestamp() + INTERVAL '5 minutes',
           updated_at = clock_timestamp()
-      WHERE name = ${NAME} AND lease_token = ${token}::uuid
+      WHERE name = ${name} AND lease_token = ${token}::uuid
     `).catch(() => { });
 
         throw error;
