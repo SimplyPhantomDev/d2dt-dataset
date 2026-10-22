@@ -1,0 +1,81 @@
+name: Sample public matches
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "43 * * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-match-sampling
+  cancel-in-progress: false
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          package-manager-cache: false
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check coverage and initial collection target
+        id: capacity
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          PUBLIC_MATCH_TARGET: "100000"
+        run: |
+          node <<'NODE'
+          const { appendFileSync } = require("node:fs");
+          const { checkPublicMatchCoverage } = require("./scripts/checkPublicMatchCoverage.cjs");
+
+          (async () => {
+            const target = Number(process.env.PUBLIC_MATCH_TARGET);
+
+            if (!Number.isSafeInteger(target) || target < 1) {
+              throw new Error("PUBLIC_MATCH_TARGET must be a positive integer.");
+            }
+
+            const coverage = await checkPublicMatchCoverage();
+            const collect = coverage.matches < target;
+
+            console.log(JSON.stringify({
+              storedMatches: coverage.matches,
+              targetMatches: target,
+              collect,
+            }, null, 2));
+
+            appendFileSync(
+              process.env.GITHUB_OUTPUT,
+              `collect=${collect}\n`
+            );
+          })().catch(error => {
+            console.error(error.message);
+            process.exitCode = 1;
+          });
+          NODE
+
+      - name: Sample up to 20 hours across seven mature UTC days
+        if: steps.capacity.outputs.collect == 'true'
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: node scripts/samplePublicMatches.cjs 20 7
+
+      - name: Report updated coverage
+        if: steps.capacity.outputs.collect == 'true'
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: node scripts/checkPublicMatchCoverage.cjs
