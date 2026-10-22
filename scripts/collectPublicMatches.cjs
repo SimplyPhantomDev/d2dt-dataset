@@ -24,7 +24,7 @@ async function query(run) {
     } catch {
         // Raw connection errors can contain credentials.
         throw new CollectorDatabaseError(
-            "Public-match database operation failed. Check DATABASE_URL and migrations 005–006."
+            "Public-match database operation failed. Check DATABASE_URL and migrations 005–007."
         );
     }
 }
@@ -166,6 +166,7 @@ async function collectPublicMatches(initialCursor = null, windowHour = null) {
             ), advanced AS (
                 UPDATE public.public_match_collection c
                 SET next_match_id = ${next}::bigint,
+                    last_page_at = clock_timestamp(),
                     next_request_at = clock_timestamp() + CASE
                         WHEN ${page.received}::integer = 0 THEN INTERVAL '5 minutes'
                         WHEN ${page.remainingRequests.day}::integer <= 100 THEN INTERVAL '1 hour'
@@ -215,7 +216,10 @@ async function collectPublicMatches(initialCursor = null, windowHour = null) {
     }
 }
 
-module.exports = { collectPublicMatches };
+module.exports = {
+    collectPublicMatches,
+    PUBLIC_MATCH_COLLECTION: NAME,
+};
 
 if (require.main === module) {
     (process.argv.length > 3
