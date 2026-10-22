@@ -54,7 +54,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-          git add -- positionHistory.json
+          git add -- rankedPositionHistory.json
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
           git diff --cached --quiet
@@ -65,7 +65,7 @@ jobs:
           }
           if ($diffExitCode -ne 1) { exit $diffExitCode }
 
-          git commit -m "Update hourly position history"
+          git commit -m "Update hourly ranked position history"
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
           # Include unrelated commits pushed during collection.

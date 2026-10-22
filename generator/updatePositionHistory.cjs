@@ -5,7 +5,7 @@ const fetchPositionHours = require("./fetchPositionHours.cjs");
 
 const HISTORY_PATH = path.resolve(
     __dirname,
-    "../positionHistory.json"
+    "../rankedPositionHistory.json"
 );
 
 const SOURCE = "stratz.heroStats.winHour";
@@ -263,6 +263,7 @@ async function updatePositionHistory() {
 
     return {
         historyFile: path.basename(HISTORY_PATH),
+        filters,
         requests: fresh.requests,
         addedRecords: added,
         revisedRecords: revised,

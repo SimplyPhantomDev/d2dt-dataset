@@ -2,6 +2,7 @@ const { stratzQuery } = require("../server/stratzApi.cjs");
 
 // null means the unfiltered baseline, not STRATZ's UNKNOWN category.
 const POSITIONS = [null, 1, 2, 3, 4, 5];
+const GAME_MODE_IDS = Object.freeze(["ALL_PICK_RANKED"]);
 
 async function fetchPositionHours() {
     const startedAt = new Date().toISOString();
@@ -17,9 +18,13 @@ async function fetchPositionHours() {
             position === null ? "" : `, positionIds: [${label}]`;
 
         const query = `
-            query PositionWinHours($take: Int!, $skip: Int!) {
+            query PositionWinHours(
+                $take: Int!
+                $skip: Int!
+                $gameModeIds: [GameModeEnumType!]!
+            ) {
                 heroStats {
-                    winHour(take: $take, skip: $skip${filter}) {
+                    winHour(take: $take, skip: $skip, gameModeIds: $gameModeIds${filter}) {
                         heroId
                         hour
                         matchCount
@@ -44,7 +49,11 @@ async function fetchPositionHours() {
                 await new Promise(resolve => setTimeout(resolve, 300));
             }
 
-            const body = await stratzQuery(query, { take: 100, skip });
+            const body = await stratzQuery(query, {
+                take: 100,
+                skip,
+                gameModeIds: GAME_MODE_IDS,
+            });
             requests++;
 
             const rows = body.data?.heroStats?.winHour;
@@ -134,11 +143,10 @@ async function fetchPositionHours() {
         startedAt,
         fetchedAt: new Date().toISOString(),
 
-        // No explicit population filters yet:
-        // these are provider-default samples.
+        // Ranked All Pick; rank and region selections use provider defaults.
         filters: {
             bracketIds: null,
-            gameModeIds: null,
+            gameModeIds: [...GAME_MODE_IDS],
             regionIds: null,
         },
 
