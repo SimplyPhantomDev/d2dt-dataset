@@ -101,6 +101,16 @@ function noMentions(value) {
     return value.replaceAll("@", "@\u200B");
 }
 
+function safeTitle(value) {
+    return noMentions(value)
+        .replace(/#(?=[0-9])/g, "#\u200B")
+        .replace(/\bGH-(?=[0-9])/gi, "GH-\u200B")
+        .replace(
+            /(^|[^a-z0-9_.-])(?:www\.)?github\.com(?=\/)/gi,
+            "$1redirect.github.com"
+        );
+}
+
 function literal(value) {
     const safe = noMentions(value || "(not provided)");
 
@@ -117,7 +127,7 @@ function literal(value) {
 
 function buildGithubIssue(report, receivedAt = new Date().toISOString()) {
     return {
-        title: `[App report] ${noMentions(report.title)}`,
+        title: `[App report] ${safeTitle(report.title)}`,
         body: [
             "Unverified report submitted through the application. All client fields below are user-supplied.",
             "",
@@ -142,24 +152,66 @@ function buildGithubIssue(report, receivedAt = new Date().toISOString()) {
     };
 }
 
+function clientNetwork(value) {
+    if (typeof value !== "string") {
+        reject("Issue reporting is unavailable.", 503);
+    }
+
+    const ip = value.trim();
+    const family = isIP(ip);
+
+    if (!family || ip.includes("%")) {
+        reject("Issue reporting is unavailable.", 503);
+    }
+
+    // Preserve existing IPv4 fingerprints.
+    if (family === 4) return ip;
+
+    // Canonicalize compressed, expanded and IPv4-embedded IPv6 spellings.
+    const canonical = new URL(`http://[${ip}]/`).hostname.slice(1, -1);
+
+    const [left, right] = canonical.split("::");
+    const head = left ? left.split(":") : [];
+    const tail = right ? right.split(":") : [];
+
+    const words = canonical.includes("::")
+        ? [
+            ...head,
+            ...Array(8 - head.length - tail.length).fill("0"),
+            ...tail,
+        ]
+        : head;
+
+    const groups = words.map(word => Number.parseInt(word, 16));
+
+    // IPv4-mapped addresses share the corresponding ordinary IPv4 bucket.
+    if (
+        groups.slice(0, 5).every(group => group === 0)
+        && groups[5] === 0xffff
+    ) {
+        return [
+            groups[6] >>> 8,
+            groups[6] & 255,
+            groups[7] >>> 8,
+            groups[7] & 255,
+        ].join(".");
+    }
+
+    // Discard the interface identifier: all addresses in this /64 share limits.
+    return `${groups.slice(0, 4)
+        .map(group => group.toString(16).padStart(4, "0"))
+        .join(":")}::/64`;
+}
+
 function reportFingerprints(req, report, secret) {
     if (!/^[a-f0-9]{64}$/i.test(secret ?? "")) {
         reject("Issue reporting is unavailable.", 503);
     }
 
-    // This endpoint is deployed directly on Vercel. Do not trust client-sent IDs
-    // or fall back to arbitrary proxy headers when the platform header is absent.
-    let ip = req.headers["x-vercel-forwarded-for"];
-
-    if (typeof ip !== "string" || !isIP(ip.trim())) {
-        reject("Issue reporting is unavailable.", 503);
-    }
-
-    ip = ip.trim();
-
-    if (isIP(ip) === 6) {
-        ip = new URL(`http://[${ip}]/`).hostname;
-    }
+    // Use only the address supplied by the trusted Vercel deployment.
+    const network = clientNetwork(
+        req.headers["x-vercel-forwarded-for"]
+    );
 
     const key = Buffer.from(secret, "hex");
 
@@ -168,9 +220,9 @@ function reportFingerprints(req, report, secret) {
         .digest("hex");
 
     return {
-        client: hash(`client:${ip}`),
+        client: hash(`client:${network}`),
 
-        // Ignore changing timestamps/metadata when suppressing immediate retries.
+        // Changing metadata must not bypass duplicate suppression.
         content: hash(`report:${JSON.stringify([
             report.title,
             report.description,
