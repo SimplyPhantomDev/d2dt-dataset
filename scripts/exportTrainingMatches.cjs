@@ -170,7 +170,11 @@ async function readTrainingMatches() {
     }
 }
 
-async function exportTrainingMatches(output = OUTPUT, savedFeatureSpec = null) {
+async function exportTrainingMatches(
+    output = OUTPUT,
+    savedFeatureSpec = null,
+    { preview = false } = {}
+) {
     const { extractor, patch, source } =
         await readFeatureSource(savedFeatureSpec);
     const rows = await readTrainingMatches();
@@ -290,6 +294,12 @@ async function exportTrainingMatches(output = OUTPUT, savedFeatureSpec = null) {
         featureNames: extractor.featureNames,
         catalog: extractor.catalog,
     };
+
+    // Preview uses the same source checks and feature generation as an export,
+    // and returns before creating any output files or directories.
+    if (preview) {
+        return { features, featureSpec, rows: featureRows };
+    }
 
     const jsonl = records =>
         records.map(record => JSON.stringify(record)).join("\n")
