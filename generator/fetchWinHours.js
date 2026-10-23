@@ -1,8 +1,8 @@
 const path = require("path");
 
 require("dotenv").config({
-  path: path.resolve(__dirname, "../.env"),
-  quiet: true,
+    path: path.resolve(__dirname, "../.env"),
+    quiet: true,
 });
 
 const { stratzQuery } = require("../server/stratzApi.cjs");
@@ -22,46 +22,46 @@ const QUERY = `
 
 async function fetchWinHours() {
 
-  const records = new Map();
-  let skip = 0;
-  let requests = 0;
+    const records = new Map();
+    let skip = 0;
+    let requests = 0;
 
-  for (let page = 0; page < 100; page++) {
+    for (let page = 0; page < 100; page++) {
     // Pace requests below the token's 250 calls/minute limit.
-    if (page > 0) {
-      await new Promise((resolve) => setTimeout(resolve, 300));
-    }
+        if (page > 0) {
+            await new Promise((resolve) => setTimeout(resolve, 300));
+        }
 
-    const body = await stratzQuery(QUERY, { take: 100, skip });
-    requests++;
+        const body = await stratzQuery(QUERY, { take: 100, skip });
+        requests++;
 
-    const rows = body.data?.heroStats?.winHour;
+        const rows = body.data?.heroStats?.winHour;
 
-    if (!Array.isArray(rows)) {
-      throw new Error("STRATZ returned no winHour array");
-    }
+        if (!Array.isArray(rows)) {
+            throw new Error("STRATZ returned no winHour array");
+        }
 
-    // The API's dynamic limit may return fewer rows than requested.
-    // Only an empty page ends collection; advance by the actual row count.
-    if (rows.length === 0) {
-      if (records.size === 0) {
-        throw new Error("STRATZ returned no hourly records");
-      }
+        // The API's dynamic limit may return fewer rows than requested.
+        // Only an empty page ends collection; advance by the actual row count.
+        if (rows.length === 0) {
+            if (records.size === 0) {
+                throw new Error("STRATZ returned no hourly records");
+            }
 
-      return {
-        fetchedAt: new Date().toISOString(),
-        requests,
-        records: [...records.values()].sort(
-          (a, b) => a.hour - b.hour || a.heroId - b.heroId
-        ),
-      };
-    }
+            return {
+                fetchedAt: new Date().toISOString(),
+                requests,
+                records: [...records.values()].sort(
+                    (a, b) => a.hour - b.hour || a.heroId - b.heroId
+                ),
+            };
+        }
 
-    let newRecords = 0;
+        let newRecords = 0;
 
-    for (const row of rows) {
-      if (
-        !row ||
+        for (const row of rows) {
+            if (
+                !row ||
         !Number.isSafeInteger(row.heroId) ||
         row.heroId <= 0 ||
         !Number.isSafeInteger(row.hour) ||
@@ -71,57 +71,57 @@ async function fetchWinHours() {
         row.winCount < 0 ||
         !Number.isSafeInteger(row.matchCount) ||
         row.matchCount < row.winCount
-      ) {
-        throw new Error("STRATZ returned an invalid hourly record");
-      }
+            ) {
+                throw new Error("STRATZ returned an invalid hourly record");
+            }
 
-      const key = `${row.heroId}:${row.hour}`;
+            const key = `${row.heroId}:${row.hour}`;
 
-      if (!records.has(key)) newRecords++;
+            if (!records.has(key)) newRecords++;
 
-      records.set(key, {
-        heroId: row.heroId,
-        hour: row.hour,
-        winCount: row.winCount,
-        matchCount: row.matchCount,
-      });
+            records.set(key, {
+                heroId: row.heroId,
+                hour: row.hour,
+                winCount: row.winCount,
+                matchCount: row.matchCount,
+            });
+        }
+
+        if (newRecords === 0) {
+            throw new Error(
+                "Pagination returned only previously collected records"
+            );
+        }
+
+        skip += rows.length;
     }
 
-    if (newRecords === 0) {
-      throw new Error(
-        "Pagination returned only previously collected records"
-      );
-    }
-
-    skip += rows.length;
-  }
-
-  throw new Error(
-    "Pagination exceeded 100 pages; collection was stopped"
-  );
+    throw new Error(
+        "Pagination exceeded 100 pages; collection was stopped"
+    );
 }
 
 module.exports = fetchWinHours;
 
 if (require.main === module) {
-  fetchWinHours()
-    .then(({ fetchedAt, requests, records }) => {
-      console.log(JSON.stringify({
-        fetchedAt,
-        requests,
-        records: records.length,
-        heroes: new Set(records.map((row) => row.heroId)).size,
-        earliestHour: new Date(
-          records[0].hour * 1000
-        ).toISOString(),
-        latestHour: new Date(
-          records[records.length - 1].hour * 1000
-        ).toISOString(),
-        latestSample: records.slice(-3),
-      }, null, 2));
-    })
-    .catch((error) => {
-      console.error("Hourly collection failed:", error.message);
-      process.exitCode = 1;
-    });
+    fetchWinHours()
+        .then(({ fetchedAt, requests, records }) => {
+            console.log(JSON.stringify({
+                fetchedAt,
+                requests,
+                records: records.length,
+                heroes: new Set(records.map((row) => row.heroId)).size,
+                earliestHour: new Date(
+                    records[0].hour * 1000
+                ).toISOString(),
+                latestHour: new Date(
+                    records[records.length - 1].hour * 1000
+                ).toISOString(),
+                latestSample: records.slice(-3),
+            }, null, 2));
+        })
+        .catch((error) => {
+            console.error("Hourly collection failed:", error.message);
+            process.exitCode = 1;
+        });
 }
