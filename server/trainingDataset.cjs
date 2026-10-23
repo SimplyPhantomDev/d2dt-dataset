@@ -1,7 +1,9 @@
 const { readFile } = require("node:fs/promises");
 const { resolve, join } = require("node:path");
 const { createHash } = require("node:crypto");
-const { createDraftFeatureExtractor } = require("./draftFeatures.cjs");
+const {
+    restoreDraftFeatureExtractor,
+} = require("./restoreDraftFeatureExtractor.cjs");
 
 const DAY = 86400000;
 const sha256 = bytes => createHash("sha256").update(bytes).digest("hex");
@@ -48,21 +50,10 @@ async function loadTrainingDataset(directory) {
         }
     }
 
-    let extractor;
-
-    try {
-        extractor = createDraftFeatureExtractor(
-            spec.catalog.heroes.map(hero => ({
-                HeroId: hero.heroId,
-                roles: hero.roles,
-                primaryAttribute: hero.primaryAttribute,
-            }))
-        );
-    } catch {
-        throw new Error("The saved hero catalog is invalid or unsupported.");
-    }
+    const extractor = restoreDraftFeatureExtractor(spec);
 
     const info = manifest.features;
+    const positionProfile = extractor.catalog.positionProfile;
 
     if (spec.featureSchema !== extractor.featureSchema
         || spec.profileSha256 !== extractor.profileSha256
@@ -78,7 +69,11 @@ async function loadTrainingDataset(directory) {
         || info.profileSha256 !== spec.profileSha256
         || info.profilePatch !== spec.profilePatch
         || info.heroes !== extractor.catalog.heroes.length
-        || info.featureCount !== spec.featureNames.length) {
+        || info.featureCount !== spec.featureNames.length
+        || (positionProfile && (
+            info.positionProfileUpdatedAt !== positionProfile.sourceUpdatedAt
+            || info.positionWindowComplete !== positionProfile.window.complete
+        ))) {
         throw new Error(
             "Feature definitions do not agree with the saved catalog and manifest."
         );

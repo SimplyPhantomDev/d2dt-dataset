@@ -6,8 +6,8 @@ const {
     splitChronologically,
 } = require("../server/trainingDataset.cjs");
 const {
-    createDraftFeatureExtractor,
-} = require("../server/draftFeatures.cjs");
+    restoreDraftFeatureExtractor,
+} = require("../server/restoreDraftFeatureExtractor.cjs");
 const { predictRadiant } = require("../server/logisticRegression.cjs");
 
 const round = value => Number(value.toFixed(6));
@@ -114,13 +114,7 @@ async function inspectDraftBenchmark(modelDirectory, datasetDirectory) {
         bin.wins += split.validation[index].target;
     });
 
-    const extractor = createDraftFeatureExtractor(
-        data.spec.catalog.heroes.map(hero => ({
-            HeroId: hero.heroId,
-            primaryAttribute: hero.primaryAttribute,
-            roles: hero.roles,
-        }))
-    );
+    const extractor = restoreDraftFeatureExtractor(data.spec);
 
     function explain(name, allies, enemies) {
         const { values } = extractor.extract(allies, enemies);

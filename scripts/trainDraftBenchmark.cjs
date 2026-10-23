@@ -22,6 +22,18 @@ async function trainDraftBenchmark(
     const data = await loadTrainingDataset(directory);
     const split = splitChronologically(data.rows);
     const width = data.spec.featureNames.length;
+    const positionProfile = data.spec.catalog.positionProfile;
+
+    if (positionProfile
+        && Date.parse(split.validation[0].startedAt)
+        <= Date.parse(positionProfile.sourceUpdatedAt)) {
+        throw new Error(
+            `Position-aware evaluation requires validation and test
+            matches after the position snapshot was collected.
+            Re-export later matches using --feature-spec with this
+            dataset's saved featureSpec.json.`
+        );
+    }
 
     const prior = split.train.reduce(
         (sum, row) => sum + row.target,
@@ -46,11 +58,21 @@ async function trainDraftBenchmark(
     add("coin-flip", constant(0.5));
     add("training-prior", constant(prior));
 
-    for (const family of ["heroes-only", "heroes-and-tags"]) {
+    const families = ["heroes-only", "heroes-and-tags"];
+
+    if (positionProfile) {
+        families.push("heroes-tags-and-positions");
+    }
+
+    for (const family of families) {
         const columns = data.spec.featureNames.flatMap((name, index) =>
-            family === "heroes-and-tags" || name.startsWith("hero.")
-                ? [index]
-                : []
+            (
+                family === "heroes-only"
+                    ? name.startsWith("hero.")
+                    : family === "heroes-and-tags"
+                        ? !name.startsWith("position.")
+                        : true
+            ) ? [index] : []
         );
 
         for (const lambda of LAMBDAS) {

@@ -1,17 +1,23 @@
-const { resolve, join, relative } = require("node:path");
+const { resolve, join, relative, dirname } = require("node:path");
 const {
     readFile, mkdir, mkdtemp, writeFile, rename, rm,
 } = require("node:fs/promises");
 const { createHash, randomUUID } = require("node:crypto");
 const { neon } = require("@neondatabase/serverless");
 const { fetchPatchTimeline } = require("../server/matchPatch.cjs");
+
 const {
     TrainingExportError,
     buildTrainingDataset,
 } = require("../server/trainingMatches.cjs");
+
 const {
-    createDraftFeatureExtractor,
-} = require("../server/draftFeatures.cjs");
+    createPositionAwareFeatureExtractor,
+} = require("../server/draftPositionFeatures.cjs");
+
+const {
+    restoreDraftFeatureExtractor,
+} = require("../server/restoreDraftFeatureExtractor.cjs");
 
 const ROOT = resolve(__dirname, "..");
 const OUTPUT = resolve(ROOT, "training-data");
@@ -21,20 +27,61 @@ require("dotenv").config({
     quiet: true,
 });
 
-async function readFeatureSource() {
+async function readFeatureSource(savedFeatureSpec) {
+    if (savedFeatureSpec !== null) {
+        try {
+            const file = resolve(savedFeatureSpec);
+
+            const [specBytes, manifestText] = await Promise.all([
+                readFile(file),
+                readFile(join(dirname(file), "manifest.json"), "utf8"),
+            ]);
+
+            const manifest = JSON.parse(manifestText);
+            const expected = manifest.files?.["featureSpec.json"];
+
+            if (manifest.schema !== 2 || manifest.matchSchema !== 2
+                || expected?.bytes !== specBytes.length
+                || expected.sha256 !== createHash("sha256")
+                    .update(specBytes)
+                    .digest("hex")) {
+                throw new Error(
+                    "Saved feature specification integrity check failed."
+                );
+            }
+
+            const spec = JSON.parse(specBytes.toString("utf8"));
+
+            return {
+                extractor: restoreDraftFeatureExtractor(spec),
+                patch: spec.profilePatch,
+                source: spec.source ?? {},
+            };
+        } catch {
+            throw new TrainingExportError(
+                `Could not restore the saved feature specification.
+                Provide an unmodified featureSpec.json from a completed export.`
+            );
+        }
+    }
+
     try {
-        const [bytes, text] = await Promise.all([
+        const [bytes, text, positionText] = await Promise.all([
             readFile(resolve(ROOT, "heroes.json")),
             readFile(resolve(ROOT, "manifest.json"), "utf8"),
+            readFile(resolve(ROOT, "heroPositionProfiles.json"), "utf8"),
         ]);
 
         const manifest = JSON.parse(text);
 
-        // Git may check out LF JSON as CRLF on Windows. Accept that conversion
-        // only when the LF bytes match the published size and checksum.
+        // Accept Windows line-ending conversion only when the normalized
+        // bytes match the published hero file's checksum and size.
         const candidates = [
             bytes,
-            Buffer.from(bytes.toString("utf8").replaceAll("\r\n", "\n"), "utf8"),
+            Buffer.from(
+                bytes.toString("utf8").replaceAll("\r\n", "\n"),
+                "utf8"
+            ),
         ];
 
         const verifiedBytes = candidates.find(candidate =>
@@ -57,19 +104,29 @@ async function readFeatureSource() {
         }
 
         return {
-            extractor: createDraftFeatureExtractor(
-                JSON.parse(verifiedBytes.toString("utf8"))
+            extractor: createPositionAwareFeatureExtractor(
+                JSON.parse(verifiedBytes.toString("utf8")),
+                JSON.parse(positionText)
             ),
+
             patch: manifest.patch,
+
             source: {
                 heroesFile: "heroes.json",
                 heroesSha256: manifest.heroesSha256,
                 datasetGeneratedAt: manifest.generatedAt,
+                positionProfilesFile: "heroPositionProfiles.json",
+
+                positionProfilesSha256: createHash("sha256")
+                    .update(positionText.replaceAll("\r\n", "\n"))
+                    .digest("hex"),
             },
         };
     } catch {
         throw new TrainingExportError(
-            "Could not load hero profiles. Check that heroes.json and manifest.json are valid and from the same generated dataset."
+            `Could not load hero profiles. Check heroes.json and
+            manifest.json, then run node generator/buildHeroPositionProfiles.cjs
+            to refresh the position profiles.`
         );
     }
 }
@@ -113,8 +170,9 @@ async function readTrainingMatches() {
     }
 }
 
-async function exportTrainingMatches(output = OUTPUT) {
-    const { extractor, patch, source } = await readFeatureSource();
+async function exportTrainingMatches(output = OUTPUT, savedFeatureSpec = null) {
+    const { extractor, patch, source } =
+        await readFeatureSource(savedFeatureSpec);
     const rows = await readTrainingMatches();
 
     let timeline;
@@ -133,6 +191,14 @@ async function exportTrainingMatches(output = OUTPUT) {
     const featureExclusions = [];
     let radiantWins = 0;
 
+    const positionProfile = extractor.catalog.positionProfile;
+
+    const missingPositionData = new Set(
+        (positionProfile?.heroes ?? [])
+            .filter(hero => hero.classifiedMatches === 0)
+            .map(hero => hero.heroId)
+    );
+
     for (const match of matches) {
         if (match.patch.name !== patch) {
             featureExclusions.push({
@@ -141,6 +207,23 @@ async function exportTrainingMatches(output = OUTPUT) {
                 patch: match.patch.name,
                 reason: "profile_patch_mismatch",
             });
+            continue;
+        }
+
+        const missingHeroIds = [
+            ...match.radiantHeroIds,
+            ...match.direHeroIds,
+        ].filter(id => missingPositionData.has(id));
+
+        if (missingHeroIds.length) {
+            featureExclusions.push({
+                matchId: match.matchId,
+                startedAt: match.startedAt,
+                patch: match.patch.name,
+                reason: "position_observations_missing",
+                heroIds: missingHeroIds.sort((a, b) => a - b),
+            });
+
             continue;
         }
 
@@ -186,6 +269,10 @@ async function exportTrainingMatches(output = OUTPUT) {
         excludedMatches: featureExclusions.length,
         radiantWins,
         direWins: featureRows.length - radiantWins,
+        ...(positionProfile ? {
+            positionProfileUpdatedAt: positionProfile.sourceUpdatedAt,
+            positionWindowComplete: positionProfile.window.complete,
+        } : {}),
     };
 
     const featureSpec = {
@@ -273,12 +360,31 @@ async function exportTrainingMatches(output = OUTPUT) {
 module.exports = { exportTrainingMatches };
 
 if (require.main === module) {
-    exportTrainingMatches().then(summary => {
-        console.log(JSON.stringify(summary, null, 2));
-    }).catch(error => {
-        console.error(error instanceof TrainingExportError
-            ? error.message
-            : "Training export failed unexpectedly. No export was saved.");
+    const args = process.argv.slice(2);
+
+    const valid = args.length === 0
+        || (
+            args.length === 2
+            && args[0] === "--feature-spec"
+            && args[1].trim()
+        );
+
+    if (!valid) {
+        console.error(
+            `Usage: node scripts/exportTrainingMatches.cjs
+            [--feature-spec training-data/dataset-ID/featureSpec.json]`
+        );
+
         process.exitCode = 1;
-    });
+    } else {
+        exportTrainingMatches(OUTPUT, args[1] ?? null).then(summary => {
+            console.log(JSON.stringify(summary, null, 2));
+        }).catch(error => {
+            console.error(error instanceof TrainingExportError
+                ? error.message
+                : "Training export failed unexpectedly. No export was saved.");
+
+            process.exitCode = 1;
+        });
+    }
 }
