@@ -2,13 +2,15 @@ name: Verify match reports
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "17 * * * *"
+  # Automatic verification is paused during development.
+  # Uncomment the schedule when public match reporting launches.
+  # schedule:
+  #  - cron: "17 * * * *"
 
 permissions:
   contents: read
 
-# Manual and scheduled runs share the same database queue.
+# Prevent overlapping verification runs against the same database queue.
 concurrency:
   group: match-report-verification
   cancel-in-progress: false
