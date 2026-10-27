@@ -2,7 +2,7 @@
   "schema": 1,
   "profileSchema": "hero-position-observations-v1",
   "source": "stratz.heroStats.winHour",
-  "sourceUpdatedAt": "2026-10-27T18:21:53.786Z",
+  "sourceUpdatedAt": "2026-10-27T22:39:42.593Z",
   "filters": {
     "bracketIds": null,
     "gameModeIds": [
@@ -8912,8 +8912,8 @@
       "classificationCoverage": 0.9773771650759986
     }
   ],
-  "generatedAt": "2026-10-27T18:21:54.589Z",
+  "generatedAt": "2026-10-27T22:39:43.205Z",
   "sourceHashNormalization": "lf",
-  "sourceHistorySha256": "6d4baa19476d0a049f41790566c3f1dc524a56c542885fd3e362dbbafa9455f2",
+  "sourceHistorySha256": "0c235333f23f3b1046a0d9a98a1229fa3f36823523503d7adf969516e6c6ed27",
   "sourceHeroesSha256": "c03ecb637729035aeaece7e59e32ee423a3b3343789c0d6b29891d8ae521c646"
 }
