@@ -2,7 +2,7 @@
   "schema": 1,
   "profileSchema": "hero-position-observations-v1",
   "source": "stratz.heroStats.winHour",
-  "sourceUpdatedAt": "2026-10-28T06:21:35.658Z",
+  "sourceUpdatedAt": "2026-10-28T14:37:25.589Z",
   "filters": {
     "bracketIds": null,
     "gameModeIds": [
@@ -13,10 +13,10 @@
   "sharePopulation": "classified-matches-in-usable-hero-hours",
   "shareIntervalMethod": "marginal-wilson-95",
   "window": {
-    "start": "2026-10-20T14:00:00.000Z",
-    "end": "2026-10-27T14:00:00.000Z",
+    "start": "2026-10-21T14:00:00.000Z",
+    "end": "2026-10-28T14:00:00.000Z",
     "requiredHours": 168,
-    "commonHoursObserved": 142,
+    "commonHoursObserved": 144,
     "complete": false
   },
   "ignoredUnknownHeroIds": [],
@@ -233,21 +233,21 @@
     },
     {
       "heroId": 4,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 19481,
-      "baselineWins": 10128,
+      "baselineMatches": 19482,
+      "baselineWins": 10129,
       "positions": [
         {
           "position": 1,
-          "matches": 12805,
-          "wins": 6689,
-          "observedHours": 142,
-          "observedShare": 0.6652984880760638,
+          "matches": 12806,
+          "wins": 6690,
+          "observedHours": 143,
+          "observedShare": 0.6653158769742311,
           "shareInterval95": {
-            "lower": 0.6585994978636402,
-            "upper": 0.6719315084620332
+            "lower": 0.6586171441682412,
+            "upper": 0.6719486364409785
           }
         },
         {
@@ -255,10 +255,10 @@
           "matches": 3071,
           "wins": 1667,
           "observedHours": 142,
-          "observedShare": 0.15955733361043278,
+          "observedShare": 0.15954904405652534,
           "shareInterval95": {
-            "lower": 0.15445190323243346,
-            "upper": 0.1647986330086555
+            "lower": 0.15444385502199856,
+            "upper": 0.16479009836196865
           }
         },
         {
@@ -266,10 +266,10 @@
           "matches": 2587,
           "wins": 1296,
           "observedHours": 141,
-          "observedShare": 0.1344105574894789,
+          "observedShare": 0.13440357439734,
           "shareInterval95": {
-            "lower": 0.12966463485782573,
-            "upper": 0.13930238509798085
+            "lower": 0.12965788024831185,
+            "upper": 0.13929516873123607
           }
         },
         {
@@ -277,10 +277,10 @@
           "matches": 500,
           "wins": 239,
           "observedHours": 113,
-          "observedShare": 0.02597807450511768,
+          "observedShare": 0.025976724854530342,
           "shareInterval95": {
-            "lower": 0.023823632997714353,
-            "upper": 0.02832169586845508
+            "lower": 0.023822393969732784,
+            "upper": 0.028320226307288046
           }
         },
         {
@@ -288,25 +288,25 @@
           "matches": 284,
           "wins": 121,
           "observedHours": 84,
-          "observedShare": 0.014755546318906843,
+          "observedShare": 0.014754779717373233,
           "shareInterval95": {
-            "lower": 0.013146397142542907,
-            "upper": 0.016558354207880665
+            "lower": 0.01314571361675272,
+            "upper": 0.01655749477730411
           }
         }
       ],
-      "classifiedMatches": 19247,
-      "classifiedWins": 10012,
+      "classifiedMatches": 19248,
+      "classifiedWins": 10013,
       "unreconciledMatches": 234,
       "unreconciledWins": 116,
-      "classificationCoverage": 0.9879882962886916
+      "classificationCoverage": 0.9879889128426239
     },
     {
       "heroId": 5,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 90309,
+      "baselineMatches": 90310,
       "baselineWins": 46315,
       "positions": [
         {
@@ -314,10 +314,10 @@
           "matches": 221,
           "wins": 99,
           "observedHours": 86,
-          "observedShare": 0.0024784954074938037,
+          "observedShare": 0.0024784676116992644,
           "shareInterval95": {
-            "lower": 0.002172869287346734,
-            "upper": 0.0028269877458134245
+            "lower": 0.0021728449155964517,
+            "upper": 0.0028269560476547394
           }
         },
         {
@@ -325,10 +325,10 @@
           "matches": 1313,
           "wins": 700,
           "observedHours": 141,
-          "observedShare": 0.014725178597463187,
+          "observedShare": 0.014725013457742688,
           "shareInterval95": {
-            "lower": 0.01395522810578454,
-            "upper": 0.015536940138867065
+            "lower": 0.013955071541408924,
+            "upper": 0.015536765969148124
           }
         },
         {
@@ -336,21 +336,21 @@
           "matches": 390,
           "wins": 182,
           "observedHours": 112,
-          "observedShare": 0.004373815424989065,
+          "observedShare": 0.004373766373586937,
           "shareInterval95": {
-            "lower": 0.0039615141490108,
-            "upper": 0.004828819619261129
+            "lower": 0.003961469712737095,
+            "upper": 0.004828765478073334
           }
         },
         {
           "position": 4,
-          "matches": 22510,
+          "matches": 22511,
           "wins": 11713,
-          "observedHours": 142,
-          "observedShare": 0.25244765440129197,
+          "observedHours": 143,
+          "observedShare": 0.25245603804055267,
           "shareInterval95": {
-            "lower": 0.2496069975185359,
-            "upper": 0.25530964027738334
+            "lower": 0.24961536531088727,
+            "upper": 0.2553180388020412
           }
         },
         {
@@ -358,18 +358,18 @@
           "matches": 64733,
           "wins": 33044,
           "observedHours": 142,
-          "observedShare": 0.725974856168762,
+          "observedShare": 0.7259667145164185,
           "shareInterval95": {
-            "lower": 0.723037633675962,
-            "upper": 0.7288926087745388
+            "lower": 0.7230294818266425,
+            "upper": 0.7288844782389854
           }
         }
       ],
-      "classifiedMatches": 89167,
+      "classifiedMatches": 89168,
       "classifiedWins": 45738,
       "unreconciledMatches": 1142,
       "unreconciledWins": 577,
-      "classificationCoverage": 0.9873545272342734
+      "classificationCoverage": 0.9873546672572251
     },
     {
       "heroId": 6,
@@ -443,10 +443,10 @@
     },
     {
       "heroId": 7,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 107404,
+      "baselineMatches": 107405,
       "baselineWins": 54667,
       "positions": [
         {
@@ -507,27 +507,27 @@
       ],
       "classifiedMatches": 105765,
       "classifiedWins": 53848,
-      "unreconciledMatches": 1639,
+      "unreconciledMatches": 1640,
       "unreconciledWins": 819,
-      "classificationCoverage": 0.9847398607128226
+      "classificationCoverage": 0.9847306922396536
     },
     {
       "heroId": 8,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 114512,
-      "baselineWins": 60547,
+      "baselineMatches": 114513,
+      "baselineWins": 60548,
       "positions": [
         {
           "position": 1,
-          "matches": 108864,
-          "wins": 57862,
-          "observedHours": 142,
-          "observedShare": 0.9620785648004949,
+          "matches": 108865,
+          "wins": 57863,
+          "observedHours": 143,
+          "observedShare": 0.9620788999257662,
           "shareInterval95": {
-            "lower": 0.9609498797503058,
-            "upper": 0.9631758770342833
+            "lower": 0.9609502246446537,
+            "upper": 0.9631762026449682
           }
         },
         {
@@ -535,10 +535,10 @@
           "matches": 1536,
           "wins": 711,
           "observedHours": 140,
-          "observedShare": 0.013574300737925853,
+          "observedShare": 0.013574180776980452,
           "shareInterval95": {
-            "lower": 0.012916402136550518,
-            "upper": 0.014265225203987559
+            "lower": 0.012916287952583233,
+            "upper": 0.014265099182357258
           }
         },
         {
@@ -546,10 +546,10 @@
           "matches": 1793,
           "wins": 802,
           "observedHours": 139,
-          "observedShare": 0.015845521629623084,
+          "observedShare": 0.015845381597087208,
           "shareInterval95": {
-            "lower": 0.015134178445187775,
-            "upper": 0.016589736474240446
+            "lower": 0.015134044651837894,
+            "upper": 0.01658958992153725
           }
         },
         {
@@ -557,10 +557,10 @@
           "matches": 351,
           "wins": 161,
           "observedHours": 99,
-          "observedShare": 0.0031019398170650876,
+          "observedShare": 0.0031019124041146737,
           "shareInterval95": {
-            "lower": 0.0027943687793628193,
-            "upper": 0.00344324774022266
+            "lower": 0.0027943440809173633,
+            "upper": 0.0034432173164936834
           }
         },
         {
@@ -568,25 +568,25 @@
           "matches": 611,
           "wins": 281,
           "observedHours": 124,
-          "observedShare": 0.005399673014891079,
+          "observedShare": 0.005399625296051469,
           "shareInterval95": {
-            "lower": 0.00498914918659974,
-            "upper": 0.005843777724080825
+            "lower": 0.004989105086968076,
+            "upper": 0.0058437260925169425
           }
         }
       ],
-      "classifiedMatches": 113155,
-      "classifiedWins": 59817,
+      "classifiedMatches": 113156,
+      "classifiedWins": 59818,
       "unreconciledMatches": 1357,
       "unreconciledWins": 730,
-      "classificationCoverage": 0.9881497135671371
+      "classificationCoverage": 0.9881498170513392
     },
     {
       "heroId": 9,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 72470,
+      "baselineMatches": 72471,
       "baselineWins": 37396,
       "positions": [
         {
@@ -594,10 +594,10 @@
           "matches": 1137,
           "wins": 508,
           "observedHours": 134,
-          "observedShare": 0.015859952573580693,
+          "observedShare": 0.015859731347031007,
           "shareInterval95": {
-            "lower": 0.014971019643107823,
-            "upper": 0.016800767339865245
+            "lower": 0.01497081072451405,
+            "upper": 0.016800533105418482
           }
         },
         {
@@ -605,10 +605,10 @@
           "matches": 3623,
           "wins": 1785,
           "observedHours": 142,
-          "observedShare": 0.05053703445389873,
+          "observedShare": 0.05053632952532396,
           "shareInterval95": {
-            "lower": 0.0489575025929275,
-            "upper": 0.05216473205514667
+            "lower": 0.048956819138314275,
+            "upper": 0.05216400505633548
           }
         },
         {
@@ -616,21 +616,21 @@
           "matches": 1388,
           "wins": 643,
           "observedHours": 141,
-          "observedShare": 0.019361138234063328,
+          "observedShare": 0.019360868170342164,
           "shareInterval95": {
-            "lower": 0.01837794379316744,
-            "upper": 0.020395839313675456
+            "lower": 0.018377687318687316,
+            "upper": 0.020395554971238794
           }
         },
         {
           "position": 4,
-          "matches": 40456,
+          "matches": 40457,
           "wins": 21137,
-          "observedHours": 142,
-          "observedShare": 0.564318593946157,
+          "observedHours": 143,
+          "observedShare": 0.5643246711581649,
           "shareInterval95": {
-            "lower": 0.5606855870448682,
-            "upper": 0.5679447082824773
+            "lower": 0.5606916950622645,
+            "upper": 0.5679507541339919
           }
         },
         {
@@ -638,18 +638,18 @@
           "matches": 25086,
           "wins": 12926,
           "observedHours": 142,
-          "observedShare": 0.3499232807923002,
+          "observedShare": 0.34991839979913797,
           "shareInterval95": {
-            "lower": 0.3464401035168449,
-            "upper": 0.3534225407193487
+            "lower": 0.3464352582629448,
+            "upper": 0.35341762428565743
           }
         }
       ],
-      "classifiedMatches": 71690,
+      "classifiedMatches": 71691,
       "classifiedWins": 36999,
       "unreconciledMatches": 780,
       "unreconciledWins": 397,
-      "classificationCoverage": 0.9892369256243964
+      "classificationCoverage": 0.9892370741400008
     },
     {
       "heroId": 10,
@@ -933,21 +933,21 @@
     },
     {
       "heroId": 14,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 188146,
-      "baselineWins": 95953,
+      "baselineMatches": 188149,
+      "baselineWins": 95955,
       "positions": [
         {
           "position": 1,
           "matches": 3435,
           "wins": 1786,
           "observedHours": 142,
-          "observedShare": 0.018537406705846162,
+          "observedShare": 0.018537306666954485,
           "shareInterval95": {
-            "lower": 0.017933168412967413,
-            "upper": 0.019161606902701984
+            "lower": 0.017933071605617728,
+            "upper": 0.019161503528691903
           }
         },
         {
@@ -955,10 +955,10 @@
           "matches": 22697,
           "wins": 12160,
           "observedHours": 142,
-          "observedShare": 0.12248719650730433,
+          "observedShare": 0.12248653549341075,
           "shareInterval95": {
-            "lower": 0.12100228739603862,
-            "upper": 0.12398775766389693
+            "lower": 0.12100163384694188,
+            "upper": 0.1239870891281466
           }
         },
         {
@@ -966,21 +966,21 @@
           "matches": 41111,
           "wins": 21684,
           "observedHours": 142,
-          "observedShare": 0.22186064835052158,
+          "observedShare": 0.22185945105827246,
           "shareInterval95": {
-            "lower": 0.2199746128662906,
-            "upper": 0.2237582157608195
+            "lower": 0.21997342432145406,
+            "upper": 0.22375700970856655
           }
         },
         {
           "position": 4,
-          "matches": 66824,
+          "matches": 66825,
           "wins": 33376,
-          "observedHours": 142,
-          "observedShare": 0.3606240657093054,
+          "observedHours": 143,
+          "observedShare": 0.36062751616280453,
           "shareInterval95": {
-            "lower": 0.358440650872122,
-            "upper": 0.36281325920729396
+            "lower": 0.35844410257788506,
+            "upper": 0.36281670823428624
           }
         },
         {
@@ -988,18 +988,18 @@
           "matches": 51234,
           "wins": 25529,
           "observedHours": 142,
-          "observedShare": 0.27649068272702254,
+          "observedShare": 0.2764891906185578,
           "shareInterval95": {
-            "lower": 0.27445889246479277,
-            "upper": 0.2785317399013479
+            "lower": 0.27445740925197065,
+            "upper": 0.27853023890909573
           }
         }
       ],
-      "classifiedMatches": 185301,
+      "classifiedMatches": 185302,
       "classifiedWins": 94535,
-      "unreconciledMatches": 2845,
-      "unreconciledWins": 1418,
-      "classificationCoverage": 0.9848787643638451
+      "unreconciledMatches": 2847,
+      "unreconciledWins": 1420,
+      "classificationCoverage": 0.9848683755959373
     },
     {
       "heroId": 15,
@@ -1213,21 +1213,21 @@
     },
     {
       "heroId": 18,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 73066,
-      "baselineWins": 37630,
+      "baselineMatches": 73067,
+      "baselineWins": 37631,
       "positions": [
         {
           "position": 1,
-          "matches": 66158,
-          "wins": 34281,
-          "observedHours": 142,
-          "observedShare": 0.9172686308492201,
+          "matches": 66159,
+          "wins": 34282,
+          "observedHours": 143,
+          "observedShare": 0.9172697778886948,
           "shareInterval95": {
-            "lower": 0.9152359104065994,
-            "upper": 0.9192569052635903
+            "lower": 0.9152370843095732,
+            "upper": 0.9192580259335836
           }
         },
         {
@@ -1235,10 +1235,10 @@
           "matches": 815,
           "wins": 442,
           "observedHours": 138,
-          "observedShare": 0.011299826689774696,
+          "observedShare": 0.011299670021906108,
           "shareInterval95": {
-            "lower": 0.010554046707443669,
-            "upper": 0.012097661344091801
+            "lower": 0.010553900326252483,
+            "upper": 0.012097493684553191
           }
         },
         {
@@ -1246,10 +1246,10 @@
           "matches": 4305,
           "wins": 2061,
           "observedHours": 142,
-          "observedShare": 0.059688041594454073,
+          "observedShare": 0.059687214042093005,
           "shareInterval95": {
-            "lower": 0.05798241936220415,
-            "upper": 0.06144056435143902
+            "lower": 0.057981614739798785,
+            "upper": 0.061439713307045486
           }
         },
         {
@@ -1257,10 +1257,10 @@
           "matches": 387,
           "wins": 157,
           "observedHours": 109,
-          "observedShare": 0.005365684575389948,
+          "observedShare": 0.005365610182181183,
           "shareInterval95": {
-            "lower": 0.004858241641565777,
-            "upper": 0.005925814265734136
+            "lower": 0.0048581742675385155,
+            "upper": 0.005925732130824608
           }
         },
         {
@@ -1268,26 +1268,26 @@
           "matches": 460,
           "wins": 202,
           "observedHours": 120,
-          "observedShare": 0.006377816291161178,
+          "observedShare": 0.00637772786512492,
           "shareInterval95": {
-            "lower": 0.005822559233135038,
-            "upper": 0.0069856522968966385
+            "lower": 0.005822478484007113,
+            "upper": 0.006985555474422145
           }
         }
       ],
-      "classifiedMatches": 72125,
-      "classifiedWins": 37143,
+      "classifiedMatches": 72126,
+      "classifiedWins": 37144,
       "unreconciledMatches": 941,
       "unreconciledWins": 487,
-      "classificationCoverage": 0.987121232857964
+      "classificationCoverage": 0.9871214091176591
     },
     {
       "heroId": 19,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 27383,
-      "baselineWins": 12080,
+      "baselineMatches": 27384,
+      "baselineWins": 12081,
       "positions": [
         {
           "position": 1,
@@ -1347,16 +1347,16 @@
       ],
       "classifiedMatches": 26824,
       "classifiedWins": 11824,
-      "unreconciledMatches": 559,
-      "unreconciledWins": 256,
-      "classificationCoverage": 0.97958587444765
+      "unreconciledMatches": 560,
+      "unreconciledWins": 257,
+      "classificationCoverage": 0.9795501022494888
     },
     {
       "heroId": 20,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 60591,
+      "baselineMatches": 60592,
       "baselineWins": 31712,
       "positions": [
         {
@@ -1417,27 +1417,27 @@
       ],
       "classifiedMatches": 59668,
       "classifiedWins": 31219,
-      "unreconciledMatches": 923,
+      "unreconciledMatches": 924,
       "unreconciledWins": 493,
-      "classificationCoverage": 0.9847667145285603
+      "classificationCoverage": 0.9847504621072088
     },
     {
       "heroId": 21,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 111362,
-      "baselineWins": 53664,
+      "baselineMatches": 111365,
+      "baselineWins": 53667,
       "positions": [
         {
           "position": 1,
-          "matches": 18749,
-          "wins": 9131,
-          "observedHours": 142,
-          "observedShare": 0.17034170096395831,
+          "matches": 18750,
+          "wins": 9132,
+          "observedHours": 143,
+          "observedShare": 0.17034769099383115,
           "shareInterval95": {
-            "lower": 0.16813231166504858,
-            "upper": 0.17257410033099982
+            "lower": 0.1681382904253979,
+            "upper": 0.17258010079421315
           }
         },
         {
@@ -1445,10 +1445,10 @@
           "matches": 27792,
           "wins": 13562,
           "observedHours": 142,
-          "observedShare": 0.2525007495434599,
+          "observedShare": 0.25249616149869625,
           "shareInterval95": {
-            "lower": 0.24994282899571998,
-            "upper": 0.2550759454779631
+            "lower": 0.24993827971187857,
+            "upper": 0.25507131867862565
           }
         },
         {
@@ -1456,21 +1456,21 @@
           "matches": 12461,
           "wins": 6281,
           "observedHours": 142,
-          "observedShare": 0.11321286125723423,
+          "observedShare": 0.1132108041319536,
           "shareInterval95": {
-            "lower": 0.11135446795850945,
-            "upper": 0.11509825220304085
+            "lower": 0.11135244250069759,
+            "upper": 0.11509616306333423
           }
         },
         {
           "position": 4,
-          "matches": 36512,
-          "wins": 17262,
-          "observedHours": 142,
-          "observedShare": 0.331725221910291,
+          "matches": 36513,
+          "wins": 17263,
+          "observedHours": 143,
+          "observedShare": 0.331728279533747,
           "shareInterval95": {
-            "lower": 0.32894959062318824,
-            "upper": 0.33451259873548583
+            "lower": 0.3289526668477154,
+            "upper": 0.3345156373310393
           }
         },
         {
@@ -1478,25 +1478,25 @@
           "matches": 14553,
           "wins": 6801,
           "observedHours": 142,
-          "observedShare": 0.13221946632505654,
+          "observedShare": 0.13221706384177198,
           "shareInterval95": {
-            "lower": 0.13023117997299385,
-            "upper": 0.13423342366784555
+            "lower": 0.1302288109304642,
+            "upper": 0.13423098744505937
           }
         }
       ],
-      "classifiedMatches": 110067,
-      "classifiedWins": 53037,
-      "unreconciledMatches": 1295,
-      "unreconciledWins": 627,
-      "classificationCoverage": 0.9883712577001131
+      "classifiedMatches": 110069,
+      "classifiedWins": 53039,
+      "unreconciledMatches": 1296,
+      "unreconciledWins": 628,
+      "classificationCoverage": 0.9883625914784717
     },
     {
       "heroId": 22,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 80201,
+      "baselineMatches": 80203,
       "baselineWins": 40346,
       "positions": [
         {
@@ -1504,21 +1504,21 @@
           "matches": 559,
           "wins": 240,
           "observedHours": 125,
-          "observedShare": 0.007034809091137902,
+          "observedShare": 0.007034632034632035,
           "shareInterval95": {
-            "lower": 0.006477050906438935,
-            "upper": 0.007640228143604645
+            "lower": 0.0064768878440617,
+            "upper": 0.0076400359105871455
           }
         },
         {
           "position": 2,
-          "matches": 24476,
+          "matches": 24477,
           "wins": 11785,
-          "observedHours": 142,
-          "observedShare": 0.3080214442123279,
+          "observedHours": 143,
+          "observedShare": 0.30802627604953187,
           "shareInterval95": {
-            "lower": 0.3048207880297366,
-            "upper": 0.31124066126844613
+            "lower": 0.3048256458247466,
+            "upper": 0.31124546621357496
           }
         },
         {
@@ -1526,10 +1526,10 @@
           "matches": 1074,
           "wins": 486,
           "observedHours": 138,
-          "observedShare": 0.01351589438977121,
+          "observedShare": 0.013515554213228632,
           "shareInterval95": {
-            "lower": 0.012736234020315224,
-            "upper": 0.014342589022611728
+            "lower": 0.012735913343897478,
+            "upper": 0.014342228195101704
           }
         },
         {
@@ -1537,29 +1537,29 @@
           "matches": 34649,
           "wins": 17866,
           "observedHours": 142,
-          "observedShare": 0.4360449019657195,
+          "observedShare": 0.43603392731299706,
           "shareInterval95": {
-            "lower": 0.4326001632360878,
-            "upper": 0.4394958240030708
+            "lower": 0.4325892422640428,
+            "upper": 0.43948479657507805
           }
         },
         {
           "position": 5,
-          "matches": 18704,
+          "matches": 18705,
           "wins": 9583,
-          "observedHours": 142,
-          "observedShare": 0.2353829503410435,
+          "observedHours": 143,
+          "observedShare": 0.2353896103896104,
           "shareInterval95": {
-            "lower": 0.23244608584369503,
-            "upper": 0.23834539854784137
+            "lower": 0.23245275348637154,
+            "upper": 0.2383520497145322
           }
         }
       ],
-      "classifiedMatches": 79462,
+      "classifiedMatches": 79464,
       "classifiedWins": 39960,
       "unreconciledMatches": 739,
       "unreconciledWins": 386,
-      "classificationCoverage": 0.9907856510517326
+      "classificationCoverage": 0.9907858808274005
     },
     {
       "heroId": 23,
@@ -1703,21 +1703,21 @@
     },
     {
       "heroId": 26,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 165897,
-      "baselineWins": 80737,
+      "baselineMatches": 165899,
+      "baselineWins": 80739,
       "positions": [
         {
           "position": 1,
           "matches": 927,
           "wins": 380,
           "observedHours": 137,
-          "observedShare": 0.005671320371480661,
+          "observedShare": 0.005671250978856695,
           "shareInterval95": {
-            "lower": 0.005318709715163041,
-            "upper": 0.006047165682676058
+            "lower": 0.005318644625813683,
+            "upper": 0.00604709170575328
           }
         },
         {
@@ -1725,10 +1725,10 @@
           "matches": 21610,
           "wins": 10944,
           "observedHours": 142,
-          "observedShare": 0.13220845008381563,
+          "observedShare": 0.13220683241973374,
           "shareInterval95": {
-            "lower": 0.13057503544340063,
-            "upper": 0.1338591518250634
+            "lower": 0.13057343627245574,
+            "upper": 0.13385751553236278
           }
         },
         {
@@ -1736,10 +1736,10 @@
           "matches": 1447,
           "wins": 656,
           "observedHours": 141,
-          "observedShare": 0.008852643557208755,
+          "observedShare": 0.008852535238841034,
           "shareInterval95": {
-            "lower": 0.008409940165016835,
-            "upper": 0.009318432074321318
+            "lower": 0.008409837241052731,
+            "upper": 0.00931831808418492
           }
         },
         {
@@ -1747,36 +1747,36 @@
           "matches": 52797,
           "wins": 25565,
           "observedHours": 142,
-          "observedShare": 0.32300830814785814,
+          "observedShare": 0.3230043559122944,
           "shareInterval95": {
-            "lower": 0.3207455045307595,
-            "upper": 0.3252794308066104
+            "lower": 0.3207415734575055,
+            "upper": 0.3252754574927125
           }
         },
         {
           "position": 5,
-          "matches": 86673,
-          "wins": 42029,
-          "observedHours": 142,
-          "observedShare": 0.5302592778396369,
+          "matches": 86675,
+          "wins": 42031,
+          "observedHours": 144,
+          "observedShare": 0.5302650254502741,
           "shareInterval95": {
-            "lower": 0.5278391065587414,
-            "upper": 0.5326780268605938
+            "lower": 0.5278448705340629,
+            "upper": 0.5326837578538003
           }
         }
       ],
-      "classifiedMatches": 163454,
-      "classifiedWins": 79574,
+      "classifiedMatches": 163456,
+      "classifiedWins": 79576,
       "unreconciledMatches": 2443,
       "unreconciledWins": 1163,
-      "classificationCoverage": 0.9852739953103432
+      "classificationCoverage": 0.9852741728401015
     },
     {
       "heroId": 27,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 99337,
+      "baselineMatches": 99338,
       "baselineWins": 51381,
       "positions": [
         {
@@ -1784,10 +1784,10 @@
           "matches": 312,
           "wins": 132,
           "observedHours": 93,
-          "observedShare": 0.003192044443080323,
+          "observedShare": 0.003192011785889671,
           "shareInterval95": {
-            "lower": 0.0028574103405395305,
-            "upper": 0.0035657277317550575
+            "lower": 0.0028573811022911564,
+            "upper": 0.003565691258699974
           }
         },
         {
@@ -1795,10 +1795,10 @@
           "matches": 649,
           "wins": 315,
           "observedHours": 119,
-          "observedShare": 0.006639861678074133,
+          "observedShare": 0.006639793746930758,
           "shareInterval95": {
-            "lower": 0.006149750635872152,
-            "upper": 0.00716875090741445
+            "lower": 0.006149687704037828,
+            "upper": 0.007168677585584809
           }
         },
         {
@@ -1806,10 +1806,10 @@
           "matches": 467,
           "wins": 227,
           "observedHours": 115,
-          "observedShare": 0.004777835752943944,
+          "observedShare": 0.00477778687182845,
           "shareInterval95": {
-            "lower": 0.004364572958311456,
-            "upper": 0.005230023090255421
+            "lower": 0.004364528296357915,
+            "upper": 0.005229969595606163
           }
         },
         {
@@ -1817,37 +1817,37 @@
           "matches": 27774,
           "wins": 14370,
           "observedHours": 142,
-          "observedShare": 0.28415334090420796,
+          "observedShare": 0.28415043378621707,
           "shareInterval95": {
-            "lower": 0.28133443795225793,
-            "upper": 0.2869892094386797
+            "lower": 0.28133155404624177,
+            "upper": 0.28698627916364683
           }
         },
         {
           "position": 5,
-          "matches": 68541,
+          "matches": 68542,
           "wins": 35497,
-          "observedHours": 142,
-          "observedShare": 0.7012369172216937,
+          "observedHours": 143,
+          "observedShare": 0.701239973809134,
           "shareInterval95": {
-            "lower": 0.6983595878999017,
-            "upper": 0.7040984292890523
+            "lower": 0.6983626675501383,
+            "upper": 0.7041014627352674
           }
         }
       ],
-      "classifiedMatches": 97743,
+      "classifiedMatches": 97744,
       "classifiedWins": 50541,
       "unreconciledMatches": 1594,
       "unreconciledWins": 840,
-      "classificationCoverage": 0.9839536124505471
+      "classificationCoverage": 0.9839537739837726
     },
     {
       "heroId": 28,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 39647,
-      "baselineWins": 19310,
+      "baselineMatches": 39648,
+      "baselineWins": 19311,
       "positions": [
         {
           "position": 1,
@@ -1907,9 +1907,9 @@
       ],
       "classifiedMatches": 39030,
       "classifiedWins": 19005,
-      "unreconciledMatches": 617,
-      "unreconciledWins": 305,
-      "classificationCoverage": 0.984437662370419
+      "unreconciledMatches": 618,
+      "unreconciledWins": 306,
+      "classificationCoverage": 0.9844128329297821
     },
     {
       "heroId": 29,
@@ -1983,21 +1983,21 @@
     },
     {
       "heroId": 30,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 115827,
-      "baselineWins": 60341,
+      "baselineMatches": 115830,
+      "baselineWins": 60342,
       "positions": [
         {
           "position": 1,
           "matches": 235,
           "wins": 96,
           "observedHours": 97,
-          "observedShare": 0.002056856772747961,
+          "observedShare": 0.002056820767763054,
           "shareInterval95": {
-            "lower": 0.0018103632156260367,
-            "upper": 0.0023368335733580338
+            "lower": 0.001810331521811993,
+            "upper": 0.0023367926735236057
           }
         },
         {
@@ -2005,10 +2005,10 @@
           "matches": 785,
           "wins": 373,
           "observedHours": 132,
-          "observedShare": 0.006870776879179358,
+          "observedShare": 0.006870656607208501,
           "shareInterval95": {
-            "lower": 0.0064080927500324725,
-            "upper": 0.007366620548875115
+            "lower": 0.006407980552068579,
+            "upper": 0.007366491630551093
           }
         },
         {
@@ -2016,47 +2016,47 @@
           "matches": 521,
           "wins": 233,
           "observedHours": 125,
-          "observedShare": 0.004560095228092287,
+          "observedShare": 0.004560015404274686,
           "shareInterval95": {
-            "lower": 0.0041857337467700656,
-            "upper": 0.004967771627374233
+            "lower": 0.004185660462911764,
+            "upper": 0.0049676846858115525
           }
         },
         {
           "position": 4,
-          "matches": 34856,
+          "matches": 34857,
           "wins": 18138,
-          "observedHours": 142,
-          "observedShare": 0.3050799985995869,
+          "observedHours": 143,
+          "observedShare": 0.3050834106464544,
           "shareInterval95": {
-            "lower": 0.30241671683899013,
-            "upper": 0.30775638738647054
+            "lower": 0.30242014364848535,
+            "upper": 0.3077597842118488
           }
         },
         {
           "position": 5,
-          "matches": 77855,
+          "matches": 77856,
           "wins": 40696,
-          "observedHours": 142,
-          "observedShare": 0.6814322725203935,
+          "observedHours": 143,
+          "observedShare": 0.6814290965742994,
           "shareInterval95": {
-            "lower": 0.6787245651355258,
-            "upper": 0.6841277798357552
+            "lower": 0.6787214058773604,
+            "upper": 0.6841245876288425
           }
         }
       ],
-      "classifiedMatches": 114252,
+      "classifiedMatches": 114254,
       "classifiedWins": 59536,
-      "unreconciledMatches": 1575,
-      "unreconciledWins": 805,
-      "classificationCoverage": 0.9864021342174104
+      "unreconciledMatches": 1576,
+      "unreconciledWins": 806,
+      "classificationCoverage": 0.9863938530605197
     },
     {
       "heroId": 31,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 75529,
+      "baselineMatches": 75530,
       "baselineWins": 39779,
       "positions": [
         {
@@ -2064,10 +2064,10 @@
           "matches": 150,
           "wins": 60,
           "observedHours": 77,
-          "observedShare": 0.002018733850129199,
+          "observedShare": 0.002018706681919117,
           "shareInterval95": {
-            "lower": 0.0017207284142852519,
-            "upper": 0.0023682271098645707
+            "lower": 0.0017207052534641634,
+            "upper": 0.0023681952441848577
           }
         },
         {
@@ -2075,10 +2075,10 @@
           "matches": 403,
           "wins": 190,
           "observedHours": 115,
-          "observedShare": 0.005423664944013781,
+          "observedShare": 0.0054235919520893615,
           "shareInterval95": {
-            "lower": 0.0049205384467185045,
-            "upper": 0.005977927218839623
+            "lower": 0.004920472209962442,
+            "upper": 0.005977846791141611
           }
         },
         {
@@ -2086,10 +2086,10 @@
           "matches": 278,
           "wins": 133,
           "observedHours": 104,
-          "observedShare": 0.003741386735572782,
+          "observedShare": 0.0037413363838234306,
           "shareInterval95": {
-            "lower": 0.0033273242967115906,
-            "upper": 0.00420675888791358
+            "lower": 0.003327279508674595,
+            "upper": 0.004206702287165114
           }
         },
         {
@@ -2097,29 +2097,29 @@
           "matches": 21580,
           "wins": 11258,
           "observedHours": 142,
-          "observedShare": 0.2904285099052541,
+          "observedShare": 0.2904246013054303,
           "shareInterval95": {
-            "lower": 0.28717533867198125,
-            "upper": 0.2937033493833146
+            "lower": 0.2871714650642583,
+            "upper": 0.29369940590390986
           }
         },
         {
           "position": 5,
-          "matches": 51893,
+          "matches": 51894,
           "wins": 27502,
-          "observedHours": 142,
-          "observedShare": 0.6983877045650302,
+          "observedHours": 143,
+          "observedShare": 0.6983917636767377,
           "shareInterval95": {
-            "lower": 0.6950775113762105,
-            "upper": 0.7016773858352513
+            "lower": 0.6950816052354224,
+            "upper": 0.7016814100558121
           }
         }
       ],
-      "classifiedMatches": 74304,
+      "classifiedMatches": 74305,
       "classifiedWins": 39143,
       "unreconciledMatches": 1225,
       "unreconciledWins": 636,
-      "classificationCoverage": 0.9837810642269856
+      "classificationCoverage": 0.9837812789620018
     },
     {
       "heroId": 32,
@@ -2403,11 +2403,11 @@
     },
     {
       "heroId": 36,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 97972,
-      "baselineWins": 49256,
+      "baselineMatches": 97973,
+      "baselineWins": 49257,
       "positions": [
         {
           "position": 1,
@@ -2467,9 +2467,9 @@
       ],
       "classifiedMatches": 96933,
       "classifiedWins": 48707,
-      "unreconciledMatches": 1039,
-      "unreconciledWins": 549,
-      "classificationCoverage": 0.9893949291634344
+      "unreconciledMatches": 1040,
+      "unreconciledWins": 550,
+      "classificationCoverage": 0.9893848305145295
     },
     {
       "heroId": 37,
@@ -2613,21 +2613,21 @@
     },
     {
       "heroId": 39,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 55865,
-      "baselineWins": 26424,
+      "baselineMatches": 55866,
+      "baselineWins": 26425,
       "positions": [
         {
           "position": 1,
           "matches": 443,
           "wins": 208,
           "observedHours": 115,
-          "observedShare": 0.008031036420659525,
+          "observedShare": 0.008030890830644285,
           "shareInterval95": {
-            "lower": 0.007319686995046889,
-            "upper": 0.00881090334635635
+            "lower": 0.00731955425531851,
+            "upper": 0.008810743684302855
           }
         },
         {
@@ -2635,10 +2635,10 @@
           "matches": 44688,
           "wins": 21216,
           "observedHours": 142,
-          "observedShare": 0.8101375972154239,
+          "observedShare": 0.8101229106993945,
           "shareInterval95": {
-            "lower": 0.8068431569682718,
-            "upper": 0.8133888439800264
+            "lower": 0.8068284046299412,
+            "upper": 0.8133742261146566
           }
         },
         {
@@ -2646,10 +2646,10 @@
           "matches": 1600,
           "wins": 722,
           "observedHours": 141,
-          "observedShare": 0.029006000616377512,
+          "observedShare": 0.02900547478336536,
           "shareInterval95": {
-            "lower": 0.027637959925848454,
-            "upper": 0.03043963758183747
+            "lower": 0.027637458549079622,
+            "upper": 0.030439086176740352
           }
         },
         {
@@ -2657,29 +2657,29 @@
           "matches": 5864,
           "wins": 2764,
           "observedHours": 142,
-          "observedShare": 0.10630699225902358,
+          "observedShare": 0.10630506508103404,
           "shareInterval95": {
-            "lower": 0.10376213678765268,
-            "upper": 0.10890667814183909
+            "lower": 0.10376025310197359,
+            "upper": 0.10890470674601657
           }
         },
         {
           "position": 5,
-          "matches": 2566,
-          "wins": 1182,
-          "observedHours": 142,
-          "observedShare": 0.04651837348851544,
+          "matches": 2567,
+          "wins": 1183,
+          "observedHours": 143,
+          "observedShare": 0.0465356586055618,
           "shareInterval95": {
-            "lower": 0.04479220893656702,
-            "upper": 0.04830769533225035
+            "lower": 0.044809197737083355,
+            "upper": 0.04832527321367532
           }
         }
       ],
-      "classifiedMatches": 55161,
-      "classifiedWins": 26092,
+      "classifiedMatches": 55162,
+      "classifiedWins": 26093,
       "unreconciledMatches": 704,
       "unreconciledWins": 332,
-      "classificationCoverage": 0.9873981920701692
+      "classificationCoverage": 0.9873984176422153
     },
     {
       "heroId": 40,
@@ -2823,10 +2823,10 @@
     },
     {
       "heroId": 42,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 83465,
+      "baselineMatches": 83466,
       "baselineWins": 45689,
       "positions": [
         {
@@ -2887,16 +2887,16 @@
       ],
       "classifiedMatches": 82618,
       "classifiedWins": 45204,
-      "unreconciledMatches": 847,
+      "unreconciledMatches": 848,
       "unreconciledWins": 485,
-      "classificationCoverage": 0.9898520337866171
+      "classificationCoverage": 0.9898401744422879
     },
     {
       "heroId": 43,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 30431,
+      "baselineMatches": 30432,
       "baselineWins": 14538,
       "positions": [
         {
@@ -2904,21 +2904,21 @@
           "matches": 269,
           "wins": 104,
           "observedHours": 90,
-          "observedShare": 0.008945495660270694,
+          "observedShare": 0.008945198191008247,
           "shareInterval95": {
-            "lower": 0.00794223452272845,
-            "upper": 0.010074201559323672
+            "lower": 0.007941970289768277,
+            "upper": 0.01007386675880022
           }
         },
         {
           "position": 2,
-          "matches": 13616,
+          "matches": 13617,
           "wins": 6534,
-          "observedHours": 142,
-          "observedShare": 0.45279505171095075,
+          "observedHours": 143,
+          "observedShare": 0.4528132482043097,
           "shareInterval95": {
-            "lower": 0.44717543376046076,
-            "upper": 0.4584267286353997
+            "lower": 0.4471937017582954,
+            "upper": 0.45844484857501
           }
         },
         {
@@ -2926,10 +2926,10 @@
           "matches": 11394,
           "wins": 5428,
           "observedHours": 142,
-          "observedShare": 0.3789032622792724,
+          "observedShare": 0.37889066241021546,
           "shareInterval95": {
-            "lower": 0.373436062036994,
-            "upper": 0.3844013978887022
+            "lower": 0.3734235899553718,
+            "upper": 0.38438867242228697
           }
         },
         {
@@ -2937,10 +2937,10 @@
           "matches": 2779,
           "wins": 1317,
           "observedHours": 142,
-          "observedShare": 0.09241461873565894,
+          "observedShare": 0.09241154562383613,
           "shareInterval95": {
-            "lower": 0.08919315635050629,
-            "upper": 0.09574020286390958
+            "lower": 0.08919018520266934,
+            "upper": 0.09573702511115907
           }
         },
         {
@@ -2948,36 +2948,36 @@
           "matches": 2013,
           "wins": 977,
           "observedHours": 141,
-          "observedShare": 0.06694157161384723,
+          "observedShare": 0.06693934557063048,
           "shareInterval95": {
-            "lower": 0.0641717976851027,
-            "upper": 0.06982197462915754
+            "lower": 0.06416966065105124,
+            "upper": 0.06981965646708428
           }
         }
       ],
-      "classifiedMatches": 30071,
+      "classifiedMatches": 30072,
       "classifiedWins": 14360,
       "unreconciledMatches": 360,
       "unreconciledWins": 178,
-      "classificationCoverage": 0.9881699582662417
+      "classificationCoverage": 0.9881703470031545
     },
     {
       "heroId": 44,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 77891,
-      "baselineWins": 39617,
+      "baselineMatches": 77893,
+      "baselineWins": 39619,
       "positions": [
         {
           "position": 1,
-          "matches": 70757,
-          "wins": 36221,
-          "observedHours": 142,
-          "observedShare": 0.9188504791834402,
+          "matches": 70758,
+          "wins": 36222,
+          "observedHours": 143,
+          "observedShare": 0.9188515329775215,
           "shareInterval95": {
-            "lower": 0.9169008805381993,
-            "upper": 0.9207582910430618
+            "lower": 0.9169019584898346,
+            "upper": 0.9207593211170675
           }
         },
         {
@@ -2985,10 +2985,10 @@
           "matches": 3368,
           "wins": 1664,
           "observedHours": 142,
-          "observedShare": 0.043736851673895544,
+          "observedShare": 0.043736283714467514,
           "shareInterval95": {
-            "lower": 0.04231503212443404,
-            "upper": 0.045204190498880616
+            "lower": 0.04231448222706593,
+            "upper": 0.04520360394297843
           }
         },
         {
@@ -2996,10 +2996,10 @@
           "matches": 1545,
           "wins": 748,
           "observedHours": 142,
-          "observedShare": 0.020063371685323222,
+          "observedShare": 0.020063111145739998,
           "shareInterval95": {
-            "lower": 0.019096702017245646,
-            "upper": 0.02107792242312614
+            "lower": 0.019096453911439343,
+            "upper": 0.021077648854013958
           }
         },
         {
@@ -3007,10 +3007,10 @@
           "matches": 527,
           "wins": 207,
           "observedHours": 122,
-          "observedShare": 0.0068436225748642965,
+          "observedShare": 0.006843533704728142,
           "shareInterval95": {
-            "lower": 0.006285429902525302,
-            "upper": 0.007451015190487276
+            "lower": 0.006285348259030337,
+            "upper": 0.007450918463705632
           }
         },
         {
@@ -3018,18 +3018,18 @@
           "matches": 809,
           "wins": 326,
           "observedHours": 128,
-          "observedShare": 0.01050567488247669,
+          "observedShare": 0.010505538457542821,
           "shareInterval95": {
-            "lower": 0.009809577004752457,
-            "upper": 0.011250607357371418
+            "lower": 0.00980944957597348,
+            "upper": 0.011250461315766699
           }
         }
       ],
-      "classifiedMatches": 77006,
-      "classifiedWins": 39166,
-      "unreconciledMatches": 885,
-      "unreconciledWins": 451,
-      "classificationCoverage": 0.9886379684430807
+      "classifiedMatches": 77007,
+      "classifiedWins": 39167,
+      "unreconciledMatches": 886,
+      "unreconciledWins": 452,
+      "classificationCoverage": 0.9886254220533296
     },
     {
       "heroId": 45,
@@ -3103,21 +3103,21 @@
     },
     {
       "heroId": 46,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 33932,
+      "baselineMatches": 33933,
       "baselineWins": 15393,
       "positions": [
         {
           "position": 1,
-          "matches": 24443,
+          "matches": 24444,
           "wins": 11204,
-          "observedHours": 142,
-          "observedShare": 0.7320016770483948,
+          "observedHours": 143,
+          "observedShare": 0.7320097026322882,
           "shareInterval95": {
-            "lower": 0.7272245832930128,
-            "upper": 0.7367253973985993
+            "lower": 0.7272327249572569,
+            "upper": 0.7367333066540197
           }
         },
         {
@@ -3125,10 +3125,10 @@
           "matches": 8417,
           "wins": 3725,
           "observedHours": 142,
-          "observedShare": 0.25206636320076664,
+          "observedShare": 0.25205881472164826,
           "shareInterval95": {
-            "lower": 0.24743795992284284,
-            "upper": 0.2567518051286794
+            "lower": 0.24743052740451926,
+            "upper": 0.25674414071738266
           }
         },
         {
@@ -3136,10 +3136,10 @@
           "matches": 249,
           "wins": 106,
           "observedHours": 93,
-          "observedShare": 0.007456875898418783,
+          "observedShare": 0.0074566525918605695,
           "shareInterval95": {
-            "lower": 0.006589105999397773,
-            "upper": 0.008437958356489118
+            "lower": 0.006588908598532183,
+            "upper": 0.008437705802697338
           }
         },
         {
@@ -3147,10 +3147,10 @@
           "matches": 134,
           "wins": 45,
           "observedHours": 66,
-          "observedShare": 0.004012937230474365,
+          "observedShare": 0.004012817057467134,
           "shareInterval95": {
-            "lower": 0.0033895464314502694,
-            "upper": 0.00475043288770816
+            "lower": 0.00338944489767059,
+            "upper": 0.0047502906864828635
           }
         },
         {
@@ -3158,25 +3158,25 @@
           "matches": 149,
           "wins": 59,
           "observedHours": 81,
-          "observedShare": 0.0044621466219453764,
+          "observedShare": 0.004462012996735843,
           "shareInterval95": {
-            "lower": 0.003802048462966829,
-            "upper": 0.0052362462957648796
+            "lower": 0.0038019345705995813,
+            "upper": 0.0052360895549116195
           }
         }
       ],
-      "classifiedMatches": 33392,
+      "classifiedMatches": 33393,
       "classifiedWins": 15139,
       "unreconciledMatches": 540,
       "unreconciledWins": 254,
-      "classificationCoverage": 0.9840858186962159
+      "classificationCoverage": 0.9840862876845549
     },
     {
       "heroId": 47,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 44856,
+      "baselineMatches": 44858,
       "baselineWins": 21762,
       "positions": [
         {
@@ -3184,21 +3184,21 @@
           "matches": 2687,
           "wins": 1225,
           "observedHours": 142,
-          "observedShare": 0.060486684825428266,
+          "observedShare": 0.0604853232486944,
           "shareInterval95": {
-            "lower": 0.058307663471516294,
-            "upper": 0.06274171303672418
+            "lower": 0.0583063494529652,
+            "upper": 0.06274030242647195
           }
         },
         {
           "position": 2,
-          "matches": 20532,
+          "matches": 20533,
           "wins": 10094,
-          "observedHours": 142,
-          "observedShare": 0.462193008126421,
+          "observedHours": 143,
+          "observedShare": 0.4622051143526022,
           "shareInterval95": {
-            "lower": 0.4575602028849467,
-            "upper": 0.46683235148753865
+            "lower": 0.45757235163210735,
+            "upper": 0.466844412952045
           }
         },
         {
@@ -3206,10 +3206,10 @@
           "matches": 14792,
           "wins": 7078,
           "observedHours": 142,
-          "observedShare": 0.33298066316997954,
+          "observedShare": 0.33297316765712226,
           "shareInterval95": {
-            "lower": 0.3286127610042301,
-            "upper": 0.33737744868118524
+            "lower": 0.32860533983410856,
+            "upper": 0.33736987947167496
           }
         },
         {
@@ -3217,10 +3217,10 @@
           "matches": 3860,
           "wins": 1905,
           "observedHours": 142,
-          "observedShare": 0.0868919253539833,
+          "observedShare": 0.08688996938591752,
           "shareInterval95": {
-            "lower": 0.08430815673730614,
-            "upper": 0.08954713446046976
+            "lower": 0.08430625629010902,
+            "upper": 0.08954512170176962
           }
         },
         {
@@ -3228,25 +3228,25 @@
           "matches": 2552,
           "wins": 1267,
           "observedHours": 142,
-          "observedShare": 0.057447718524187924,
+          "observedShare": 0.057446425355663605,
           "shareInterval95": {
-            "lower": 0.055321859473065366,
-            "upper": 0.05965010997371965
+            "lower": 0.05532061278211038,
+            "upper": 0.05964876882863146
           }
         }
       ],
-      "classifiedMatches": 44423,
+      "classifiedMatches": 44424,
       "classifiedWins": 21569,
-      "unreconciledMatches": 433,
+      "unreconciledMatches": 434,
       "unreconciledWins": 193,
-      "classificationCoverage": 0.990346887818798
+      "classificationCoverage": 0.9903250256364529
     },
     {
       "heroId": 48,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 87357,
+      "baselineMatches": 87358,
       "baselineWins": 44175,
       "positions": [
         {
@@ -3307,38 +3307,38 @@
       ],
       "classifiedMatches": 86141,
       "classifiedWins": 43548,
-      "unreconciledMatches": 1216,
+      "unreconciledMatches": 1217,
       "unreconciledWins": 627,
-      "classificationCoverage": 0.9860801080623189
+      "classificationCoverage": 0.986068820256874
     },
     {
       "heroId": 49,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 106244,
-      "baselineWins": 56137,
+      "baselineMatches": 106247,
+      "baselineWins": 56139,
       "positions": [
         {
           "position": 1,
           "matches": 6871,
           "wins": 3518,
           "observedHours": 142,
-          "observedShare": 0.06562935793837278,
+          "observedShare": 0.06562810422556736,
           "shareInterval95": {
-            "lower": 0.06414522233776158,
-            "upper": 0.06714536844511669
+            "lower": 0.06414399601504003,
+            "upper": 0.0671440868253437
           }
         },
         {
           "position": 2,
-          "matches": 30648,
-          "wins": 16713,
-          "observedHours": 142,
-          "observedShare": 0.2927388389019428,
+          "matches": 30650,
+          "wins": 16714,
+          "observedHours": 143,
+          "observedShare": 0.2927523496599679,
           "shareInterval95": {
-            "lower": 0.289990242045503,
-            "upper": 0.29550264495858
+            "lower": 0.2900037412134995,
+            "upper": 0.295516166024679
           }
         },
         {
@@ -3346,10 +3346,10 @@
           "matches": 66171,
           "wins": 34577,
           "observedHours": 142,
-          "observedShare": 0.6320419508281276,
+          "observedShare": 0.6320298769771528,
           "shareInterval95": {
-            "lower": 0.6291159690559298,
-            "upper": 0.6349582431223069
+            "lower": 0.6291039036181025,
+            "upper": 0.6349461619292591
           }
         },
         {
@@ -3357,10 +3357,10 @@
           "matches": 659,
           "wins": 312,
           "observedHours": 128,
-          "observedShare": 0.006294534548302672,
+          "observedShare": 0.006294414304271414,
           "shareInterval95": {
-            "lower": 0.005833246730552763,
-            "upper": 0.006792051369223204
+            "lower": 0.005833135273595099,
+            "upper": 0.00679192165488731
           }
         },
         {
@@ -3368,25 +3368,25 @@
           "matches": 345,
           "wins": 169,
           "observedHours": 105,
-          "observedShare": 0.003295317783254055,
+          "observedShare": 0.003295254833040422,
           "shareInterval95": {
-            "lower": 0.002965919108624039,
-            "upper": 0.0036611655490247333
+            "lower": 0.002965862442021013,
+            "upper": 0.003661095623561041
           }
         }
       ],
-      "classifiedMatches": 104694,
-      "classifiedWins": 55289,
-      "unreconciledMatches": 1550,
-      "unreconciledWins": 848,
-      "classificationCoverage": 0.9854109408531305
+      "classifiedMatches": 104696,
+      "classifiedWins": 55290,
+      "unreconciledMatches": 1551,
+      "unreconciledWins": 849,
+      "classificationCoverage": 0.9854019407606803
     },
     {
       "heroId": 50,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 41660,
+      "baselineMatches": 41661,
       "baselineWins": 21612,
       "positions": [
         {
@@ -3394,10 +3394,10 @@
           "matches": 121,
           "wins": 38,
           "observedHours": 77,
-          "observedShare": 0.0029578566539552164,
+          "observedShare": 0.0029577843506318905,
           "shareInterval95": {
-            "lower": 0.002476239531849435,
-            "upper": 0.0035328143277316053
+            "lower": 0.0024761789880953016,
+            "upper": 0.0035327279969679763
           }
         },
         {
@@ -3405,10 +3405,10 @@
           "matches": 489,
           "wins": 225,
           "observedHours": 122,
-          "observedShare": 0.011953652097389264,
+          "observedShare": 0.011953359896355325,
           "shareInterval95": {
-            "lower": 0.010945398255618771,
-            "upper": 0.013053557152168351
+            "lower": 0.010945130570414642,
+            "upper": 0.01305323825001868
           }
         },
         {
@@ -3416,21 +3416,21 @@
           "matches": 245,
           "wins": 117,
           "observedHours": 105,
-          "observedShare": 0.005989048596851471,
+          "observedShare": 0.005988902197560439,
           "shareInterval95": {
-            "lower": 0.005286347151809604,
-            "upper": 0.006784521359884354
+            "lower": 0.005286217886891062,
+            "upper": 0.00678435558617734
           }
         },
         {
           "position": 4,
-          "matches": 8624,
+          "matches": 8625,
           "wins": 4342,
-          "observedHours": 142,
-          "observedShare": 0.2108145106091718,
+          "observedHours": 143,
+          "observedShare": 0.210833801852893,
           "shareInterval95": {
-            "lower": 0.2068891481096491,
-            "upper": 0.2147941798379654
+            "lower": 0.20690835267693575,
+            "upper": 0.21481355280809172
           }
         },
         {
@@ -3438,18 +3438,18 @@
           "matches": 31429,
           "wins": 16505,
           "observedHours": 142,
-          "observedShare": 0.7682849320426323,
+          "observedShare": 0.7682661517025593,
           "shareInterval95": {
-            "lower": 0.7641711835952048,
-            "upper": 0.7723482987188217
+            "lower": 0.7641523399094877,
+            "upper": 0.7723295864825462
           }
         }
       ],
-      "classifiedMatches": 40908,
+      "classifiedMatches": 40909,
       "classifiedWins": 21227,
       "unreconciledMatches": 752,
       "unreconciledWins": 385,
-      "classificationCoverage": 0.9819491118578972
+      "classificationCoverage": 0.9819495451381388
     },
     {
       "heroId": 51,
@@ -3523,32 +3523,32 @@
     },
     {
       "heroId": 52,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 14985,
-      "baselineWins": 7945,
+      "baselineMatches": 14986,
+      "baselineWins": 7946,
       "positions": [
         {
           "position": 1,
           "matches": 2866,
           "wins": 1739,
           "observedHours": 142,
-          "observedShare": 0.19497925028913532,
+          "observedShare": 0.1949659863945578,
           "shareInterval95": {
-            "lower": 0.18865453863655932,
-            "upper": 0.2014633494523165
+            "lower": 0.18864165561211632,
+            "upper": 0.201449700778279
           }
         },
         {
           "position": 2,
-          "matches": 8879,
-          "wins": 4625,
-          "observedHours": 142,
-          "observedShare": 0.6040546975984761,
+          "matches": 8880,
+          "wins": 4626,
+          "observedHours": 143,
+          "observedShare": 0.6040816326530613,
           "shareInterval95": {
-            "lower": 0.5961224402968365,
-            "upper": 0.6119325814870521
+            "lower": 0.5961497315997132,
+            "upper": 0.611959149917391
           }
         },
         {
@@ -3556,10 +3556,10 @@
           "matches": 1185,
           "wins": 607,
           "observedHours": 142,
-          "observedShare": 0.0806177290972175,
+          "observedShare": 0.08061224489795918,
           "shareInterval95": {
-            "lower": 0.07632534962075005,
-            "upper": 0.08512925529145571
+            "lower": 0.07632014566003555,
+            "upper": 0.08512347881516232
           }
         },
         {
@@ -3567,10 +3567,10 @@
           "matches": 1061,
           "wins": 497,
           "observedHours": 139,
-          "observedShare": 0.07218178107354242,
+          "observedShare": 0.07217687074829932,
           "shareInterval95": {
-            "lower": 0.06810901878952133,
-            "upper": 0.0764780982500449
+            "lower": 0.0681043756719681,
+            "upper": 0.07647290807896771
           }
         },
         {
@@ -3578,25 +3578,25 @@
           "matches": 708,
           "wins": 325,
           "observedHours": 130,
-          "observedShare": 0.048166541941628685,
+          "observedShare": 0.04816326530612245,
           "shareInterval95": {
-            "lower": 0.044821588574406185,
-            "upper": 0.05174759927933939
+            "lower": 0.04481853433162619,
+            "upper": 0.05174408590588628
           }
         }
       ],
-      "classifiedMatches": 14699,
-      "classifiedWins": 7793,
+      "classifiedMatches": 14700,
+      "classifiedWins": 7794,
       "unreconciledMatches": 286,
       "unreconciledWins": 152,
-      "classificationCoverage": 0.9809142475809143
+      "classificationCoverage": 0.9809155211530762
     },
     {
       "heroId": 53,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 54000,
+      "baselineMatches": 54001,
       "baselineWins": 22990,
       "positions": [
         {
@@ -3604,10 +3604,10 @@
           "matches": 15160,
           "wins": 6577,
           "observedHours": 142,
-          "observedShare": 0.2843157480167289,
+          "observedShare": 0.28431041596339224,
           "shareInterval95": {
-            "lower": 0.28050261447666164,
-            "upper": 0.2881599568361444
+            "lower": 0.2804973400529372,
+            "upper": 0.28815456733866746
           }
         },
         {
@@ -3615,10 +3615,10 @@
           "matches": 11581,
           "wins": 5082,
           "observedHours": 142,
-          "observedShare": 0.21719397610697475,
+          "observedShare": 0.21718990285435655,
           "shareInterval95": {
-            "lower": 0.21371456198406585,
-            "upper": 0.22071413625613745
+            "lower": 0.21371054516880625,
+            "upper": 0.22071000638891894
           }
         },
         {
@@ -3626,21 +3626,21 @@
           "matches": 3643,
           "wins": 1490,
           "observedHours": 142,
-          "observedShare": 0.06832204947394085,
+          "observedShare": 0.0683207681632347,
           "shareInterval95": {
-            "lower": 0.06621152688856208,
-            "upper": 0.07049476720234799
+            "lower": 0.06621028377580582,
+            "upper": 0.07049344671197391
           }
         },
         {
           "position": 4,
-          "matches": 15658,
+          "matches": 15659,
           "wins": 6557,
-          "observedHours": 142,
-          "observedShare": 0.29365540781305677,
+          "observedHours": 143,
+          "observedShare": 0.2936686545891002,
           "shareInterval95": {
-            "lower": 0.2898047000777791,
-            "upper": 0.29753584519148296
+            "lower": 0.2898179309327987,
+            "upper": 0.2975491054225126
           }
         },
         {
@@ -3648,36 +3648,36 @@
           "matches": 7279,
           "wins": 2992,
           "observedHours": 142,
-          "observedShare": 0.13651281858929878,
+          "observedShare": 0.13651025842991635,
           "shareInterval95": {
-            "lower": 0.13362482962716057,
-            "upper": 0.13945317792895864
+            "lower": 0.1336223194902224,
+            "upper": 0.1394505671339042
           }
         }
       ],
-      "classifiedMatches": 53321,
+      "classifiedMatches": 53322,
       "classifiedWins": 22698,
       "unreconciledMatches": 679,
       "unreconciledWins": 292,
-      "classificationCoverage": 0.9874259259259259
+      "classificationCoverage": 0.9874261587748375
     },
     {
       "heroId": 54,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 95323,
-      "baselineWins": 48744,
+      "baselineMatches": 95325,
+      "baselineWins": 48745,
       "positions": [
         {
           "position": 1,
-          "matches": 86493,
-          "wins": 44659,
-          "observedHours": 142,
-          "observedShare": 0.9215991305367018,
+          "matches": 86495,
+          "wins": 44660,
+          "observedHours": 144,
+          "observedShare": 0.9216008012530233,
           "shareInterval95": {
-            "lower": 0.9198620938314236,
-            "upper": 0.9233016553154002
+            "lower": 0.9198637999353709,
+            "upper": 0.923303291242751
           }
         },
         {
@@ -3685,10 +3685,10 @@
           "matches": 588,
           "wins": 256,
           "observedHours": 130,
-          "observedShare": 0.0062652502370779215,
+          "observedShare": 0.0062651167250913666,
           "shareInterval95": {
-            "lower": 0.00578024872200295,
-            "upper": 0.006790668670024779
+            "lower": 0.005780125516519757,
+            "upper": 0.006790524001217795
           }
         },
         {
@@ -3696,10 +3696,10 @@
           "matches": 5879,
           "wins": 2683,
           "observedHours": 142,
-          "observedShare": 0.0626418471833012,
+          "observedShare": 0.06264051229049684,
           "shareInterval95": {
-            "lower": 0.06110938385576478,
-            "upper": 0.06421011246431868
+            "lower": 0.061108080569210216,
+            "upper": 0.0642087453116304
           }
         },
         {
@@ -3707,10 +3707,10 @@
           "matches": 410,
           "wins": 154,
           "observedHours": 115,
-          "observedShare": 0.0043686268659897075,
+          "observedShare": 0.0043685337708970415,
           "shareInterval95": {
-            "lower": 0.003966494489568165,
-            "upper": 0.004811331417070429
+            "lower": 0.003966409947642103,
+            "upper": 0.004811228911877277
           }
         },
         {
@@ -3718,25 +3718,25 @@
           "matches": 481,
           "wins": 202,
           "observedHours": 115,
-          "observedShare": 0.005125145176929388,
+          "observedShare": 0.005125035960491407,
           "shareInterval95": {
-            "lower": 0.004688118908305439,
-            "upper": 0.005602681691943426
+            "lower": 0.004688018983902428,
+            "upper": 0.0056025623291758855
           }
         }
       ],
-      "classifiedMatches": 93851,
-      "classifiedWins": 47954,
+      "classifiedMatches": 93853,
+      "classifiedWins": 47955,
       "unreconciledMatches": 1472,
       "unreconciledWins": 790,
-      "classificationCoverage": 0.9845577667509415
+      "classificationCoverage": 0.9845580907421977
     },
     {
       "heroId": 55,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 29375,
+      "baselineMatches": 29376,
       "baselineWins": 14500,
       "positions": [
         {
@@ -3744,10 +3744,10 @@
           "matches": 151,
           "wins": 61,
           "observedHours": 77,
-          "observedShare": 0.005237599722511273,
+          "observedShare": 0.005237418056952586,
           "shareInterval95": {
-            "lower": 0.0044677632065768,
-            "upper": 0.00613926809230456
+            "lower": 0.0044676081875300415,
+            "upper": 0.0061390552566740544
           }
         },
         {
@@ -3755,21 +3755,21 @@
           "matches": 962,
           "wins": 482,
           "observedHours": 139,
-          "observedShare": 0.033368019424210894,
+          "observedShare": 0.03336686205820124,
           "shareInterval95": {
-            "lower": 0.031356287442484615,
-            "upper": 0.03550408777231144
+            "lower": 0.03135519875782988,
+            "upper": 0.03550285772130361
           }
         },
         {
           "position": 3,
-          "matches": 24846,
+          "matches": 24847,
           "wins": 12357,
-          "observedHours": 142,
-          "observedShare": 0.8618106139438085,
+          "observedHours": 143,
+          "observedShare": 0.8618154070271583,
           "shareInterval95": {
-            "lower": 0.8577788459312762,
-            "upper": 0.8657459757541813
+            "lower": 0.8577837671247823,
+            "upper": 0.8657506427936716
           }
         },
         {
@@ -3777,10 +3777,10 @@
           "matches": 2012,
           "wins": 936,
           "observedHours": 140,
-          "observedShare": 0.06978841484564689,
+          "observedShare": 0.06978599424230862,
           "shareInterval95": {
-            "lower": 0.06690427832326437,
-            "upper": 0.07278718334246931
+            "lower": 0.06690195423999373,
+            "upper": 0.07278466288855517
           }
         },
         {
@@ -3788,18 +3788,18 @@
           "matches": 859,
           "wins": 402,
           "observedHours": 129,
-          "observedShare": 0.029795352063822406,
+          "observedShare": 0.02979431861537928,
           "shareInterval95": {
-            "lower": 0.027894527784198066,
-            "upper": 0.03182146466445838
+            "lower": 0.02789355935003792,
+            "upper": 0.031820362132057696
           }
         }
       ],
-      "classifiedMatches": 28830,
+      "classifiedMatches": 28831,
       "classifiedWins": 14238,
       "unreconciledMatches": 545,
       "unreconciledWins": 262,
-      "classificationCoverage": 0.9814468085106383
+      "classificationCoverage": 0.981447440087146
     },
     {
       "heroId": 56,
@@ -4013,21 +4013,21 @@
     },
     {
       "heroId": 59,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 26674,
-      "baselineWins": 12266,
+      "baselineMatches": 26675,
+      "baselineWins": 12267,
       "positions": [
         {
           "position": 1,
           "matches": 720,
           "wins": 289,
           "observedHours": 135,
-          "observedShare": 0.027385797421170744,
+          "observedShare": 0.02738475581926061,
           "shareInterval95": {
-            "lower": 0.025481003667454344,
-            "upper": 0.029428681225753213
+            "lower": 0.025480033599345694,
+            "upper": 0.029427563142966243
           }
         },
         {
@@ -4035,21 +4035,21 @@
           "matches": 15638,
           "wins": 7503,
           "observedHours": 142,
-          "observedShare": 0.5948043056559279,
+          "observedShare": 0.5947816826411075,
           "shareInterval95": {
-            "lower": 0.5888566479586341,
-            "upper": 0.6007242631035912
+            "lower": 0.5888340888157645,
+            "upper": 0.6007015838800475
           }
         },
         {
           "position": 3,
-          "matches": 6696,
-          "wins": 2920,
-          "observedHours": 142,
-          "observedShare": 0.2546879160168879,
+          "matches": 6697,
+          "wins": 2921,
+          "observedHours": 143,
+          "observedShare": 0.254716263502206,
           "shareInterval95": {
-            "lower": 0.24945756897335972,
-            "upper": 0.2599899391928101
+            "lower": 0.24948581822649613,
+            "upper": 0.26001837390219945
           }
         },
         {
@@ -4057,10 +4057,10 @@
           "matches": 1695,
           "wins": 717,
           "observedHours": 140,
-          "observedShare": 0.06447073142900613,
+          "observedShare": 0.06446827932450935,
           "shareInterval95": {
-            "lower": 0.061565274227008554,
-            "upper": 0.06750344307770137
+            "lower": 0.06156292908324888,
+            "upper": 0.06750087988956731
           }
         },
         {
@@ -4068,36 +4068,36 @@
           "matches": 1542,
           "wins": 671,
           "observedHours": 141,
-          "observedShare": 0.05865124947700734,
+          "observedShare": 0.05864901871291647,
           "shareInterval95": {
-            "lower": 0.0558749402472973,
-            "upper": 0.06155651350976147
+            "lower": 0.055872812025247,
+            "upper": 0.06155417595139775
           }
         }
       ],
-      "classifiedMatches": 26291,
-      "classifiedWins": 12100,
+      "classifiedMatches": 26292,
+      "classifiedWins": 12101,
       "unreconciledMatches": 383,
       "unreconciledWins": 166,
-      "classificationCoverage": 0.9856414486016345
+      "classificationCoverage": 0.9856419868791003
     },
     {
       "heroId": 60,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 56147,
-      "baselineWins": 29001,
+      "baselineMatches": 56148,
+      "baselineWins": 29002,
       "positions": [
         {
           "position": 1,
           "matches": 363,
           "wins": 173,
           "observedHours": 101,
-          "observedShare": 0.006581810269799826,
+          "observedShare": 0.0065816909324968725,
           "shareInterval95": {
-            "lower": 0.0059404762396939766,
-            "upper": 0.007291874849820145
+            "lower": 0.005940368497686872,
+            "upper": 0.007291742687751171
           }
         },
         {
@@ -4105,21 +4105,21 @@
           "matches": 1849,
           "wins": 988,
           "observedHours": 139,
-          "observedShare": 0.03352552944589498,
+          "observedShare": 0.03352492158178159,
           "shareInterval95": {
-            "lower": 0.032055440625180315,
-            "upper": 0.03506059569863293
+            "lower": 0.03205485898402427,
+            "upper": 0.035059960518184455
           }
         },
         {
           "position": 3,
-          "matches": 52077,
-          "wins": 26954,
-          "observedHours": 142,
-          "observedShare": 0.9442449956483899,
+          "matches": 52078,
+          "wins": 26955,
+          "observedHours": 143,
+          "observedShare": 0.9442460065635595,
           "shareInterval95": {
-            "lower": 0.9422989470570257,
-            "upper": 0.9461291632562737
+            "lower": 0.9422999921590718,
+            "upper": 0.9461301409656635
           }
         },
         {
@@ -4127,10 +4127,10 @@
           "matches": 657,
           "wins": 293,
           "observedHours": 131,
-          "observedShare": 0.011912532637075719,
+          "observedShare": 0.011912316646419958,
           "shareInterval95": {
-            "lower": 0.01104046455206079,
-            "upper": 0.012852588730511167
+            "lower": 0.011040264288262432,
+            "upper": 0.012852355810453252
           }
         },
         {
@@ -4138,25 +4138,25 @@
           "matches": 206,
           "wins": 100,
           "observedHours": 89,
-          "observedShare": 0.0037351319988395706,
+          "observedShare": 0.0037350642757420266,
           "shareInterval95": {
-            "lower": 0.0032594357396975517,
-            "upper": 0.004279955335156432
+            "lower": 0.003259376628483712,
+            "upper": 0.004279877756326472
           }
         }
       ],
-      "classifiedMatches": 55152,
-      "classifiedWins": 28508,
+      "classifiedMatches": 55153,
+      "classifiedWins": 28509,
       "unreconciledMatches": 995,
       "unreconciledWins": 493,
-      "classificationCoverage": 0.9822786613710439
+      "classificationCoverage": 0.9822789769893852
     },
     {
       "heroId": 61,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 15335,
+      "baselineMatches": 15337,
       "baselineWins": 7800,
       "positions": [
         {
@@ -4164,10 +4164,10 @@
           "matches": 1410,
           "wins": 687,
           "observedHours": 141,
-          "observedShare": 0.09363171525333687,
+          "observedShare": 0.09362549800796813,
           "shareInterval95": {
-            "lower": 0.08908199560822828,
-            "upper": 0.0983887061541588
+            "lower": 0.08907606603070259,
+            "upper": 0.09838219065236828
           }
         },
         {
@@ -4175,21 +4175,21 @@
           "matches": 11575,
           "wins": 5995,
           "observedHours": 142,
-          "observedShare": 0.7686433362109037,
+          "observedShare": 0.7685922974767596,
           "shareInterval95": {
-            "lower": 0.7618400887977368,
-            "upper": 0.775309560033093
+            "lower": 0.7617887722007695,
+            "upper": 0.7752588342889328
           }
         },
         {
           "position": 3,
-          "matches": 1864,
+          "matches": 1865,
           "wins": 902,
-          "observedHours": 142,
-          "observedShare": 0.12377979945547513,
+          "observedHours": 143,
+          "observedShare": 0.12383798140770252,
           "shareInterval95": {
-            "lower": 0.11861559297909022,
-            "upper": 0.1291358999263439
+            "lower": 0.11867286761735134,
+            "upper": 0.12919494677964158
           }
         },
         {
@@ -4197,10 +4197,10 @@
           "matches": 127,
           "wins": 37,
           "observedHours": 69,
-          "observedShare": 0.008433494919981407,
+          "observedShare": 0.008432934926958832,
           "shareInterval95": {
-            "lower": 0.0070931294667939005,
-            "upper": 0.010024587633634318
+            "lower": 0.007092658184840131,
+            "upper": 0.010023922570841816
           }
         },
         {
@@ -4208,36 +4208,36 @@
           "matches": 83,
           "wins": 29,
           "observedHours": 54,
-          "observedShare": 0.005511654160302809,
+          "observedShare": 0.0055112881806108896,
           "shareInterval95": {
-            "lower": 0.004448735281687417,
-            "upper": 0.006826790606639328
+            "lower": 0.004448439740013773,
+            "upper": 0.006826337632343846
           }
         }
       ],
-      "classifiedMatches": 15059,
+      "classifiedMatches": 15060,
       "classifiedWins": 7650,
-      "unreconciledMatches": 276,
+      "unreconciledMatches": 277,
       "unreconciledWins": 150,
-      "classificationCoverage": 0.9820019563090968
+      "classificationCoverage": 0.9819391015192019
     },
     {
       "heroId": 62,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 46223,
-      "baselineWins": 24573,
+      "baselineMatches": 46226,
+      "baselineWins": 24576,
       "positions": [
         {
           "position": 1,
           "matches": 369,
           "wins": 141,
           "observedHours": 110,
-          "observedShare": 0.008080232991000066,
+          "observedShare": 0.008079879130263418,
           "shareInterval95": {
-            "lower": 0.007299500008429342,
-            "upper": 0.008943718533746602
+            "lower": 0.007299180219267101,
+            "upper": 0.008943327037250962
           }
         },
         {
@@ -4245,10 +4245,10 @@
           "matches": 903,
           "wins": 396,
           "observedHours": 138,
-          "observedShare": 0.01977357829504894,
+          "observedShare": 0.01977271234316495,
           "shareInterval95": {
-            "lower": 0.018536498325850317,
-            "upper": 0.021091443726685435
+            "lower": 0.01853568605452372,
+            "upper": 0.021090520702340187
           }
         },
         {
@@ -4256,21 +4256,21 @@
           "matches": 983,
           "wins": 434,
           "observedHours": 139,
-          "observedShare": 0.021525390325618062,
+          "observedShare": 0.021524447655959185,
           "shareInterval95": {
-            "lower": 0.020234024865699054,
-            "upper": 0.022897246551684614
+            "lower": 0.020233138183057928,
+            "upper": 0.022896244528913964
           }
         },
         {
           "position": 4,
-          "matches": 35466,
-          "wins": 19247,
-          "observedHours": 142,
-          "observedShare": 0.7766220684520551,
+          "matches": 35468,
+          "wins": 19249,
+          "observedHours": 144,
+          "observedShare": 0.7766318509273249,
           "shareInterval95": {
-            "lower": 0.7727788164425197,
-            "upper": 0.7804187860754958
+            "lower": 0.7727887423352814,
+            "upper": 0.7804284255254287
           }
         },
         {
@@ -4278,18 +4278,18 @@
           "matches": 7946,
           "wins": 4055,
           "observedHours": 142,
-          "observedShare": 0.17399872993627782,
+          "observedShare": 0.17399110994328756,
           "shareInterval95": {
-            "lower": 0.1705491441336418,
-            "upper": 0.17750315687669194
+            "lower": 0.170541659802998,
+            "upper": 0.17749540010168557
           }
         }
       ],
-      "classifiedMatches": 45667,
-      "classifiedWins": 24273,
-      "unreconciledMatches": 556,
-      "unreconciledWins": 300,
-      "classificationCoverage": 0.9879713562512169
+      "classifiedMatches": 45669,
+      "classifiedWins": 24275,
+      "unreconciledMatches": 557,
+      "unreconciledWins": 301,
+      "classificationCoverage": 0.9879505040453425
     },
     {
       "heroId": 63,
@@ -4573,21 +4573,21 @@
     },
     {
       "heroId": 67,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 65968,
+      "baselineMatches": 65969,
       "baselineWins": 34877,
       "positions": [
         {
           "position": 1,
-          "matches": 61723,
+          "matches": 61724,
           "wins": 32751,
-          "observedHours": 142,
-          "observedShare": 0.9475437519189438,
+          "observedHours": 143,
+          "observedShare": 0.9475445571913235,
           "shareInterval95": {
-            "lower": 0.9458051341238616,
-            "upper": 0.9492295874139665
+            "lower": 0.9458059653099083,
+            "upper": 0.9492303674879384
           }
         },
         {
@@ -4595,10 +4595,10 @@
           "matches": 1033,
           "wins": 524,
           "observedHours": 138,
-          "observedShare": 0.015858151673319006,
+          "observedShare": 0.015857908229839887,
           "shareInterval95": {
-            "lower": 0.014926949533896451,
-            "upper": 0.01684645240969481
+            "lower": 0.014926720280515768,
+            "upper": 0.016846193928341142
           }
         },
         {
@@ -4606,10 +4606,10 @@
           "matches": 1789,
           "wins": 893,
           "observedHours": 139,
-          "observedShare": 0.027463923856309486,
+          "observedShare": 0.027463502248967625,
           "shareInterval95": {
-            "lower": 0.026236474164765197,
-            "upper": 0.028747103386228316
+            "lower": 0.02623607115219671,
+            "upper": 0.028746662378359895
           }
         },
         {
@@ -4617,10 +4617,10 @@
           "matches": 237,
           "wins": 110,
           "observedHours": 83,
-          "observedShare": 0.0036383174700644763,
+          "observedShare": 0.003638261617107505,
           "shareInterval95": {
-            "lower": 0.0032043124829893347,
-            "upper": 0.004130862233760391
+            "lower": 0.0032042632825481357,
+            "upper": 0.004130798836265169
           }
         },
         {
@@ -4628,18 +4628,18 @@
           "matches": 358,
           "wins": 150,
           "observedHours": 94,
-          "observedShare": 0.005495855081363217,
+          "observedShare": 0.005495770712761548,
           "shareInterval95": {
-            "lower": 0.004956549446265045,
-            "upper": 0.00609348141928848
+            "lower": 0.004956473337153197,
+            "upper": 0.006093387905900404
           }
         }
       ],
-      "classifiedMatches": 65140,
+      "classifiedMatches": 65141,
       "classifiedWins": 34428,
       "unreconciledMatches": 828,
       "unreconciledWins": 449,
-      "classificationCoverage": 0.9874484598593257
+      "classificationCoverage": 0.9874486501235429
     },
     {
       "heroId": 68,
@@ -4783,21 +4783,21 @@
     },
     {
       "heroId": 70,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 45724,
+      "baselineMatches": 45725,
       "baselineWins": 22496,
       "positions": [
         {
           "position": 1,
-          "matches": 39079,
+          "matches": 39080,
           "wins": 19371,
-          "observedHours": 142,
-          "observedShare": 0.8691755076621961,
+          "observedHours": 143,
+          "observedShare": 0.86917841733019,
           "shareInterval95": {
-            "lower": 0.8660270021031707,
-            "upper": 0.8722609340480593
+            "lower": 0.8660299763264246,
+            "upper": 0.8722637800664682
           }
         },
         {
@@ -4805,10 +4805,10 @@
           "matches": 2010,
           "wins": 1034,
           "observedHours": 142,
-          "observedShare": 0.044705411356508976,
+          "observedShare": 0.0447044170632979,
           "shareInterval95": {
-            "lower": 0.0428337940155682,
-            "upper": 0.04665482260739428
+            "lower": 0.042832840436657006,
+            "upper": 0.046653786039702654
           }
         },
         {
@@ -4816,10 +4816,10 @@
           "matches": 3247,
           "wins": 1482,
           "observedHours": 142,
-          "observedShare": 0.07221814461422121,
+          "observedShare": 0.07221653841021307,
           "shareInterval95": {
-            "lower": 0.06986188050860612,
-            "upper": 0.07464750166660936
+            "lower": 0.06986032477247218,
+            "upper": 0.07464584364364336
           }
         },
         {
@@ -4827,10 +4827,10 @@
           "matches": 292,
           "wins": 109,
           "observedHours": 95,
-          "observedShare": 0.006494517470696826,
+          "observedShare": 0.006494373026110938,
           "shareInterval95": {
-            "lower": 0.0057930277420519495,
-            "upper": 0.00728033001367473
+            "lower": 0.005792898856428985,
+            "upper": 0.007280168159542106
           }
         },
         {
@@ -4838,18 +4838,18 @@
           "matches": 333,
           "wins": 120,
           "observedHours": 103,
-          "observedShare": 0.00740641889637686,
+          "observedShare": 0.007406254170188159,
           "shareInterval95": {
-            "lower": 0.006654881895895442,
-            "upper": 0.008242122899154094
+            "lower": 0.006654733831627971,
+            "upper": 0.00824193966739081
           }
         }
       ],
-      "classifiedMatches": 44961,
+      "classifiedMatches": 44962,
       "classifiedWins": 22116,
       "unreconciledMatches": 763,
       "unreconciledWins": 380,
-      "classificationCoverage": 0.9833129210042866
+      "classificationCoverage": 0.9833132859486058
     },
     {
       "heroId": 71,
@@ -5063,32 +5063,32 @@
     },
     {
       "heroId": 74,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 133522,
-      "baselineWins": 67815,
+      "baselineMatches": 133524,
+      "baselineWins": 67816,
       "positions": [
         {
           "position": 1,
           "matches": 613,
           "wins": 277,
           "observedHours": 137,
-          "observedShare": 0.004669159932057248,
+          "observedShare": 0.00466908880408869,
           "shareInterval95": {
-            "lower": 0.0043146165390523655,
-            "upper": 0.0050526892467547355
+            "lower": 0.004314550800802978,
+            "upper": 0.005052612291683122
           }
         },
         {
           "position": 2,
-          "matches": 96220,
-          "wins": 49665,
-          "observedHours": 142,
-          "observedShare": 0.7328981544250383,
+          "matches": 96222,
+          "wins": 49666,
+          "observedHours": 144,
+          "observedShare": 0.7329022233393506,
           "shareInterval95": {
-            "lower": 0.7304980634251863,
-            "upper": 0.7352846166194122
+            "lower": 0.7305021621381741,
+            "upper": 0.735288655704556
           }
         },
         {
@@ -5096,10 +5096,10 @@
           "matches": 1079,
           "wins": 494,
           "observedHours": 140,
-          "observedShare": 0.008218635508466184,
+          "observedShare": 0.008218510309317612,
           "shareInterval95": {
-            "lower": 0.007744454228235673,
-            "upper": 0.008721595001091218
+            "lower": 0.007744336225202399,
+            "upper": 0.00872146217477163
           }
         },
         {
@@ -5107,10 +5107,10 @@
           "matches": 22043,
           "wins": 10623,
           "observedHours": 142,
-          "observedShare": 0.16789933504459695,
+          "observedShare": 0.16789677733854322,
           "shareInterval95": {
-            "lower": 0.16588720491051812,
-            "upper": 0.16993089914702536
+            "lower": 0.16588467482316696,
+            "upper": 0.16992831367589936
           }
         },
         {
@@ -5118,18 +5118,18 @@
           "matches": 11332,
           "wins": 5576,
           "observedHours": 142,
-          "observedShare": 0.08631471508984134,
+          "observedShare": 0.08631340020869989,
           "shareInterval95": {
-            "lower": 0.08480772254959067,
-            "upper": 0.0878459157922007
+            "lower": 0.08480642957017885,
+            "upper": 0.08784457871750713
           }
         }
       ],
-      "classifiedMatches": 131287,
-      "classifiedWins": 66635,
+      "classifiedMatches": 131289,
+      "classifiedWins": 66636,
       "unreconciledMatches": 2235,
       "unreconciledWins": 1180,
-      "classificationCoverage": 0.983261185422627
+      "classificationCoverage": 0.9832614361463108
     },
     {
       "heroId": 75,
@@ -5203,10 +5203,10 @@
     },
     {
       "heroId": 76,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 87094,
+      "baselineMatches": 87096,
       "baselineWins": 46496,
       "positions": [
         {
@@ -5267,9 +5267,9 @@
       ],
       "classifiedMatches": 85866,
       "classifiedWins": 45851,
-      "unreconciledMatches": 1228,
+      "unreconciledMatches": 1230,
       "unreconciledWins": 645,
-      "classificationCoverage": 0.9859002916389189
+      "classificationCoverage": 0.9858776522457977
     },
     {
       "heroId": 77,
@@ -5903,32 +5903,32 @@
     },
     {
       "heroId": 86,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 140750,
-      "baselineWins": 69253,
+      "baselineMatches": 140751,
+      "baselineWins": 69254,
       "positions": [
         {
           "position": 1,
           "matches": 371,
           "wins": 155,
           "observedHours": 111,
-          "observedShare": 0.0026744328544344403,
+          "observedShare": 0.002674413575352143,
           "shareInterval95": {
-            "lower": 0.002416083333977013,
-            "upper": 0.002960325469071365
+            "lower": 0.002416065915108027,
+            "upper": 0.002960304132300115
           }
         },
         {
           "position": 2,
-          "matches": 23281,
-          "wins": 11552,
-          "observedHours": 142,
-          "observedShare": 0.16782606815118115,
+          "matches": 23282,
+          "wins": 11553,
+          "observedHours": 143,
+          "observedShare": 0.1678320670117213,
           "shareInterval95": {
-            "lower": 0.165868682516484,
-            "upper": 0.16980185038258128
+            "lower": 0.16587466017567046,
+            "upper": 0.16980786997963496
           }
         },
         {
@@ -5936,10 +5936,10 @@
           "matches": 1719,
           "wins": 811,
           "observedHours": 140,
-          "observedShare": 0.012391779182676019,
+          "observedShare": 0.012391689854529202,
           "shareInterval95": {
-            "lower": 0.011822981439885914,
-            "upper": 0.012987581849475465
+            "lower": 0.011822896188050628,
+            "upper": 0.012987488255300312
           }
         },
         {
@@ -5947,10 +5947,10 @@
           "matches": 72729,
           "wins": 35931,
           "observedHours": 142,
-          "observedShare": 0.5242825527497639,
+          "observedShare": 0.5242787733740863,
           "shareInterval95": {
-            "lower": 0.5216538629796413,
-            "upper": 0.526909897693315
+            "lower": 0.5216500922185674,
+            "upper": 0.5269061099220376
           }
         },
         {
@@ -5958,36 +5958,36 @@
           "matches": 40621,
           "wins": 19777,
           "observedHours": 142,
-          "observedShare": 0.2928251670619445,
+          "observedShare": 0.2928230561843111,
           "shareInterval95": {
-            "lower": 0.29043626627637426,
-            "upper": 0.2952255416914355
+            "lower": 0.29043416910371206,
+            "upper": 0.29522341714302675
           }
         }
       ],
-      "classifiedMatches": 138721,
-      "classifiedWins": 68226,
+      "classifiedMatches": 138722,
+      "classifiedWins": 68227,
       "unreconciledMatches": 2029,
       "unreconciledWins": 1027,
-      "classificationCoverage": 0.9855843694493783
+      "classificationCoverage": 0.9855844718687612
     },
     {
       "heroId": 87,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 55256,
-      "baselineWins": 28035,
+      "baselineMatches": 55259,
+      "baselineWins": 28036,
       "positions": [
         {
           "position": 1,
           "matches": 77,
           "wins": 31,
           "observedHours": 52,
-          "observedShare": 0.0014111351390976065,
+          "observedShare": 0.0014111092785016586,
           "shareInterval95": {
-            "lower": 0.0011293281617799173,
-            "upper": 0.0017631387137158434
+            "lower": 0.0011293074630093838,
+            "upper": 0.0017631064085964214
           }
         },
         {
@@ -5995,10 +5995,10 @@
           "matches": 390,
           "wins": 191,
           "observedHours": 110,
-          "observedShare": 0.007147307847377488,
+          "observedShare": 0.007147176865138271,
           "shareInterval95": {
-            "lower": 0.006474369451662813,
-            "upper": 0.007889635241519113
+            "lower": 0.006474250763547536,
+            "upper": 0.007889490712056852
           }
         },
         {
@@ -6006,10 +6006,10 @@
           "matches": 147,
           "wins": 70,
           "observedHours": 75,
-          "observedShare": 0.002693985265549976,
+          "observedShare": 0.002693935895321348,
           "shareInterval95": {
-            "lower": 0.0022926923444979513,
-            "upper": 0.0031652941707359284
+            "lower": 0.002292650320630256,
+            "upper": 0.0031652361780678826
           }
         },
         {
@@ -6017,29 +6017,29 @@
           "matches": 14477,
           "wins": 7310,
           "observedHours": 142,
-          "observedShare": 0.26531173258072793,
+          "observedShare": 0.2653068704528378,
           "shareInterval95": {
-            "lower": 0.26162395614538253,
-            "upper": 0.2690325509048122
+            "lower": 0.26161914968146904,
+            "upper": 0.2690276331919884
           }
         },
         {
           "position": 5,
-          "matches": 39475,
-          "wins": 20089,
-          "observedHours": 142,
-          "observedShare": 0.723435839167247,
+          "matches": 39476,
+          "wins": 20090,
+          "observedHours": 143,
+          "observedShare": 0.7234409075082009,
           "shareInterval95": {
-            "lower": 0.7196671539371987,
-            "upper": 0.7271730667440462
+            "lower": 0.719672277836737,
+            "upper": 0.7271780793893099
           }
         }
       ],
-      "classifiedMatches": 54566,
-      "classifiedWins": 27691,
-      "unreconciledMatches": 690,
+      "classifiedMatches": 54567,
+      "classifiedWins": 27692,
+      "unreconciledMatches": 692,
       "unreconciledWins": 344,
-      "classificationCoverage": 0.9875126683075142
+      "classificationCoverage": 0.9874771530429433
     },
     {
       "heroId": 88,
@@ -6113,21 +6113,21 @@
     },
     {
       "heroId": 89,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 8685,
+      "baselineMatches": 8686,
       "baselineWins": 4154,
       "positions": [
         {
           "position": 1,
-          "matches": 7256,
+          "matches": 7257,
           "wins": 3517,
-          "observedHours": 142,
-          "observedShare": 0.8510438658221909,
+          "observedHours": 143,
+          "observedShare": 0.8510613345842618,
           "shareInterval95": {
-            "lower": 0.8433282771321071,
-            "upper": 0.8584432656214676
+            "lower": 0.8433465649773403,
+            "upper": 0.8584599366321323
           }
         },
         {
@@ -6135,10 +6135,10 @@
           "matches": 295,
           "wins": 136,
           "observedHours": 102,
-          "observedShare": 0.03460004691531785,
+          "observedShare": 0.03459598921074235,
           "shareInterval95": {
-            "lower": 0.03092543136785233,
-            "upper": 0.03869385308046572
+            "lower": 0.030921798100733738,
+            "upper": 0.03868932545457225
           }
         },
         {
@@ -6146,10 +6146,10 @@
           "matches": 415,
           "wins": 201,
           "observedHours": 96,
-          "observedShare": 0.04867464227070138,
+          "observedShare": 0.04866893397443415,
           "shareInterval95": {
-            "lower": 0.04430677194839868,
-            "upper": 0.05344902607507105
+            "lower": 0.044301564552605394,
+            "upper": 0.05344277436703555
           }
         },
         {
@@ -6157,10 +6157,10 @@
           "matches": 264,
           "wins": 108,
           "observedHours": 99,
-          "observedShare": 0.03096410978184377,
+          "observedShare": 0.030960478480121966,
           "shareInterval95": {
-            "lower": 0.02749326723973561,
-            "upper": 0.034857417868334926
+            "lower": 0.027490037558997395,
+            "upper": 0.03485333869385541
           }
         },
         {
@@ -6168,47 +6168,47 @@
           "matches": 296,
           "wins": 112,
           "observedHours": 104,
-          "observedShare": 0.03471733520994605,
+          "observedShare": 0.03471326375043978,
           "shareInterval95": {
-            "lower": 0.031036346654697275,
-            "upper": 0.038817408740080384
+            "lower": 0.031032700343958313,
+            "upper": 0.03881286667271713
           }
         }
       ],
-      "classifiedMatches": 8526,
+      "classifiedMatches": 8527,
       "classifiedWins": 4074,
       "unreconciledMatches": 159,
       "unreconciledWins": 80,
-      "classificationCoverage": 0.981692573402418
+      "classificationCoverage": 0.9816946810960165
     },
     {
       "heroId": 90,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 33480,
-      "baselineWins": 16713,
+      "baselineMatches": 33482,
+      "baselineWins": 16715,
       "positions": [
         {
           "position": 1,
           "matches": 214,
           "wins": 76,
           "observedHours": 92,
-          "observedShare": 0.0064919305909477,
+          "observedShare": 0.006491536734817691,
           "shareInterval95": {
-            "lower": 0.005680616835381543,
-            "upper": 0.007418252842213107
+            "lower": 0.005680272069222035,
+            "upper": 0.007417803011304625
           }
         },
         {
           "position": 2,
-          "matches": 21110,
-          "wins": 10806,
-          "observedHours": 142,
-          "observedShare": 0.6403955830603082,
+          "matches": 21111,
+          "wins": 10807,
+          "observedHours": 143,
+          "observedShare": 0.6403870654613845,
           "shareInterval95": {
-            "lower": 0.6351990818775666,
-            "upper": 0.6455593660651486
+            "lower": 0.6351906964909025,
+            "upper": 0.6455507202235434
           }
         },
         {
@@ -6216,21 +6216,21 @@
           "matches": 671,
           "wins": 286,
           "observedHours": 136,
-          "observedShare": 0.020355539376289287,
+          "observedShare": 0.02035430443487229,
           "shareInterval95": {
-            "lower": 0.01888607613724732,
-            "upper": 0.02193678029700699
+            "lower": 0.01888492951959174,
+            "upper": 0.021935450539003594
           }
         },
         {
           "position": 4,
-          "matches": 6970,
-          "wins": 3446,
-          "observedHours": 142,
-          "observedShare": 0.21144278606965175,
+          "matches": 6971,
+          "wins": 3447,
+          "observedHours": 143,
+          "observedShare": 0.2114602924224959,
           "shareInterval95": {
-            "lower": 0.20706854186647747,
-            "upper": 0.2158842764500508
+            "lower": 0.2070860443313889,
+            "upper": 0.2159017785320919
           }
         },
         {
@@ -6238,18 +6238,18 @@
           "matches": 3999,
           "wins": 1857,
           "observedHours": 142,
-          "observedShare": 0.12131416090280306,
+          "observedShare": 0.12130680094642965,
           "shareInterval95": {
-            "lower": 0.11783368917765233,
-            "upper": 0.12488288263113881
+            "lower": 0.11782652645323101,
+            "upper": 0.1248753218045165
           }
         }
       ],
-      "classifiedMatches": 32964,
-      "classifiedWins": 16471,
+      "classifiedMatches": 32966,
+      "classifiedWins": 16473,
       "unreconciledMatches": 516,
       "unreconciledWins": 242,
-      "classificationCoverage": 0.9845878136200716
+      "classificationCoverage": 0.9845887342452662
     },
     {
       "heroId": 91,
@@ -6323,11 +6323,11 @@
     },
     {
       "heroId": 92,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 13525,
-      "baselineWins": 7358,
+      "baselineMatches": 13526,
+      "baselineWins": 7359,
       "positions": [
         {
           "position": 1,
@@ -6387,9 +6387,9 @@
       ],
       "classifiedMatches": 13286,
       "classifiedWins": 7221,
-      "unreconciledMatches": 239,
-      "unreconciledWins": 137,
-      "classificationCoverage": 0.9823290203327172
+      "unreconciledMatches": 240,
+      "unreconciledWins": 138,
+      "classificationCoverage": 0.982256395090936
     },
     {
       "heroId": 93,
@@ -6673,21 +6673,21 @@
     },
     {
       "heroId": 97,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 71301,
-      "baselineWins": 34983,
+      "baselineMatches": 71302,
+      "baselineWins": 34984,
       "positions": [
         {
           "position": 1,
           "matches": 939,
           "wins": 412,
           "observedHours": 140,
-          "observedShare": 0.01346564754133624,
+          "observedShare": 0.013465454441162131,
           "shareInterval95": {
-            "lower": 0.012636594245403279,
-            "upper": 0.014348302395376097
+            "lower": 0.012636412960334275,
+            "upper": 0.014348096732755345
           }
         },
         {
@@ -6695,10 +6695,10 @@
           "matches": 13004,
           "wins": 6614,
           "observedHours": 142,
-          "observedShare": 0.1864827269728823,
+          "observedShare": 0.18648005277196203,
           "shareInterval95": {
-            "lower": 0.18360913483545943,
-            "upper": 0.18939085935241295
+            "lower": 0.18360649723655173,
+            "upper": 0.189388148348806
           }
         },
         {
@@ -6706,21 +6706,21 @@
           "matches": 34984,
           "wins": 17054,
           "observedHours": 142,
-          "observedShare": 0.5016849984942566,
+          "observedShare": 0.5016778042274931,
           "shareInterval95": {
-            "lower": 0.4979739608895495,
-            "upper": 0.5053958504624425
+            "lower": 0.497966793447348,
+            "upper": 0.5053886301663607
           }
         },
         {
           "position": 4,
-          "matches": 12811,
-          "wins": 6217,
-          "observedHours": 142,
-          "observedShare": 0.1837150273184862,
+          "matches": 12812,
+          "wins": 6218,
+          "observedHours": 143,
+          "observedShare": 0.18372673301402473,
           "shareInterval95": {
-            "lower": 0.1808582420232421,
-            "upper": 0.1866066577736987
+            "lower": 0.18086989648243035,
+            "upper": 0.18661841291632852
           }
         },
         {
@@ -6728,36 +6728,36 @@
           "matches": 7995,
           "wins": 3931,
           "observedHours": 142,
-          "observedShare": 0.11465159967303859,
+          "observedShare": 0.11464995554535808,
           "shareInterval95": {
-            "lower": 0.11230809632342155,
-            "upper": 0.11703755691017075
+            "lower": 0.11230648369540935,
+            "upper": 0.1170358808551891
           }
         }
       ],
-      "classifiedMatches": 69733,
-      "classifiedWins": 34228,
+      "classifiedMatches": 69734,
+      "classifiedWins": 34229,
       "unreconciledMatches": 1568,
       "unreconciledWins": 755,
-      "classificationCoverage": 0.9780087235803144
+      "classificationCoverage": 0.9780090320047123
     },
     {
       "heroId": 98,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 35202,
-      "baselineWins": 15735,
+      "baselineMatches": 35204,
+      "baselineWins": 15737,
       "positions": [
         {
           "position": 1,
           "matches": 440,
           "wins": 166,
           "observedHours": 108,
-          "observedShare": 0.01275584159563982,
+          "observedShare": 0.012755102040816327,
           "shareInterval95": {
-            "lower": 0.011624672273359057,
-            "upper": 0.01399552369964743
+            "lower": 0.011623997933215292,
+            "upper": 0.013994712804213888
           }
         },
         {
@@ -6765,21 +6765,21 @@
           "matches": 3228,
           "wins": 1540,
           "observedHours": 142,
-          "observedShare": 0.0935814924334667,
+          "observedShare": 0.0935760667903525,
           "shareInterval95": {
-            "lower": 0.09055306912854329,
-            "upper": 0.09670042806581493
+            "lower": 0.0905478104554816,
+            "upper": 0.09669483141379237
           }
         },
         {
           "position": 3,
-          "matches": 30044,
-          "wins": 13459,
-          "observedHours": 142,
-          "observedShare": 0.8709920565895518,
+          "matches": 30046,
+          "wins": 13461,
+          "observedHours": 144,
+          "observedShare": 0.8709995361781077,
           "shareInterval95": {
-            "lower": 0.8674132402328879,
-            "upper": 0.874488250344457
+            "lower": 0.8674209112728075,
+            "upper": 0.8744955416057254
           }
         },
         {
@@ -6787,10 +6787,10 @@
           "matches": 524,
           "wins": 182,
           "observedHours": 123,
-          "observedShare": 0.015191047718443788,
+          "observedShare": 0.015190166975881261,
           "shareInterval95": {
-            "lower": 0.013953214296817815,
-            "upper": 0.01653685158386211
+            "lower": 0.013952404834564013,
+            "upper": 0.016535893497942267
           }
         },
         {
@@ -6798,36 +6798,36 @@
           "matches": 258,
           "wins": 90,
           "observedHours": 91,
-          "observedShare": 0.0074795616628978955,
+          "observedShare": 0.007479128014842301,
           "shareInterval95": {
-            "lower": 0.006623551909253134,
-            "upper": 0.00844525926379424
+            "lower": 0.006623167735236608,
+            "upper": 0.008444769879525514
           }
         }
       ],
-      "classifiedMatches": 34494,
-      "classifiedWins": 15437,
+      "classifiedMatches": 34496,
+      "classifiedWins": 15439,
       "unreconciledMatches": 708,
       "unreconciledWins": 298,
-      "classificationCoverage": 0.9798875063916823
+      "classificationCoverage": 0.9798886490171571
     },
     {
       "heroId": 99,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 37661,
-      "baselineWins": 18355,
+      "baselineMatches": 37663,
+      "baselineWins": 18356,
       "positions": [
         {
           "position": 1,
           "matches": 882,
           "wins": 409,
           "observedHours": 138,
-          "observedShare": 0.023789615643964937,
+          "observedShare": 0.023788973999352682,
           "shareInterval95": {
-            "lower": 0.022287029788868967,
-            "upper": 0.025390874624191973
+            "lower": 0.022286428224273205,
+            "upper": 0.025390190371412654
           }
         },
         {
@@ -6835,21 +6835,21 @@
           "matches": 982,
           "wins": 507,
           "observedHours": 139,
-          "observedShare": 0.02648685097774781,
+          "observedShare": 0.026486136584313303,
           "shareInterval95": {
-            "lower": 0.02490072412914822,
-            "upper": 0.028171092071100502
+            "lower": 0.024900051986357124,
+            "upper": 0.028170332929017865
           }
         },
         {
           "position": 3,
-          "matches": 33806,
-          "wins": 16514,
-          "observedHours": 142,
-          "observedShare": 0.9118273769386379,
+          "matches": 33807,
+          "wins": 16515,
+          "observedHours": 143,
+          "observedShare": 0.9118297550976373,
           "shareInterval95": {
-            "lower": 0.9088983163024327,
-            "upper": 0.9146711049243339
+            "lower": 0.9089007694456775,
+            "upper": 0.9146734099076569
           }
         },
         {
@@ -6857,10 +6857,10 @@
           "matches": 963,
           "wins": 434,
           "observedHours": 127,
-          "observedShare": 0.025974376264329063,
+          "observedShare": 0.025973675693170783,
           "shareInterval95": {
-            "lower": 0.024403757011451657,
-            "upper": 0.027643215949231387
+            "lower": 0.024403098288752135,
+            "upper": 0.02764247102588192
           }
         },
         {
@@ -6868,25 +6868,25 @@
           "matches": 442,
           "wins": 192,
           "observedHours": 113,
-          "observedShare": 0.011921780175320296,
+          "observedShare": 0.011921458625525946,
           "shareInterval95": {
-            "lower": 0.010866472109456578,
-            "upper": 0.013078220439978111
+            "lower": 0.010866178873857834,
+            "upper": 0.013077867915195815
           }
         }
       ],
-      "classifiedMatches": 37075,
-      "classifiedWins": 18056,
-      "unreconciledMatches": 586,
+      "classifiedMatches": 37076,
+      "classifiedWins": 18057,
+      "unreconciledMatches": 587,
       "unreconciledWins": 299,
-      "classificationCoverage": 0.9844401370117628
+      "classificationCoverage": 0.9844144120224093
     },
     {
       "heroId": 100,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 32059,
+      "baselineMatches": 32060,
       "baselineWins": 15332,
       "positions": [
         {
@@ -6894,10 +6894,10 @@
           "matches": 198,
           "wins": 90,
           "observedHours": 84,
-          "observedShare": 0.006321233598314338,
+          "observedShare": 0.006321031796705402,
           "shareInterval95": {
-            "lower": 0.005502051088889436,
-            "upper": 0.007261490979221324
+            "lower": 0.005501875371839091,
+            "upper": 0.007261259277775092
           }
         },
         {
@@ -6905,10 +6905,10 @@
           "matches": 1843,
           "wins": 936,
           "observedHours": 142,
-          "observedShare": 0.058838553139865274,
+          "observedShare": 0.0588366747541821,
           "shareInterval95": {
-            "lower": 0.056286218581303435,
-            "upper": 0.06149908268090684
+            "lower": 0.05628441929825923,
+            "upper": 0.06149712219960796
           }
         },
         {
@@ -6916,10 +6916,10 @@
           "matches": 3242,
           "wins": 1509,
           "observedHours": 142,
-          "observedShare": 0.10350221881684385,
+          "observedShare": 0.10349891457029753,
           "shareInterval95": {
-            "lower": 0.10017731128938066,
-            "upper": 0.10692436754884495
+            "lower": 0.10017410736598224,
+            "upper": 0.10692096068550556
           }
         },
         {
@@ -6927,47 +6927,47 @@
           "matches": 12475,
           "wins": 5944,
           "observedHours": 142,
-          "observedShare": 0.398269642116017,
+          "observedShare": 0.39825692759545395,
           "shareInterval95": {
-            "lower": 0.3928611031831155,
-            "upper": 0.4037031304509283
+            "lower": 0.3928485056014634,
+            "upper": 0.40369030131319766
           }
         },
         {
           "position": 5,
-          "matches": 13565,
+          "matches": 13566,
           "wins": 6507,
-          "observedHours": 142,
-          "observedShare": 0.43306835232895957,
+          "observedHours": 143,
+          "observedShare": 0.433086451283361,
           "shareInterval95": {
-            "lower": 0.42758957390112,
-            "upper": 0.4385635457642724
+            "lower": 0.42760773088357856,
+            "upper": 0.43858158172800893
           }
         }
       ],
-      "classifiedMatches": 31323,
+      "classifiedMatches": 31324,
       "classifiedWins": 14986,
       "unreconciledMatches": 736,
       "unreconciledWins": 346,
-      "classificationCoverage": 0.9770423282073677
+      "classificationCoverage": 0.9770430442919525
     },
     {
       "heroId": 101,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 76274,
-      "baselineWins": 37623,
+      "baselineMatches": 76277,
+      "baselineWins": 37624,
       "positions": [
         {
           "position": 1,
           "matches": 133,
           "wins": 54,
           "observedHours": 61,
-          "observedShare": 0.0017662213487025576,
+          "observedShare": 0.0017661978938422107,
           "shareInterval95": {
-            "lower": 0.0014906647060520225,
-            "upper": 0.002092609228523835
+            "lower": 0.0014906449079960015,
+            "upper": 0.0020925814442637578
           }
         },
         {
@@ -6975,10 +6975,10 @@
           "matches": 10750,
           "wins": 5369,
           "observedHours": 142,
-          "observedShare": 0.14275849247031952,
+          "observedShare": 0.14275659668273508,
           "shareInterval95": {
-            "lower": 0.1402781092776078,
-            "upper": 0.1452753224648632
+            "lower": 0.140276243761247,
+            "upper": 0.14527339611548887
           }
         },
         {
@@ -6986,21 +6986,21 @@
           "matches": 565,
           "wins": 296,
           "observedHours": 125,
-          "observedShare": 0.0075031207670447,
+          "observedShare": 0.007503021127976309,
           "shareInterval95": {
-            "lower": 0.006911393417605822,
-            "upper": 0.008145094058743672
+            "lower": 0.006911301610260951,
+            "upper": 0.008144985930900916
           }
         },
         {
           "position": 4,
-          "matches": 37974,
+          "matches": 37975,
           "wins": 18901,
-          "observedHours": 142,
-          "observedShare": 0.5042893947039919,
+          "observedHours": 143,
+          "observedShare": 0.5042959775838944,
           "shareInterval95": {
-            "lower": 0.5007181929042387,
-            "upper": 0.5078601588874115
+            "lower": 0.5007247995645253,
+            "upper": 0.5078667173211456
           }
         },
         {
@@ -7008,18 +7008,18 @@
           "matches": 25880,
           "wins": 12553,
           "observedHours": 142,
-          "observedShare": 0.3436827707099413,
+          "observedShare": 0.34367820671155197,
           "shareInterval95": {
-            "lower": 0.34029862831752594,
-            "upper": 0.34708286103382263
+            "lower": 0.34029409769653385,
+            "upper": 0.34707826391188934
           }
         }
       ],
-      "classifiedMatches": 75302,
+      "classifiedMatches": 75303,
       "classifiedWins": 37173,
-      "unreconciledMatches": 972,
-      "unreconciledWins": 450,
-      "classificationCoverage": 0.9872564700946588
+      "unreconciledMatches": 974,
+      "unreconciledWins": 451,
+      "classificationCoverage": 0.9872307510783067
     },
     {
       "heroId": 102,
@@ -7163,10 +7163,10 @@
     },
     {
       "heroId": 104,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 105076,
+      "baselineMatches": 105077,
       "baselineWins": 55337,
       "positions": [
         {
@@ -7174,10 +7174,10 @@
           "matches": 2396,
           "wins": 1161,
           "observedHours": 142,
-          "observedShare": 0.023088189947579402,
+          "observedShare": 0.02308796746870694,
           "shareInterval95": {
-            "lower": 0.022191950269646377,
-            "upper": 0.02401973584787058
+            "lower": 0.022191736330876677,
+            "upper": 0.02401950450516569
           }
         },
         {
@@ -7185,21 +7185,21 @@
           "matches": 4465,
           "wins": 2239,
           "observedHours": 142,
-          "observedShare": 0.043025362318840576,
+          "observedShare": 0.043024947724447614,
           "shareInterval95": {
-            "lower": 0.04180762468028026,
-            "upper": 0.044276930212450015
+            "lower": 0.041807221567591375,
+            "upper": 0.04427650384106762
           }
         },
         {
           "position": 3,
-          "matches": 95032,
+          "matches": 95033,
           "wins": 50424,
-          "observedHours": 142,
-          "observedShare": 0.9157415972864632,
+          "observedHours": 143,
+          "observedShare": 0.9157424092043517,
           "shareInterval95": {
-            "lower": 0.9140361462666093,
-            "upper": 0.9174162705713818
+            "lower": 0.9140369738385146,
+            "upper": 0.9174170670717117
           }
         },
         {
@@ -7207,10 +7207,10 @@
           "matches": 1349,
           "wins": 613,
           "observedHours": 141,
-          "observedShare": 0.012999152019734813,
+          "observedShare": 0.012999026759301193,
           "shareInterval95": {
-            "lower": 0.012327802208915483,
-            "upper": 0.013706554953720683
+            "lower": 0.012327683378324463,
+            "upper": 0.013706422925320804
           }
         },
         {
@@ -7218,18 +7218,18 @@
           "matches": 534,
           "wins": 254,
           "observedHours": 124,
-          "observedShare": 0.005145698427382054,
+          "observedShare": 0.005145648843192615,
           "shareInterval95": {
-            "lower": 0.004728325631494869,
-            "upper": 0.0055997057448682885
+            "lower": 0.004728280059977761,
+            "upper": 0.005599651798678358
           }
         }
       ],
-      "classifiedMatches": 103776,
+      "classifiedMatches": 103777,
       "classifiedWins": 54691,
       "unreconciledMatches": 1300,
       "unreconciledWins": 646,
-      "classificationCoverage": 0.9876280025886025
+      "classificationCoverage": 0.987628120330805
     },
     {
       "heroId": 105,
@@ -7443,10 +7443,10 @@
     },
     {
       "heroId": 108,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 30811,
+      "baselineMatches": 30812,
       "baselineWins": 14674,
       "positions": [
         {
@@ -7507,27 +7507,27 @@
       ],
       "classifiedMatches": 30328,
       "classifiedWins": 14442,
-      "unreconciledMatches": 483,
+      "unreconciledMatches": 484,
       "unreconciledWins": 232,
-      "classificationCoverage": 0.9843237804680147
+      "classificationCoverage": 0.9842918343502531
     },
     {
       "heroId": 109,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 29934,
+      "baselineMatches": 29935,
       "baselineWins": 13377,
       "positions": [
         {
           "position": 1,
-          "matches": 27799,
+          "matches": 27800,
           "wins": 12481,
-          "observedHours": 142,
-          "observedShare": 0.9442595108695652,
+          "observedHours": 143,
+          "observedShare": 0.9442614041642607,
           "shareInterval95": {
-            "lower": 0.9415804220899081,
-            "upper": 0.946822676961682
+            "lower": 0.9415824034982554,
+            "upper": 0.9468244855856605
           }
         },
         {
@@ -7535,10 +7535,10 @@
           "matches": 254,
           "wins": 114,
           "observedHours": 98,
-          "observedShare": 0.008627717391304348,
+          "observedShare": 0.008627424340205836,
           "shareInterval95": {
-            "lower": 0.007633509171181383,
-            "upper": 0.00975014165225281
+            "lower": 0.0076332497676017685,
+            "upper": 0.009749810675651647
           }
         },
         {
@@ -7546,10 +7546,10 @@
           "matches": 515,
           "wins": 216,
           "observedHours": 122,
-          "observedShare": 0.017493206521739132,
+          "observedShare": 0.01749261234333073,
           "shareInterval95": {
-            "lower": 0.016057381754466474,
-            "upper": 0.01905493401678215
+            "lower": 0.01605683596445469,
+            "upper": 0.019054287329129543
           }
         },
         {
@@ -7557,10 +7557,10 @@
           "matches": 502,
           "wins": 186,
           "observedHours": 126,
-          "observedShare": 0.017051630434782607,
+          "observedShare": 0.017051051255052477,
           "shareInterval95": {
-            "lower": 0.015634532631856768,
-            "upper": 0.01859474618796815
+            "lower": 0.015634001219691517,
+            "upper": 0.018594115111998842
           }
         },
         {
@@ -7568,18 +7568,18 @@
           "matches": 370,
           "wins": 149,
           "observedHours": 120,
-          "observedShare": 0.012567934782608696,
+          "observedShare": 0.012567507897150233,
           "shareInterval95": {
-            "lower": 0.011357503166466118,
-            "upper": 0.013905554300441157
+            "lower": 0.011357117170483112,
+            "upper": 0.01390508231736178
           }
         }
       ],
-      "classifiedMatches": 29440,
+      "classifiedMatches": 29441,
       "classifiedWins": 13146,
       "unreconciledMatches": 494,
       "unreconciledWins": 231,
-      "classificationCoverage": 0.9834970267922764
+      "classificationCoverage": 0.9834975780858527
     },
     {
       "heroId": 110,
@@ -7933,11 +7933,11 @@
     },
     {
       "heroId": 119,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 52017,
-      "baselineWins": 25506,
+      "baselineMatches": 52018,
+      "baselineWins": 25507,
       "positions": [
         {
           "position": 1,
@@ -7997,9 +7997,9 @@
       ],
       "classifiedMatches": 51160,
       "classifiedWins": 25071,
-      "unreconciledMatches": 857,
-      "unreconciledWins": 435,
-      "classificationCoverage": 0.9835246169521502
+      "unreconciledMatches": 858,
+      "unreconciledWins": 436,
+      "classificationCoverage": 0.9835057095620746
     },
     {
       "heroId": 120,
@@ -8143,21 +8143,21 @@
     },
     {
       "heroId": 123,
-      "usableHours": 142,
+      "usableHours": 144,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 84535,
-      "baselineWins": 39877,
+      "baselineMatches": 84539,
+      "baselineWins": 39880,
       "positions": [
         {
           "position": 1,
           "matches": 502,
           "wins": 185,
           "observedHours": 127,
-          "observedShare": 0.006044333136671764,
+          "observedShare": 0.0060441148141013295,
           "shareInterval95": {
-            "lower": 0.005539553789377028,
-            "upper": 0.006594804333552298
+            "lower": 0.005539353650962559,
+            "upper": 0.006594566196697643
           }
         },
         {
@@ -8165,10 +8165,10 @@
           "matches": 1686,
           "wins": 688,
           "observedHours": 141,
-          "observedShare": 0.020300290176152577,
+          "observedShare": 0.020299556925447892,
           "shareInterval95": {
-            "lower": 0.019363133176593602,
-            "upper": 0.02128182032184187
+            "lower": 0.01936243344975549,
+            "upper": 0.021281052012402112
           }
         },
         {
@@ -8176,40 +8176,40 @@
           "matches": 652,
           "wins": 291,
           "observedHours": 130,
-          "observedShare": 0.007850408775119501,
+          "observedShare": 0.007850125216721248,
           "shareInterval95": {
-            "lower": 0.007272540924904808,
-            "upper": 0.008473801409448435
+            "lower": 0.007272278165662216,
+            "upper": 0.008473495433834648
           }
         },
         {
           "position": 4,
-          "matches": 44190,
-          "wins": 21206,
-          "observedHours": 142,
-          "observedShare": 0.5320698830867037,
+          "matches": 44191,
+          "wins": 21207,
+          "observedHours": 143,
+          "observedShare": 0.532062704681179,
           "shareInterval95": {
-            "lower": 0.5286749981914008,
-            "upper": 0.5354618014561164
+            "lower": 0.5286678783172211,
+            "upper": 0.5354545652903858
           }
         },
         {
           "position": 5,
-          "matches": 36023,
-          "wins": 16817,
-          "observedHours": 142,
-          "observedShare": 0.4337350848253525,
+          "matches": 36025,
+          "wins": 16819,
+          "observedHours": 144,
+          "observedShare": 0.43374349836255055,
           "shareInterval95": {
-            "lower": 0.4303677401524392,
-            "upper": 0.4371085591304172
+            "lower": 0.43037620640785174,
+            "upper": 0.4371169189497672
           }
         }
       ],
-      "classifiedMatches": 83053,
-      "classifiedWins": 39187,
-      "unreconciledMatches": 1482,
+      "classifiedMatches": 83056,
+      "classifiedWins": 39190,
+      "unreconciledMatches": 1483,
       "unreconciledWins": 690,
-      "classificationCoverage": 0.9824687999053646
+      "classificationCoverage": 0.9824578005417618
     },
     {
       "heroId": 126,
@@ -8353,10 +8353,10 @@
     },
     {
       "heroId": 129,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 23738,
+      "baselineMatches": 23739,
       "baselineWins": 11232,
       "positions": [
         {
@@ -8364,10 +8364,10 @@
           "matches": 112,
           "wins": 49,
           "observedHours": 68,
-          "observedShare": 0.004818240481824048,
+          "observedShare": 0.0048180332100146266,
           "shareInterval95": {
-            "lower": 0.004006199547663427,
-            "upper": 0.005793921427149719
+            "lower": 0.004006027144545047,
+            "upper": 0.005793672316814246
           }
         },
         {
@@ -8375,21 +8375,21 @@
           "matches": 841,
           "wins": 416,
           "observedHours": 134,
-          "observedShare": 0.03617982361798236,
+          "observedShare": 0.036178267228770544,
           "shareInterval95": {
-            "lower": 0.033854865946560946,
-            "upper": 0.03865805740950074
+            "lower": 0.03385340787668002,
+            "upper": 0.038656396622701095
           }
         },
         {
           "position": 3,
-          "matches": 21350,
+          "matches": 21351,
           "wins": 10093,
-          "observedHours": 142,
-          "observedShare": 0.9184770918477092,
+          "observedHours": 143,
+          "observedShare": 0.918480598812699,
           "shareInterval95": {
-            "lower": 0.9148898690214063,
-            "upper": 0.9219260228353771
+            "lower": 0.9148935229847331,
+            "upper": 0.9219293875912288
           }
         },
         {
@@ -8397,10 +8397,10 @@
           "matches": 597,
           "wins": 271,
           "observedHours": 119,
-          "observedShare": 0.025682942568294256,
+          "observedShare": 0.02568183773552439,
           "shareInterval95": {
-            "lower": 0.02372641857433382,
-            "upper": 0.02779621152929351
+            "lower": 0.023725396924463574,
+            "upper": 0.027795017136951383
           }
         },
         {
@@ -8408,18 +8408,18 @@
           "matches": 345,
           "wins": 164,
           "observedHours": 103,
-          "observedShare": 0.01484190148419015,
+          "observedShare": 0.014841263012991483,
           "shareInterval95": {
-            "lower": 0.013365662486844572,
-            "upper": 0.016478468028203016
+            "lower": 0.013365087112818974,
+            "upper": 0.016477759774958814
           }
         }
       ],
-      "classifiedMatches": 23245,
+      "classifiedMatches": 23246,
       "classifiedWins": 10993,
       "unreconciledMatches": 493,
       "unreconciledWins": 239,
-      "classificationCoverage": 0.9792316117617322
+      "classificationCoverage": 0.9792324866253844
     },
     {
       "heroId": 131,
@@ -8493,21 +8493,21 @@
     },
     {
       "heroId": 135,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 67232,
-      "baselineWins": 35137,
+      "baselineMatches": 67235,
+      "baselineWins": 35138,
       "positions": [
         {
           "position": 1,
           "matches": 372,
           "wins": 187,
           "observedHours": 119,
-          "observedShare": 0.005631159080244017,
+          "observedShare": 0.0056310738397263175,
           "shareInterval95": {
-            "lower": 0.005088576457974157,
-            "upper": 0.006231233630222846
+            "lower": 0.005088499410744353,
+            "upper": 0.006231139336108343
           }
         },
         {
@@ -8515,21 +8515,21 @@
           "matches": 2543,
           "wins": 1349,
           "observedHours": 142,
-          "observedShare": 0.038494724572743375,
+          "observedShare": 0.03849414186673125,
           "shareInterval95": {
-            "lower": 0.03705428305823949,
-            "upper": 0.03998883619291736
+            "lower": 0.03705372174480079,
+            "upper": 0.03998823134972278
           }
         },
         {
           "position": 3,
-          "matches": 60145,
+          "matches": 60146,
           "wins": 31451,
-          "observedHours": 142,
-          "observedShare": 0.910446405594829,
+          "observedHours": 143,
+          "observedShare": 0.9104477611940298,
           "shareInterval95": {
-            "lower": 0.9082450418591628,
-            "upper": 0.912600037044142
+            "lower": 0.9082464290795299,
+            "upper": 0.9126013615870271
           }
         },
         {
@@ -8537,10 +8537,10 @@
           "matches": 1981,
           "wins": 1011,
           "observedHours": 142,
-          "observedShare": 0.029987435854740317,
+          "observedShare": 0.02998698192606945,
           "shareInterval95": {
-            "lower": 0.028713945868180078,
-            "upper": 0.03131558529012398
+            "lower": 0.028713510937766175,
+            "upper": 0.03131511158863622
           }
         },
         {
@@ -8548,47 +8548,47 @@
           "matches": 1020,
           "wins": 524,
           "observedHours": 140,
-          "observedShare": 0.015440274897443273,
+          "observedShare": 0.01544004117344313,
           "shareInterval95": {
-            "lower": 0.01452784746673846,
-            "upper": 0.016409053518555726
+            "lower": 0.014527627455672534,
+            "upper": 0.01640880525584655
           }
         }
       ],
-      "classifiedMatches": 66061,
+      "classifiedMatches": 66062,
       "classifiedWins": 34522,
-      "unreconciledMatches": 1171,
-      "unreconciledWins": 615,
-      "classificationCoverage": 0.9825826987148977
+      "unreconciledMatches": 1173,
+      "unreconciledWins": 616,
+      "classificationCoverage": 0.9825537294563843
     },
     {
       "heroId": 136,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 34795,
-      "baselineWins": 17470,
+      "baselineMatches": 34798,
+      "baselineWins": 17472,
       "positions": [
         {
           "position": 1,
           "matches": 1842,
           "wins": 885,
           "observedHours": 142,
-          "observedShare": 0.0538454792598439,
+          "observedShare": 0.05384233141387273,
           "shareInterval95": {
-            "lower": 0.0515033358423636,
-            "upper": 0.05628781220534997
+            "lower": 0.0515003212808063,
+            "upper": 0.0562845259253162
           }
         },
         {
           "position": 2,
-          "matches": 15167,
-          "wins": 8334,
-          "observedHours": 142,
-          "observedShare": 0.4433628577274986,
+          "matches": 15169,
+          "wins": 8335,
+          "observedHours": 143,
+          "observedShare": 0.4433953991406273,
           "shareInterval95": {
-            "lower": 0.4381051721709771,
-            "upper": 0.448633261856374
+            "lower": 0.4381378241189464,
+            "upper": 0.4486656846840579
           }
         },
         {
@@ -8596,10 +8596,10 @@
           "matches": 5644,
           "wins": 2730,
           "observedHours": 142,
-          "observedShare": 0.16498582244438598,
+          "observedShare": 0.16497617725293034,
           "shareInterval95": {
-            "lower": 0.1610902600819451,
-            "upper": 0.1689566163931292
+            "lower": 0.16108082097533194,
+            "upper": 0.16894676288505212
           }
         },
         {
@@ -8607,10 +8607,10 @@
           "matches": 6334,
           "wins": 2834,
           "observedHours": 142,
-          "observedShare": 0.18515595311175423,
+          "observedShare": 0.18514512875975564,
           "shareInterval95": {
-            "lower": 0.18107530171836456,
-            "upper": 0.1893073066385822
+            "lower": 0.18106468978111526,
+            "upper": 0.18929626816960035
           }
         },
         {
@@ -8618,36 +8618,36 @@
           "matches": 5222,
           "wins": 2406,
           "observedHours": 142,
-          "observedShare": 0.15264988745651728,
+          "observedShare": 0.152640963432814,
           "shareInterval95": {
-            "lower": 0.1488777391539171,
-            "upper": 0.15650003753253372
+            "lower": 0.14886901656660673,
+            "upper": 0.15649090951679195
           }
         }
       ],
-      "classifiedMatches": 34209,
-      "classifiedWins": 17189,
-      "unreconciledMatches": 586,
-      "unreconciledWins": 281,
-      "classificationCoverage": 0.9831584997844518
+      "classifiedMatches": 34211,
+      "classifiedWins": 17190,
+      "unreconciledMatches": 587,
+      "unreconciledWins": 282,
+      "classificationCoverage": 0.9831312144376113
     },
     {
       "heroId": 137,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 27491,
-      "baselineWins": 13848,
+      "baselineMatches": 27492,
+      "baselineWins": 13849,
       "positions": [
         {
           "position": 1,
           "matches": 144,
           "wins": 83,
           "observedHours": 67,
-          "observedShare": 0.0053563457818776965,
+          "observedShare": 0.0053561465501208855,
           "shareInterval95": {
-            "lower": 0.004551712638333637,
-            "upper": 0.006302318142369067
+            "lower": 0.004551543272389361,
+            "upper": 0.006302083845299551
           }
         },
         {
@@ -8655,21 +8655,21 @@
           "matches": 5704,
           "wins": 3119,
           "observedHours": 142,
-          "observedShare": 0.21217080791548876,
+          "observedShare": 0.21216291612423285,
           "shareInterval95": {
-            "lower": 0.20732490740311646,
-            "upper": 0.21709895258944464
+            "lower": 0.20731717248829426,
+            "upper": 0.21709090311799487
           }
         },
         {
           "position": 3,
-          "matches": 20122,
-          "wins": 9903,
-          "observedHours": 142,
-          "observedShare": 0.7484749293259931,
+          "matches": 20123,
+          "wins": 9904,
+          "observedHours": 143,
+          "observedShare": 0.7484842849172401,
           "shareInterval95": {
-            "lower": 0.7432531067343202,
-            "upper": 0.7536257528223729
+            "lower": 0.7432626227834755,
+            "upper": 0.753634947923016
           }
         },
         {
@@ -8677,10 +8677,10 @@
           "matches": 665,
           "wins": 319,
           "observedHours": 127,
-          "observedShare": 0.024735902395476864,
+          "observedShare": 0.024734982332155476,
           "shareInterval95": {
-            "lower": 0.022946061233106885,
-            "upper": 0.02666154527050557
+            "lower": 0.022945206990720293,
+            "upper": 0.0266605545986522
           }
         },
         {
@@ -8688,18 +8688,18 @@
           "matches": 249,
           "wins": 116,
           "observedHours": 101,
-          "observedShare": 0.009262014581163517,
+          "observedShare": 0.009261670076250698,
           "shareInterval95": {
-            "lower": 0.008184990123144257,
-            "upper": 0.01047926225238671
+            "lower": 0.00818468552348475,
+            "upper": 0.010478872725733484
           }
         }
       ],
-      "classifiedMatches": 26884,
-      "classifiedWins": 13540,
+      "classifiedMatches": 26885,
+      "classifiedWins": 13541,
       "unreconciledMatches": 607,
       "unreconciledWins": 308,
-      "classificationCoverage": 0.9779200465606925
+      "classificationCoverage": 0.9779208497017314
     },
     {
       "heroId": 138,
@@ -8773,10 +8773,10 @@
     },
     {
       "heroId": 145,
-      "usableHours": 142,
+      "usableHours": 143,
       "excludedMissingBaselineHours": 0,
       "excludedInconsistentHours": 0,
-      "baselineMatches": 28761,
+      "baselineMatches": 28762,
       "baselineWins": 13114,
       "positions": [
         {
@@ -8784,10 +8784,10 @@
           "matches": 15780,
           "wins": 6825,
           "observedHours": 142,
-          "observedShare": 0.5583073874893858,
+          "observedShare": 0.5582876348841324,
           "shareInterval95": {
-            "lower": 0.5525105253907607,
-            "upper": 0.5640884022210793
+            "lower": 0.5524908511140478,
+            "upper": 0.5640685772162515
           }
         },
         {
@@ -8795,21 +8795,21 @@
           "matches": 11071,
           "wins": 5406,
           "observedHours": 142,
-          "observedShare": 0.39169968864987265,
+          "observedShare": 0.39168583053246064,
           "shareInterval95": {
-            "lower": 0.3860240577857416,
-            "upper": 0.3974047544595
+            "lower": 0.38601033751888164,
+            "upper": 0.39739076121665057
           }
         },
         {
           "position": 3,
-          "matches": 1070,
+          "matches": 1071,
           "wins": 492,
-          "observedHours": 139,
-          "observedShare": 0.03785734503255024,
+          "observedHours": 140,
+          "observedShare": 0.03789138510525385,
           "shareInterval95": {
-            "lower": 0.0356944329857371,
-            "upper": 0.04014586284809035
+            "lower": 0.03572754549268264,
+            "upper": 0.04018081679186828
           }
         },
         {
@@ -8817,10 +8817,10 @@
           "matches": 178,
           "wins": 80,
           "observedHours": 84,
-          "observedShare": 0.006297763939994339,
+          "observedShare": 0.006297541128604281,
           "shareInterval95": {
-            "lower": 0.005440222610868476,
-            "upper": 0.007289488617521382
+            "lower": 0.0054400300618706095,
+            "upper": 0.00728923085760769
           }
         },
         {
@@ -8828,18 +8828,18 @@
           "matches": 165,
           "wins": 74,
           "observedHours": 75,
-          "observedShare": 0.005837814888197,
+          "observedShare": 0.005837608349548912,
           "shareInterval95": {
-            "lower": 0.005014346628116081,
-            "upper": 0.00679559150624834
+            "lower": 0.005014169155452889,
+            "upper": 0.0067953512066391344
           }
         }
       ],
-      "classifiedMatches": 28264,
+      "classifiedMatches": 28265,
       "classifiedWins": 12877,
       "unreconciledMatches": 497,
       "unreconciledWins": 237,
-      "classificationCoverage": 0.9827196550884879
+      "classificationCoverage": 0.9827202558931925
     },
     {
       "heroId": 155,
@@ -8912,8 +8912,8 @@
       "classificationCoverage": 0.9773771650759986
     }
   ],
-  "generatedAt": "2026-10-28T06:21:36.254Z",
+  "generatedAt": "2026-10-28T14:37:26.375Z",
   "sourceHashNormalization": "lf",
-  "sourceHistorySha256": "69a4b307d0dff914c2d5a1becb0ae43bad4b3ae4703c707222ddf5d7ef35637f",
+  "sourceHistorySha256": "fe8728771ab737894090636c3f87d972beb9067c4ef0a86488117afc4195fba8",
   "sourceHeroesSha256": "c03ecb637729035aeaece7e59e32ee423a3b3343789c0d6b29891d8ae521c646"
 }
