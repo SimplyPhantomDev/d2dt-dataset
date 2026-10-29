@@ -108,10 +108,10 @@ These capability tags are separate from numbered playing positions. A Support ta
 
 ## 3. A weight describes how strongly a feature affects the score
 
-Think of a shopping receipt:
+Let's say someone makes a purchase at that fruit stall:
 
 ```text
-item quantity × price per item = contribution to the bill
+amount of baskets × price of basket = final price
 ```
 
 The model uses similar arithmetic:
@@ -186,7 +186,7 @@ The symbols mean:
 
 - `z` is the total score.
 - `p` is the resulting probability, between 0 and 1.
-- `e` is a standard mathematical constant, approximately 2.718.
+- `e` is a standard mathematical constant called Napier's constant, approximately 2.718.
 
 You do not need to calculate the power by hand. A calculator or computer handles that part.
 
@@ -350,25 +350,25 @@ This prevents us from using knowledge collected later while claiming to predict 
 
 The readiness checker verifies that timing requirement. Passing it does not establish that the model predicts well.
 
-## 9. Understand position fit using kitchen appliances
+## 9. Understand position fit
 
-Imagine a kitchen with five jobs:
+Imagine you're now home with your fruit basket and you need equipment to prepare yourself a fresh smoothie:
 
-- Heat water.
-- Blend fruit.
-- Toast bread.
-- Cook rice.
-- Keep food cold.
+- Peeler to get rid of the peel from apples and pears
+- Sift to work through berries' seeds
+- Knife to cut the bananas
+- Jug to serve the smoothie in
+- Clean water to wash the fruit 
 
-Five kettles provide plenty of water-heating capacity, but poor coverage of the kitchen's other jobs.
+Five knives sure can chop up your fruit into a smoothie-like texture and look with enough effort, but the outcome doesn't compare to a properly prepared smoothie with all the equipment necessary.
 
-A varied set of appliances can cover those jobs more naturally. Some appliances can also perform several jobs.
+A varied set of equipment can cover those jobs more naturally. Some equipment can handle multiple jobs, like a knife can function as a peeler if need be.
 
 The position analyzer asks a similar question about a draft:
 
 > Can these five heroes reasonably cover five different positions?
 
-Heroes are more flexible than appliances. The analyzer uses observed playing frequencies rather than treating unusual assignments as physically impossible.
+Heroes are more flexible than food prepping equipment. The analyzer uses observed playing frequencies rather than treating unusual assignments as physically impossible.
 
 ### Observed frequency
 
