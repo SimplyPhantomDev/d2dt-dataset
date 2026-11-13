@@ -4,8 +4,6 @@ This file is intended as a thorough explanation on the mathematics behind the wi
 
 You do not need a background in statistics or machine learning to follow this guide. Each equation comes with an explanation and a worked example.
 
-> **Development status:** This guide describes the experimental learned model in this repository. The frontend currently uses an earlier calculation. Training and evaluating this model does not automatically replace the frontend calculator.
->
 > Unless stated otherwise, the example numbers below are invented to explain the mathematics. They are not published hero ratings.
 
 ## 1. Start with a fruit stall
