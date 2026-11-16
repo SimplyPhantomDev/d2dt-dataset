@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-09T10:43:27.985Z",
+  "generatedAt": "2026-11-16T10:26:44.327Z",
   "file": "synergyMatrix.json",
-  "bytes": 2121368,
-  "sha256": "a290eed54a8aae8ff41a8891016c3d20dab3dfd941e7edc39d0406e4aeeef693",
+  "bytes": 2121495,
+  "sha256": "870f493755c234e3d11cde07124d125e12393e1389f9ca6477e2a05014f349c8",
   "heroesFile": "heroes.json",
   "heroesBytes": 39036,
   "heroesSha256": "c03ecb637729035aeaece7e59e32ee423a3b3343789c0d6b29891d8ae521c646",
@@ -11,8 +11,8 @@
   "heroWinrates": {
     "ready": true,
     "scope": "unfiltered",
-    "windowStart": "2026-11-02T00:00:00.000Z",
-    "windowEnd": "2026-11-09T00:00:00.000Z",
+    "windowStart": "2026-11-09T00:00:00.000Z",
+    "windowEnd": "2026-11-16T00:00:00.000Z",
     "requiredHours": 168,
     "minimumHeroHours": 168,
     "heroesExpected": 127
